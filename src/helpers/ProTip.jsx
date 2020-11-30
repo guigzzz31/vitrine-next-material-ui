@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
 import Link from "@material-ui/core/Link";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +15,7 @@ function LightBulbIcon(props) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(6, 0, 3),
+    margin: theme.spacing(3, 1, 3),
   },
   lightBulb: {
     verticalAlign: "middle",
@@ -25,9 +26,16 @@ const useStyles = makeStyles((theme) => ({
 export default function ProTip() {
   const classes = useStyles();
   return (
-    <Typography className={classes.root} color="textSecondary">
-      <LightBulbIcon className={classes.lightBulb} />
-      Covid 19: le cabinet est désinfecté entre chaque patient.
-    </Typography>
+    <Paper>
+      <Typography className={classes.root} color="info">
+        <LightBulbIcon className={classes.lightBulb} /> Covid 19: le cabinet est
+        désinfecté entre chaque patient. <br />
+        Le cabinet sera désinfecté entre chaque patient. Des mesures seront
+        mises en place afin que nous puissions respecter la distanciation
+        sociale. <br />
+        Dans la mesure du possible, nous demandons à tous nos patients de venir
+        avec un masque. <br />A très bientôt.
+      </Typography>
+    </Paper>
   );
 }
