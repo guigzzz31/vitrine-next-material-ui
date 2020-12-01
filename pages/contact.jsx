@@ -1,31 +1,42 @@
-import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
+
 import ProTip from "../src/helpers/ProTip";
-import Link from "../src/helpers/Link";
-import Copyright from "../src/helpers/Copyright";
+import CardInfo from "../src/helpers/CardInfo";
+
+import data from "../src/data/data";
+
+import useWindowDimensions from "../src/hooks/useWindowDimensions";
 
 export default function contact() {
+  const { height, width } = useWindowDimensions();
+  const contact = data.find((category) => category.pageName === "Contact");
+
+  const useStyles = makeStyles((theme) => ({
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-around",
+      alignItems: "flex-start",
+      top: 12,
+      height: height - 160,
+    },
+    title: {
+      paddingTop: theme.spacing(1),
+    },
+  }));
+  const classes = useStyles();
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Next.js example
-        </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          component={Link}
-          naked
-          href="/"
-        >
-          Go to the main page
-        </Button>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <>
+      <Typography className={classes.title} variant="h4" align="center">
+        Contact
+      </Typography>
+      <Container className={classes.container} maxWidth="sm">
+        <ProTip info={contact.infoBulle} />
+        <CardInfo info={contact.info} />
+      </Container>
+    </>
   );
 }

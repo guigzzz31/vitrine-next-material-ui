@@ -4,8 +4,8 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
-import Menu from "./Menu";
-import Logo from "./Logo";
+import Menu from "../helpers/Menu";
+import Logo from "../helpers/Logo";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
@@ -21,16 +21,16 @@ export default function Header() {
     <Grid
       container
       direction="row"
-      justify="center"
+      justify="space-between"
+      alignItems="center"
       className={classes.root}
-      maxWidth="sm"
     >
       <Grid item>
-        <Menu />
+        <Logo />
       </Grid>
       <Grid item>
         <Box>
-          <Typography
+          {/* <Typography
             color="textSecondary"
             variant="h6"
             component="h1"
@@ -38,15 +38,24 @@ export default function Header() {
             gutterBottom
           >
             Carole Richou <br />&<br /> Carine Da Costa
-          </Typography>{" "}
+          </Typography>{" "} */}
           <Typography
+            color="textSecondary"
+            variant="h6"
+            component="h1"
+            align="center"
+            gutterBottom
+          >
+            Podologie - Cugnaux
+          </Typography>{" "}
+          {/* <Typography
             variant="subtitle1"
             align="center"
             color="textSecondary"
             gutterBottom
           >
             Pédicure Podologue - Cugnaux
-          </Typography>
+          </Typography> */}
           <Typography
             variant="h6"
             component="h1"
@@ -59,7 +68,7 @@ export default function Header() {
         </Box>
       </Grid>
       <Grid item>
-        <Logo />
+        <Menu />
       </Grid>
     </Grid>
   );

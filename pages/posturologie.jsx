@@ -1,24 +1,47 @@
-import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+
+import ProTip from "../src/helpers/ProTip";
+import CardInfo from "../src/helpers/CardInfo";
+
+import data from "../src/data/data";
+
+import useWindowDimensions from "../src/hooks/useWindowDimensions";
 
 export default function posturologie() {
+  const { height, width } = useWindowDimensions();
+  const infoPage = data.find(
+    (category) => category.pageName === "Posturologie"
+  );
+
+  const useStyles = makeStyles((theme) => ({
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      top: 12,
+      height: height - 160,
+    },
+    title: {
+      paddingTop: theme.spacing(1),
+    },
+  }));
+  const classes = useStyles();
+
   return (
-    <div>
-      <h1>Posturologie</h1>
-      <p>
-        La posturologie est une discipline qui étudie la position et l’équilibre
-        de l’être humain dans l’espace, à l’état statique et en mouvement. Pour
-        se tenir debout, l'être humain doit lutter contre la gravité et adapter
-        continuellement sa position afin de garder l’équilibre. Cette adaptation
-        se fait grâce aux informations reçues par les capteurs posturaux qui
-        sont : la peau, les articulations, la plante des pieds, les yeux,
-        l’oreille interne et les dents. Le cerveau reçoit toutes ces
-        informations et adapte la posture du corps à tout moment. La
-        posturologie est un outil diagnostic qui permet d’analyser et traiter
-        les causes d’une dysfonction posturale fonctionnelle (contrairement à la
-        podologie classique qui elle analyse et traite les causes d'une
-        dysfonction organique) au moyen de semelles dites de posture.
-      </p>
-      <h2>Pourquoi consulter ?</h2>
-    </div>
+    <>
+      <Typography className={classes.title} variant="h4" align="center">
+        {infoPage.pageName}
+      </Typography>
+      <Container className={classes.container} maxWidth="sm">
+        {infoPage.infoBulle ? <ProTip info={infoPage.infoBulle} /> : null}
+        <Typography variant="body1">
+          {infoPage.content.part1.paragraph}
+        </Typography>
+      </Container>
+    </>
   );
 }
