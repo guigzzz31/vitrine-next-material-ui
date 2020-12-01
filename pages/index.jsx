@@ -1,39 +1,47 @@
-import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Head from "../src/components/Head";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 
-import Header from "../src/components/Header";
 import ProTip from "../src/helpers/ProTip";
-import Link from "../src/helpers/Link";
-import Copyright from "../src/helpers/Copyright";
+import CardInfo from "../src/helpers/CardInfo";
+
+import data from "../src/data/data";
+
+import useWindowDimensions from "../src/hooks/useWindowDimensions";
 
 export default function Index() {
+  const { height, width } = useWindowDimensions();
+  const infoPage = data.find(
+    (category) => category.pageName === "Présentation"
+  );
+
   const useStyles = makeStyles((theme) => ({
-    root: {
-      padding: 0,
-      //width: 300,
-      //margin: 0
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      top: 12,
+      height: height - 160,
     },
-    box: {
-      padding: 10,
+    title: {
+      paddingTop: theme.spacing(1),
     },
   }));
   const classes = useStyles();
+
   return (
-    <Container maxWidth="sm" className={classes.root}>
-      <Head
-        title="home"
-        description="Page d'accueil"
-        url="https://podologue-cugnaux.io/home"
-      />
-      <Box my={4} className={classes.box}>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <>
+      <Typography className={classes.title} variant="h4" align="center">
+        {infoPage.pageName}
+      </Typography>
+      <Container className={classes.container} maxWidth="sm">
+        {infoPage.infoBulle ? <ProTip info={infoPage.infoBulle} /> : null}
+        {/* <Typography variant="body1">
+          {infoPage.content.part1.paragraph}
+        </Typography> */}
+      </Container>
+    </>
   );
 }

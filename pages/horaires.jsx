@@ -10,11 +10,9 @@ import data from "../src/data/data";
 
 import useWindowDimensions from "../src/hooks/useWindowDimensions";
 
-export default function reflexologie() {
+export default function Horaires() {
   const { height, width } = useWindowDimensions();
-  const infoPage = data.find(
-    (category) => category.pageName === "Réflexologie"
-  );
+  const infoPage = data.find((category) => category.pageName === "Horaires");
 
   const useStyles = makeStyles((theme) => ({
     container: {
@@ -38,9 +36,9 @@ export default function reflexologie() {
       </Typography>
       <Container className={classes.container} maxWidth="sm">
         {infoPage.infoBulle ? <ProTip info={infoPage.infoBulle} /> : null}
-        <Typography variant="body1">
+        {/* <Typography variant="body1">
           {infoPage.content.part1.paragraph}
-        </Typography>
+        </Typography> */}
       </Container>
     </>
   );

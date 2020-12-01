@@ -1,14 +1,45 @@
-import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+
+import ProTip from "../src/helpers/ProTip";
+import CardInfo from "../src/helpers/CardInfo";
+
+import data from "../src/data/data";
+
+import useWindowDimensions from "../src/hooks/useWindowDimensions";
 
 export default function podologie() {
+  const { height, width } = useWindowDimensions();
+  const infoPage = data.find((category) => category.pageName === "Podologie");
+
+  const useStyles = makeStyles((theme) => ({
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "flex-start",
+      alignItems: "flex-start",
+      top: 12,
+      height: height - 160,
+    },
+    title: {
+      paddingTop: theme.spacing(1),
+    },
+  }));
+  const classes = useStyles();
+
   return (
-    <div>
-      <h1>Podologie</h1>
-      <p>
-        La podologie étudie l'ensemble des troubles statiques et dynamiques du
-        pied ainsi que les pathologies sus-jacentes.
-      </p>
-      <h2>Pourquoi consulter ?</h2>
-    </div>
+    <>
+      <Typography className={classes.title} variant="h4" align="center">
+        {infoPage.pageName}
+      </Typography>
+      <Container className={classes.container} maxWidth="sm">
+        {infoPage.infoBulle ? <ProTip info={infoPage.infoBulle} /> : null}
+        <Typography variant="body1">
+          {infoPage.content.part1.paragraph}
+        </Typography>
+      </Container>
+    </>
   );
 }
