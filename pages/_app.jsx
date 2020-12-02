@@ -5,7 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../styles/theme";
 import Header from "../src/components/Header";
 import Head from "../src/helpers/Head";
-import Copyright from "../src/helpers/Copyright";
+import Footer from "../src/components/Footer";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -29,7 +29,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
-        <Copyright />
+        <Footer />
       </ThemeProvider>
     </React.Fragment>
   );
