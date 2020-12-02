@@ -59,7 +59,16 @@ const data = [
       },
       part2: {
         title: "Pourquoi consulter ?",
-        paragraph: "",
+        reasons: [
+          "- Troubles de la marche",
+          "- Troubles de la posture",
+          "- Douleur mécanique",
+          "- Malformation",
+          "- Prise en charge post traumatique",
+          "- Prise en charge post chirurgicale",
+        ],
+        solutions:
+          "Lors de nos consultations, veuillez à ne pas oublier vos radiographies, IRM ou scanners (pied, genou, bassin, rachis) ainsi que vos chaussures de sport ou de ville afin de pouvoir adapter au mieux vos semelles orthopédiques. Les semelles orthopédiques sont réalisées sur mesure au cabinet.",
       },
     },
   },
@@ -85,7 +94,14 @@ const data = [
       },
       part2: {
         title: "Pourquoi consulter ?",
-        paragraph: "",
+        reasons: [
+          "- Troubles de la marche",
+          "- Troubles de la posture",
+          "- Douleur mécanique",
+          "- Malformation",
+          "- Prise en charge post traumatique",
+          "- Prise en charge post chirurgicale",
+        ],
       },
     },
   },
@@ -101,7 +117,14 @@ const data = [
       },
       part2: {
         title: "Pourquoi consulter ?",
-        paragraph: "",
+        reasons: [
+          "- Durillons, cors",
+          "- Oeil de perdrix",
+          "- Mycose cutanées et ungéales",
+          "- Ongle incarné",
+          "- Verrue plantaire",
+          "- Hématomes sous unguéaux",
+        ],
       },
     },
   },
@@ -118,7 +141,14 @@ const data = [
       },
       part2: {
         title: "Pourquoi consulter ?",
-        paragraph: "",
+        reasons: [
+          "- Troubles de la marche",
+          "- Troubles de la posture",
+          "- Douleur mécanique",
+          "- Malformation",
+          "- Prise en charge post traumatique",
+          "- Prise en charge post chirurgicale",
+        ],
       },
     },
   },
@@ -138,7 +168,23 @@ const data = [
       },
       part2: {
         title: "Pourquoi consulter ?",
-        paragraph: "",
+        reasons: [
+          {
+            primary:
+              "Améliore la qualité de vie de patients atteints de maladie chronique",
+            secondary: "sclérose en plaques, de diabète ou de cancer",
+          },
+          {
+            primary: "Diminue les maux du quotidien",
+            secondary:
+              "douleurs dorsales, cervicales, maux de tête, syndrome prémenstruel",
+          },
+          {
+            primary: "Agi sur le stress",
+            secondary:
+              "douleurs dorsales, cervicales, maux de tête, syndrome prémenstruel",
+          },
+        ],
       },
     },
   },

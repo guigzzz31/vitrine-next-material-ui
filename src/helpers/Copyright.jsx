@@ -8,7 +8,7 @@ import { Container } from "@material-ui/core";
 export default function Copyright() {
   return (
     <Container>
-      <Typography variant="body2" color="primary" align="center">
+      <Typography variant="body2" color="textSecondary" align="center">
         {"Copyright © "}
         <MuiLink color="inherit" href="https://github.com/guigzzz31">
           guigzzzo
