@@ -1,17 +1,17 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
 
 import Menu from "../helpers/Menu";
 import Logo from "../helpers/Logo";
-import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    position: "fixed",
+    top: 0,
     backgroundColor: "#4a8e89",
-    padding: 0,
   },
 }));
 
@@ -30,38 +30,27 @@ export default function Header() {
       </Grid>
       <Grid item>
         <Box>
-          {/* <Typography
-            color="textSecondary"
-            variant="h6"
-            component="h1"
-            align="center"
-            gutterBottom
-          >
-            Carole Richou <br />&<br /> Carine Da Costa
-          </Typography>{" "} */}
           <Typography
-            color="textSecondary"
+            color="secondary"
             variant="h6"
             component="h1"
             align="center"
-            gutterBottom
           >
-            Podologie - Cugnaux
-          </Typography>{" "}
-          {/* <Typography
-            variant="subtitle1"
+            Podologie - Pédicurie
+          </Typography>
+          <Typography
+            color="secondary"
+            variant="body1"
+            component="h1"
             align="center"
-            color="textSecondary"
-            gutterBottom
           >
-            Pédicure Podologue - Cugnaux
-          </Typography> */}
+            Cugnaux
+          </Typography>
           <Typography
             variant="h6"
             component="h1"
             align="center"
-            color="textSecondary"
-            gutterBottom
+            color="secondary"
           >
             05 34 57 10 41
           </Typography>

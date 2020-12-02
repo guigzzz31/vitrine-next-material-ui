@@ -21,6 +21,16 @@ const data = [
       paragraph1:
         "La prise de rendez-vous s'effectue par téléphone ou sur place.",
     },
+    content: {
+      part1: {
+        title: "Horaires de Carole Richou",
+        paragraph: ``,
+      },
+      part2: {
+        title: "Horaires de Carine Da Costa",
+        reasons: [],
+      },
+    },
   },
   {
     id: 2,
@@ -51,6 +61,14 @@ const data = [
     id: 3,
     pageName: "Podologie",
     path: "/podologie",
+    infoBulle: {
+      head: "En consultation",
+      paragraph1:
+        "Veuillez à ne pas oublier vos radiographies, IRM ou scanners (pied, genou, bassin, rachis) ainsi que vos chaussures de sport ou de ville afin de pouvoir adapter au mieux vos semelles orthopédiques.",
+      paragraph2:
+        "Les semelles orthopédiques sont réalisées sur mesure au cabinet.",
+    },
+
     content: {
       part1: {
         title: "",
@@ -67,8 +85,26 @@ const data = [
           "- Prise en charge post traumatique",
           "- Prise en charge post chirurgicale",
         ],
-        solutions:
-          "Lors de nos consultations, veuillez à ne pas oublier vos radiographies, IRM ou scanners (pied, genou, bassin, rachis) ainsi que vos chaussures de sport ou de ville afin de pouvoir adapter au mieux vos semelles orthopédiques. Les semelles orthopédiques sont réalisées sur mesure au cabinet.",
+        reasons: [
+          {
+            primary: "- Troubles de la marche",
+          },
+          {
+            primary: "- Troubles de la posture",
+          },
+          {
+            primary: "- Douleur mécanique",
+          },
+          {
+            primary: "- Malformation",
+          },
+          {
+            primary: "- Prise en charge post traumatique",
+          },
+          {
+            primary: "- Prise en charge post chirurgicale",
+          },
+        ],
       },
     },
   },
@@ -95,12 +131,18 @@ const data = [
       part2: {
         title: "Pourquoi consulter ?",
         reasons: [
-          "- Troubles de la marche",
-          "- Troubles de la posture",
-          "- Douleur mécanique",
-          "- Malformation",
-          "- Prise en charge post traumatique",
-          "- Prise en charge post chirurgicale",
+          {
+            primary: "Perte d'équilibre",
+            secondary: "sclérose en plaques, de diabète ou de cancer",
+          },
+          {
+            primary: "Douleurs diverses",
+            secondary: "accompagnée ou non de nausées, vertiges…",
+          },
+          {
+            primary: "Blocages et/ou raideurs",
+            secondary: "lumbago, tour de reins, torticolis...",
+          },
         ],
       },
     },
@@ -118,12 +160,24 @@ const data = [
       part2: {
         title: "Pourquoi consulter ?",
         reasons: [
-          "- Durillons, cors",
-          "- Oeil de perdrix",
-          "- Mycose cutanées et ungéales",
-          "- Ongle incarné",
-          "- Verrue plantaire",
-          "- Hématomes sous unguéaux",
+          {
+            primary: "- Durillons, cors",
+          },
+          {
+            primary: "- Oeil de perdrix",
+          },
+          {
+            primary: "- Mycose cutanées et ungéales",
+          },
+          {
+            primary: "- Ongle incarné",
+          },
+          {
+            primary: "- Verrue plantaire",
+          },
+          {
+            primary: "- Hématomes sous unguéaux",
+          },
         ],
       },
     },
@@ -132,22 +186,24 @@ const data = [
     id: 6,
     pageName: "Diabétologie",
     path: "/diabetologie",
-    // infoBulle: {},
+    infoBulle: {
+      head: "Conventionnées par la sécurité sociale",
+      paragraph1:
+        "Sous prescription médicale, prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
+    },
     content: {
       part1: {
         title: "",
-        paragraph:
-          "Conventionnées par la sécurité sociale. Sous prescription médicale, prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
+        paragraph: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire (médecin généraliste, diabétologue, infirmier, pédicure-podologue, dermatologue, infectiologue).
+          Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
       },
       part2: {
         title: "Pourquoi consulter ?",
         reasons: [
-          "- Troubles de la marche",
-          "- Troubles de la posture",
-          "- Douleur mécanique",
-          "- Malformation",
-          "- Prise en charge post traumatique",
-          "- Prise en charge post chirurgicale",
+          {
+            primary:
+              "Parmi les nombreuses complications du diabète (insuffisance rénale, infarctus, accident vasculaire cérébral, rétinopathie, etc.), le pied n’est pas épargné. Les complications podologiques sont fréquentes chez le diabétique ; des lésions graves pouvant même, dans les cas les plus sévères, conduire à des amputations.",
+          },
         ],
       },
     },
@@ -181,8 +237,6 @@ const data = [
           },
           {
             primary: "Agi sur le stress",
-            secondary:
-              "douleurs dorsales, cervicales, maux de tête, syndrome prémenstruel",
           },
         ],
       },
