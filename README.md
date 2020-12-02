@@ -1,14 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`] and styled with [`material-ui`].
+It's a template website for a podiatrist friend, run dev and enjoy it !
+
 
 ## Getting Started
 
-First, run the development server:
-
-
+First, install packages:
 
 ```bash
-npm i
-&
+npm install
+```
+Then, run the development server:
+
+```bash
 npm run dev
 ```
 
