@@ -1,5 +1,3 @@
-import { makeStyles } from "@material-ui/core/styles";
-
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
@@ -8,25 +6,10 @@ import CardInfo from "../src/helpers/CardInfo";
 
 import data from "../src/data/data";
 
-import useWindowDimensions from "../src/hooks/useWindowDimensions";
+import useStyles from "../styles/container.styles";
 
 export default function pedicurie() {
-  const { height, width } = useWindowDimensions();
   const infoPage = data.find((category) => category.pageName === "Pédicurie");
-
-  const useStyles = makeStyles((theme) => ({
-    container: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start",
-      alignItems: "flex-start",
-      top: 12,
-      height: height - 160,
-    },
-    title: {
-      paddingTop: theme.spacing(1),
-    },
-  }));
   const classes = useStyles();
 
   return (

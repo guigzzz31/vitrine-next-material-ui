@@ -37,6 +37,7 @@ export default function SimpleMenu() {
       >
         {data.map((item) => (
           <MenuItem
+            key={item.id}
             component={Link}
             onClick={handleClose}
             href={item.path}
