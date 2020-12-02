@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`] and styled with [`material-ui`].
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`] and styled with [`@material-ui`].
 It's a template website for a podiatrist friend, run dev and enjoy it !
 
 
