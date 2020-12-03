@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
-import Link from "@material-ui/core/Link";
+import Box from "@material-ui/core/Box";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import Typography from "@material-ui/core/Typography";
 
@@ -27,27 +27,24 @@ export default function ProTip(props) {
   const { info } = props;
   const classes = useStyles();
   return (
-    <Paper elevation={3} square>
-      <Typography color="primary" className={classes.root}>
-        <LightBulbIcon className={classes.lightBulb} /> {info.head}
-        <Typography paragraph></Typography>
-        {info.paragraph1 ? (
-          <Typography color="textPrimary" paragraph>
-            {info.paragraph1}
-          </Typography>
-        ) : null}
-        {info.paragraph2 ? (
-          <Typography color="textPrimary" paragraph>
-            {info.paragraph2}
-          </Typography>
-        ) : null}
-        {info.paragraph3 ? (
-          <Typography color="textPrimary" paragraph>
-            {info.paragraph3}
-          </Typography>
-        ) : null}
-        A très bientôt.
-      </Typography>
-    </Paper>
+    <Box mx={2}>
+      <Paper elevation={3} square>
+        <Typography color="primary" className={classes.root}>
+          <LightBulbIcon className={classes.lightBulb} />
+          {info.head}
+          <Typography paragraph></Typography>
+          {info.paragraph
+            ? info.paragraph.map((item) => {
+                return (
+                  <Typography color="textPrimary" paragraph>
+                    {item}
+                  </Typography>
+                );
+              })
+            : null}
+          {info.bottom}
+        </Typography>
+      </Paper>
+    </Box>
   );
 }

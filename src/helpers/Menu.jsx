@@ -6,6 +6,7 @@ import Link from "./Link";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import data from "../data/data";
+import { Box } from "@material-ui/core";
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -19,7 +20,7 @@ export default function SimpleMenu() {
   };
 
   return (
-    <div>
+    <Box>
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
@@ -48,6 +49,6 @@ export default function SimpleMenu() {
           </MenuItem>
         ))}
       </Menu>
-    </div>
+    </Box>
   );
 }

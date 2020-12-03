@@ -9,7 +9,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import RoomIcon from "@material-ui/icons/Room";
 import { Container } from "@material-ui/core";
 
-export default function cardInfo(props) {
+export default function CardContact(props) {
   const { info } = props;
   const useStyles = makeStyles((theme) => ({
     cardInfoContainer: {
