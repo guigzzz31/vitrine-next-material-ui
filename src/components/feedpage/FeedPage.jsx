@@ -4,10 +4,8 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 
 import PageName from "./PageName";
-import Definition from "./Definition";
-import Troubles from "./Troubles";
-import Solutions from "./Solutions";
-import ProTip from "../../helpers/ProTip";
+import ProTip from "./InfoTip";
+import ContentGenerator from "../../helpers/generators/ContentGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,22 +22,14 @@ export default function FeedPage(props) {
       <Grid item>
         <PageName pageName={infoPage.pageName} />
       </Grid>
-      {infoPage.infoBulle ? (
+      {infoPage.infoTip ? (
         <Grid item>
-          <ProTip info={infoPage.infoBulle} />
+          <ProTip info={infoPage.infoTip} />
         </Grid>
       ) : null}
-      <Grid item>
-        {infoPage.content.part1.paragraph ? (
-          <Definition definition={infoPage.content.part1.paragraph} />
-        ) : null}
-      </Grid>
-      <Grid item>
-        <Troubles items={infoPage.content.part2.reasons} />
-      </Grid>
-      <Grid item>
-        <Solutions solutions={infoPage.content.part2.solutions} />
-      </Grid>
+      {infoPage.content ? (
+        <ContentGenerator content={infoPage.content} />
+      ) : null}
     </Grid>
   );
 }

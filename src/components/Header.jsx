@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 
 import Menu from "../helpers/Menu";
-import Logo from "../helpers/Logo";
+import Logo from "../helpers/static/Logo";
 
 const useStyles = makeStyles((theme) => ({
   root: {

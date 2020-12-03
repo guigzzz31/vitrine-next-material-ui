@@ -4,7 +4,7 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
 import ProTip from "../src/helpers/ProTip";
-import CardInfo from "../src/helpers/CardInfo";
+import CardContact from "../src/helpers/static/CardContact";
 
 import data from "../src/data/data";
 
@@ -35,7 +35,7 @@ export default function contact() {
       </Typography>
       <Container className={classes.container} maxWidth="sm">
         <ProTip info={contact.infoBulle} />
-        <CardInfo info={contact.info} />
+        <CardContact info={contact.info} />
       </Container>
     </>
   );

@@ -10,13 +10,10 @@ const theme = createMuiTheme({
       //mint cream
       main: "#EDF7F6",
     },
-    initial: {
-      main: "#000",
-    },
     text: {
       //smokey black
       primary: "#191516",
-      //gainsboro
+      //lavanda
       secondary: "#BAAEC1",
     },
     error: {
