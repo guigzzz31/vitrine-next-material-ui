@@ -10,7 +10,7 @@ export default function ContentGenerator(props) {
       {content
         ? content.map((item) => {
             return (
-              <Box m={3}>
+              <Box key={item.content_id} m={3}>
                 <Title title={item.title} />
                 <Subtitle subtitle={item.subtitle} />
                 <ParagraphGenerator paragraphs={item.paragraph} />

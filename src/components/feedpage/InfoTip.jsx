@@ -36,7 +36,7 @@ export default function ProTip(props) {
           {info.paragraph
             ? info.paragraph.map((item) => {
                 return (
-                  <Typography color="textPrimary" paragraph>
+                  <Typography key={item.id} color="textPrimary" paragraph>
                     {item}
                   </Typography>
                 );
