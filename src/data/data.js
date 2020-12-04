@@ -12,11 +12,7 @@ const data = [
         },
         {
           paragraph_id: 1,
-          primary: `Des mesures seront mises en place afin que nous puissions respecter la distanciation sociale.`,
-        },
-        {
-          paragraph_id: 2,
-          primary: `Dans la mesure du possible, nous demandons à tous nos patients de venir avec un masque.`,
+          primary: `Nous demandons à tous nos patients de venir avec un masque.`,
         },
       ],
       bottom: "À très bientôt!",
@@ -30,7 +26,7 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: `- Diplomée d'état`,
+            primary: `- Formée en pédicurie, podologie, diabétologie`,
           },
           {
             paragraph_id: 1,
@@ -46,7 +42,7 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- Diplomée d'état",
+            primary: "- Formée en pédicurie, podologie, diabétologie",
           },
           {
             paragraph_id: 1,
@@ -71,18 +67,68 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    schedule: [
+      {
+        column_id: 0,
+        day: "lun",
+        morning: "Carole",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 1,
+        day: "mar",
+        morning: "Carine",
+        afternoon: "Carine",
+      },
+      {
+        column_id: 2,
+        day: "mer",
+        morning: "Carine",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 3,
+        day: "jeu",
+        morning: "Carole",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 4,
+        day: "ven",
+        morning: "Carine",
+        afternoon: "Carine",
+      },
+    ],
     content: [
       {
         content_id: 0,
         title: "Horaires de Carole Richou",
         subtitle: "",
-        paragraph: ["", "", ""],
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- Pédicurie, podologie, diabétologie",
+          },
+          {
+            paragraph_id: 1,
+            primary: "- Spécialisée en réflexologie",
+          },
+        ],
       },
       {
         content_id: 1,
         title: "Horaires de Carine Da Costa",
         subtitle: "",
-        paragraph: ["", "", ""],
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- Pédicurie, podologie, diabétologie",
+          },
+          {
+            paragraph_id: 1,
+            primary: "- Spécialisée en posturologie",
+          },
+        ],
       },
     ],
   },
@@ -737,78 +783,6 @@ const data = [
     ],
   },
   {
-    page_id: 10,
-    pageName: "Honoraires",
-    path: "/honoraires",
-    infoTip: {
-      head: "Le saviez-vous ?",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary: "Suivant votre mutuelle:",
-        },
-        {
-          paragraph_id: 1,
-          primary:
-            "Chaque séance peut être pris en charge partiellement ou totalement.",
-        },
-        {
-          paragraph_id: 2,
-          primary:
-            "Nous vous invitons à vous rapprocher de votre mutuelle pour connaître les modalités de remboursement.",
-        },
-      ],
-      bottom: "À très bientôt!",
-    },
-    content: [
-      {
-        content_id: 0,
-        title: "Soin de pédicurie",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `- 32 euros adultes`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `- 37 euros à domicile`,
-          },
-        ],
-      },
-      {
-        content_id: 1,
-        title: "Séance de réflexologie",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 1,
-            primary: "- 35 euros",
-          },
-        ],
-      },
-      {
-        content_id: 2,
-        title: "Consultation podologie/posturologique",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 40 euros la séance",
-          },
-          {
-            paragraph_id: 1,
-            primary:
-              "- entre 50 et 100 euros pour la paire de semelle sur mesure",
-          },
-        ],
-      },
-    ],
-  },
-  {
     page_id: 9,
     pageName: "Enfants",
     path: "/kids",
@@ -887,6 +861,95 @@ const data = [
             paragraph_id: 2,
             primary: "- ",
             secondary: "lumbago, tour de reins, torticolis...",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    page_id: 10,
+    pageName: "Honoraires",
+    path: "/honoraires",
+    infoTip: {
+      head: "Le saviez-vous ?",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: "Suivant votre mutuelle:",
+        },
+        {
+          paragraph_id: 1,
+          primary:
+            "Chaque séance peut être pris en charge partiellement ou totalement.",
+        },
+        {
+          paragraph_id: 2,
+          primary:
+            "Nous vous invitons à vous rapprocher de votre mutuelle pour connaître les modalités de remboursement.",
+        },
+      ],
+      bottom: "À très bientôt!",
+    },
+    content: [
+      {
+        content_id: 0,
+        title: "Soin de pédicurie",
+        subtitle: "",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: `- 32 euros adultes`,
+          },
+          {
+            paragraph_id: 1,
+            primary: `- 37 euros à domicile`,
+          },
+        ],
+      },
+      {
+        content_id: 1,
+        title: "Consultation podologie",
+        subtitle: "",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- 40 euros la séance",
+          },
+          {
+            paragraph_id: 1,
+            primary:
+              "- entre 50 et 100 euros pour la paire de semelle sur mesure",
+          },
+        ],
+      },
+      {
+        content_id: 2,
+        title: "Séance de réflexologie",
+        subtitle: "",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 1,
+            primary: "- 35 euros",
+          },
+        ],
+      },
+      {
+        content_id: 3,
+        title: "Consultation posturologique",
+        subtitle: "",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- 40 euros la séance",
+          },
+          {
+            paragraph_id: 1,
+            primary:
+              "- entre 50 et 100 euros pour la paire de semelle sur mesure",
           },
         ],
       },

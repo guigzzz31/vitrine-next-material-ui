@@ -26,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function InfoTipGenerator(props) {
   const { infoTip } = props;
-  console.log("infoTip", infoTip);
   const classes = useStyles();
   return (
     <Box mx={2}>
