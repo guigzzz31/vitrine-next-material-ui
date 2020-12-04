@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 
-import PageName from "./PageName";
-import ProTip from "./InfoTip";
-import ContentGenerator from "../../helpers/generators/ContentGenerator";
+import PageName from "../helpers/generators/PageNameGenerator";
+import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
+import ContentGenerator from "../helpers/generators/ContentGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +24,7 @@ export default function FeedPage(props) {
       </Grid>
       {infoPage.infoTip ? (
         <Grid item>
-          <ProTip info={infoPage.infoTip} />
+          <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
       ) : null}
       {infoPage.content ? (
