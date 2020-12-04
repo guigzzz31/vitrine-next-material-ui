@@ -1,5 +1,5 @@
 import data from "../src/data/data";
-import FeedPage from "../src/components/feedpage/FeedPage";
+import FeedPage from "../src/components/FeedPage";
 
 export default function diabetologie() {
   const infoPage = data.find(

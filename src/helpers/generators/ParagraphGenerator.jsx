@@ -9,7 +9,7 @@ export default function ParagraphGenerator(props) {
         ? paragraphs.map((item) => {
             return (
               <Paragraph
-                key={item.id}
+                key={item.paragraph_id}
                 primary={item.primary}
                 secondary={item.secondary}
               />

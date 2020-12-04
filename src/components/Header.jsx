@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 
-import Menu from "../helpers/Menu";
+import Menu from "./Menu";
 import Logo from "../helpers/static/Logo";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +36,7 @@ export default function Header() {
             component="h1"
             align="center"
           >
-            Podologie - Pédicurie
+            Pédicurie - Podologie
           </Typography>
           <Typography
             color="secondary"

@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import Typography from "@material-ui/core/Typography";
+import ParagraphGenerator from "./ParagraphGenerator";
 
 function LightBulbIcon(props) {
   return (
@@ -23,26 +24,32 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProTip(props) {
-  const { info } = props;
+export default function InfoTipGenerator(props) {
+  const { infoTip } = props;
+  console.log("infoTip", infoTip);
   const classes = useStyles();
   return (
     <Box mx={2}>
       <Paper elevation={3} square>
         <Typography color="primary" className={classes.root}>
           <LightBulbIcon className={classes.lightBulb} />
-          {info.head}
+          {infoTip.head}
           <Typography paragraph></Typography>
-          {info.paragraph
-            ? info.paragraph.map((item) => {
+          {/* {infoTip.paragraph
+            ? infoTip.paragraph.map((item) => {
                 return (
-                  <Typography color="textPrimary" paragraph>
-                    {item}
+                  <Typography
+                    key={item.paragraph_id}
+                    color="textPrimary"
+                    paragraph
+                  >
+                    {item.primary}
                   </Typography>
                 );
               })
-            : null}
-          {info.bottom}
+            : null} */}
+          <ParagraphGenerator paragraphs={infoTip.paragraph} />
+          {infoTip.bottom}
         </Typography>
       </Paper>
     </Box>

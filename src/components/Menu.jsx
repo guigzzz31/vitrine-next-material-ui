@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import Link from "./Link";
+import Link from "../helpers/Link";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import data from "../data/data";
@@ -38,7 +38,7 @@ export default function SimpleMenu() {
       >
         {data.map((item) => (
           <MenuItem
-            key={item.id}
+            key={item.page_id}
             component={Link}
             onClick={handleClose}
             href={item.path}
