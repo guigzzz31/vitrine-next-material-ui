@@ -1,5 +1,5 @@
 import React from "react";
-import Paragraph from "../static/Paragraph";
+import Paragraph from "../static/article/Paragraph";
 
 export default function ParagraphGenerator(props) {
   const { paragraphs } = props;

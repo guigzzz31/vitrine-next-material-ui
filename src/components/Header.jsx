@@ -1,11 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
 
 import Menu from "./Menu";
 import Logo from "../helpers/static/Logo";
+import HeaderContent from "../helpers/static/HeaderContent";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,32 +28,7 @@ export default function Header() {
         <Logo />
       </Grid>
       <Grid item>
-        <Box>
-          <Typography
-            color="secondary"
-            variant="h6"
-            component="h1"
-            align="center"
-          >
-            Pédicurie - Podologie
-          </Typography>
-          <Typography
-            color="secondary"
-            variant="body1"
-            component="h1"
-            align="center"
-          >
-            Cugnaux
-          </Typography>
-          <Typography
-            variant="h6"
-            component="h1"
-            align="center"
-            color="secondary"
-          >
-            05 34 57 10 41
-          </Typography>
-        </Box>
+        <HeaderContent />
       </Grid>
       <Grid item>
         <Menu />
