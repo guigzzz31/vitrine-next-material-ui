@@ -30,7 +30,7 @@ const data = [
           },
           {
             paragraph_id: 1,
-            primary: `- Formée en réflexologie`,
+            primary: `- Spécialisée en réflexologie`,
           },
         ],
       },
@@ -46,7 +46,7 @@ const data = [
           },
           {
             paragraph_id: 1,
-            primary: "- Formée en posturologie",
+            primary: "- Spécialisée en posturologie",
           },
         ],
       },

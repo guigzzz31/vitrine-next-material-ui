@@ -2,23 +2,23 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Title from "../static/Title";
-import Subtitle from "../static/Subtitle";
-import ParagraphGenerator from "./ParagraphGenerator";
-import { Typography } from "@material-ui/core";
+import Subtitle from "../static/article/Subtitle";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
   box_01: {
     display: "flex",
     alignItems: "center",
-    backgroundColor: theme.palette.primary.main,
+    //purple
+    backgroundColor: "#6200B3",
     minWidth: 52,
     minHeight: 52,
   },
   box_02: {
     display: "flex",
     alignItems: "center",
-    backgroundColor: "#15616D",
+    //china pink
+    backgroundColor: "#E06C9F",
     minWidth: 52,
     minHeight: 52,
   },
