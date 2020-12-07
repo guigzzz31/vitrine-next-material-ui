@@ -1,14 +1,5 @@
-import { makeStyles } from "@material-ui/core/styles";
-import InfoIcon from "@material-ui/icons/Info";
+import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 
-const useStyles = makeStyles((theme) => ({
-  lightBulb: {
-    verticalAlign: "middle",
-    marginRight: theme.spacing(1),
-  },
-}));
-
-export default function LightBulbIcon(props) {
-  const classes = useStyles();
-  return <InfoIcon color="primary" />;
+export default function LightBulbIcon() {
+  return <InfoOutlinedIcon color="primary" />;
 }

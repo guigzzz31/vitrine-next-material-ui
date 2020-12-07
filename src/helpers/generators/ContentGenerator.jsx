@@ -1,6 +1,6 @@
 import Box from "@material-ui/core/Box";
-import Title from "../static/Title";
-import Subtitle from "../static/Subtitle";
+import Title from "../static/article/Title";
+import Subtitle from "../static/article/Subtitle";
 import ParagraphGenerator from "./ParagraphGenerator";
 
 export default function ContentGenerator(props) {

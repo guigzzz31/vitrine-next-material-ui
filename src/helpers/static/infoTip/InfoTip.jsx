@@ -1,12 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
 
-import LightBulbIcon from "./LightBulbIcon";
-import ParagraphGenerator from "../generators/ParagraphGenerator";
+import ParagraphGenerator from "../../generators/ParagraphGenerator";
+import InfoTipHeader from "./InfoTipHeader";
+import InfoTipFooter from "./InfoTipFooter";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,13 +18,12 @@ export default function InfoTip(props) {
   const { head, paragraph, bottom } = props.infoTip;
   const classes = useStyles();
   return (
-    <Box mx={2}>
-      <Paper elevation={3}>
+    <Box mx={1}>
+      <Paper elevation={2} square={false}>
         <Box className={classes.root}>
-          <LightBulbIcon />
-          <Typography paragraph>{head}</Typography>
+          <InfoTipHeader head={head} />
           <ParagraphGenerator paragraphs={paragraph} />
-          <Typography paragraph>{bottom}</Typography>
+          <InfoTipFooter bottom={bottom} />
         </Box>
       </Paper>
     </Box>
