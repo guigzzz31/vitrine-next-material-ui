@@ -9,12 +9,13 @@ const theme = createMuiTheme({
     secondary: {
       //mint cream
       main: "#EDF7F6",
+      light: "#FFF",
     },
     text: {
       //smokey black
       primary: "#191516",
       //lavanda
-      secondary: "#BAAEC1",
+      secondary: "#9b9bc4",
     },
     error: {
       //blush
@@ -23,8 +24,9 @@ const theme = createMuiTheme({
     info: {
       main: "#64b5f6",
     },
+    //mint cream
     background: {
-      default: "#fff",
+      default: "#EDF7F6",
     },
   },
 });

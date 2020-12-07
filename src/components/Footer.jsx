@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
     bottom: 0,
-    backgroundColor: "#4a8e89",
+    backgroundColor: theme.palette.primary.main,
     padding: 0,
   },
 }));

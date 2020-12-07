@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "middle",
     marginRight: theme.spacing(1),
   },
+  boxColor: {
+    backgroundColor: theme.palette.secondary.light,
+  },
 }));
 
 export default function InfoTipGenerator(props) {
@@ -29,27 +32,16 @@ export default function InfoTipGenerator(props) {
   const classes = useStyles();
   return (
     <Box mx={2}>
-      <Paper elevation={3} square>
-        <Typography color="primary" className={classes.root}>
-          <LightBulbIcon className={classes.lightBulb} />
-          {infoTip.head}
-          <Typography paragraph></Typography>
-          {/* {infoTip.paragraph
-            ? infoTip.paragraph.map((item) => {
-                return (
-                  <Typography
-                    key={item.paragraph_id}
-                    color="textPrimary"
-                    paragraph
-                  >
-                    {item.primary}
-                  </Typography>
-                );
-              })
-            : null} */}
-          <ParagraphGenerator paragraphs={infoTip.paragraph} />
-          {infoTip.bottom}
-        </Typography>
+      <Paper color="primary" elevation={3} square>
+        <Box className={classes.boxColor}>
+          <Typography color="primary" className={classes.root}>
+            <LightBulbIcon className={classes.lightBulb} />
+            {infoTip.head}
+            <Typography paragraph></Typography>
+            <ParagraphGenerator paragraphs={infoTip.paragraph} />
+            {infoTip.bottom}
+          </Typography>
+        </Box>
       </Paper>
     </Box>
   );
