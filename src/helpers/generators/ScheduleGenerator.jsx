@@ -2,9 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import Title from "../static/Title";
-import Subtitle from "../static/Subtitle";
-import ParagraphGenerator from "./ParagraphGenerator";
+import Subtitle from "../static/article/Subtitle";
 import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
