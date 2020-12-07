@@ -20,7 +20,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head
-        title="Podologie-Cugnaux"
+        title="Pédicurie-Podologie-Cugnaux"
         description="Page d'accueil"
         url="https://podologue-cugnaux.io/home"
       />

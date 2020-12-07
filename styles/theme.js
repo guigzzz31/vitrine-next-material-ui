@@ -28,6 +28,25 @@ const theme = createMuiTheme({
     background: {
       default: "#EDF7F6",
     },
+    //font families
+    typography: {
+      fontFamily: [
+        "Quicksand",
+        "Roboto",
+        "Montserrat",
+        "Lato",
+        // "-apple-system",
+        // "BlinkMacSystemFont",
+        // '"Segoe UI"',
+        // "Roboto",
+        //'"Helvetica Neue"',
+        // "Arial",
+        // "sans-serif",
+        // '"Apple Color Emoji"',
+        // '"Segoe UI Emoji"',
+        // '"Segoe UI Symbol"',
+      ].join(","),
+    },
   },
 });
 

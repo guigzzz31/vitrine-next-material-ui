@@ -1,9 +1,21 @@
-import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
+const useStyles = makeStyles((theme) => ({
+  title: {
+    fontFamily: "Montserrat",
+  },
+}));
+
 export default function Title(props) {
+  const classes = useStyles();
   return (
-    <Typography color="primary" variant="h5" gutterBottom>
+    <Typography
+      className={classes.title}
+      color="primary"
+      variant="h5"
+      gutterBottom
+    >
       {props.title}
     </Typography>
   );

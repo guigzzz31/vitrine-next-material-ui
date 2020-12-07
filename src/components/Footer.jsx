@@ -6,7 +6,7 @@ import Box from "@material-ui/core/Box";
 import Copyright from "../helpers/static/Copyright";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  footer: {
     position: "fixed",
     bottom: 0,
     backgroundColor: theme.palette.primary.main,
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header() {
+export default function Footer() {
   const classes = useStyles();
   return (
     <Grid
@@ -22,7 +22,7 @@ export default function Header() {
       direction="row"
       justify="space-between"
       alignItems="center"
-      className={classes.root}
+      className={classes.footer}
     >
       <Grid item></Grid>
       <Grid item>
