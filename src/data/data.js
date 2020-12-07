@@ -228,17 +228,26 @@ const data = [
     pageName: "Pédicurie",
     path: "/pedicurie",
     infoTip: {
-      head: "En consultation",
+      head: "Le saviez-vous ?",
       paragraph: [
         {
           paragraph_id: 0,
           primary:
-            "Lors de nos consultations, veuillez à ne pas oublier vos radiographies, IRM ou scanners (pied, genou, bassin, rachis) ainsi que vos chaussures de sport ou de ville afin de pouvoir adapter au mieux vos semelles orthopédiques.",
+            "Si vous présentez un hématome sous unguéal douloureux de moins de 48h, il s'agit d'un soin d'urgence.",
         },
         {
           paragraph_id: 1,
           primary:
-            "Les semelles orthopédiques sont réalisées sur mesure au cabinet.",
+            "Si possible, contactez nous plutôt qu'aller faire un tour aux urgences :)",
+        },
+        {
+          paragraph_id: 2,
+          primary: "Vous pensez avoir un ongle incarné ?",
+        },
+        {
+          paragraph_id: 3,
+          primary:
+            "Demandez à votre medecin de vous prescrire une crème anesthésiante. Vous pourrez l'appliquer avant le soin pour plus de sérénité.",
         },
       ],
       bottom: "À très bientôt!",
@@ -264,18 +273,24 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- Durillons, cors",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
+            primary: "- Durillons, cors, oeil de perdrix, crevasses",
+            secondary: "",
           },
           {
             paragraph_id: 1,
-            primary: "- Oeil de perdrix",
-            secondary: "accompagnée ou non de nausées, vertiges…",
+            primary: "- Ongle incarné",
+            secondary: "",
           },
           {
             paragraph_id: 2,
             primary: "- Mycose cutanées et ungéales",
-            secondary: "lumbago, tour de reins, torticolis...",
+            secondary: "",
+          },
+          {
+            paragraph_id: 1,
+            primary: "- Hématome sous unguéal",
+            secondary:
+              " -> Lié à un choc direct comme un marteau tombé sur l'orteil ou indirect comme une chaussure trop petite",
           },
           {
             paragraph_id: 3,
@@ -285,12 +300,22 @@ const data = [
           {
             paragraph_id: 4,
             primary: "- Verrue plantaire",
-            secondary: "lumbago, tour de reins, torticolis...",
+            secondary: "",
           },
           {
             paragraph_id: 5,
-            primary: "- Hématomes sous unguéaux",
-            secondary: "lumbago, tour de reins, torticolis...",
+            primary: "- Transpiration excessive",
+            secondary: "",
+          },
+          {
+            paragraph_id: 6,
+            primary: `- Hallux valgus ou "oignon"`,
+            secondary: "",
+          },
+          {
+            paragraph_id: 7,
+            primary: `- Supraductus / Infraductus chez l'enfant"`,
+            secondary: "",
           },
         ],
       },
@@ -302,18 +327,45 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- Perte d'équilibre",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
+            primary:
+              "Le soin de pédicurie va prendre en charge la plupart des maux cités ci dessus. Nous pouvons également réaliser des prescriptions en complément du soin",
+            secondary: "-> Traitement antiseptique, antimycosique...",
           },
           {
             paragraph_id: 1,
-            primary: "- Douleurs diverses",
-            secondary: "accompagnée ou non de nausées, vertiges…",
+            primary: "- L'orthonyxie",
+            secondary:
+              "-> Technique non douloureuse qui consite à poser un fil de titane sur l'ongle afin de corriger la courbure de celui ci, reduisant ainsi la recidive d'ongles incarnés et de cors sous ungéaux",
           },
           {
             paragraph_id: 2,
-            primary: "- Blocages et/ou raideurs",
-            secondary: "lumbago, tour de reins, torticolis...",
+            primary: "- L'onychoplastie",
+            secondary:
+              "-> Pose d'un faux ongle total ou partiel dans le cas d'une chute de l'ongle liée à un choc direct ou indirect, ou mycose",
+          },
+          {
+            paragraph_id: 3,
+            primary: `- Ionophorèse`,
+            secondary:
+              "-> Traitement qui consiste à exposer le pied à un courant électrique de faible intensité afin de diminuer efficacement la sudation. Nous louons le materiel pendant une période de 3 semaines, sous réserve du versement d'une caution de 400 euros",
+          },
+          {
+            paragraph_id: 4,
+            primary: `- Orthoplastie protectrice`,
+            secondary:
+              "-> Orthèse en silicone sur mesure visant à soulager un frottement douloureux comme dans le cas d'un oeil de perdrix, cor dorsal, cor pulpaire, hallux valgus...",
+          },
+          {
+            paragraph_id: 5,
+            primary: `- Attelle de contention nocturne pour hallux valgus`,
+            secondary:
+              "-> Attelle réalisée sur mesure afin de limiter l'évolution d'un hallux valgus",
+          },
+          {
+            paragraph_id: 6,
+            primary: `- Orthoplastie corrective`,
+            secondary:
+              "-> Orthèse en silicone sur mesure visant à corriger des déformations telles que le supraductus ou infraductus chez l'enfant",
           },
         ],
       },
@@ -619,16 +671,32 @@ const data = [
     pageName: "Diabétologie",
     path: "/diabetologie",
     infoTip: {
-      head: "Conventionnées par la sécurité sociale",
+      head: "Le saviez-vous ?",
       paragraph: [
         {
           paragraph_id: 0,
-          primary: "Sous prescription médicale:",
+          primary:
+            "Il existe 4 grades (allant de 0 à 3) dans le diabète et tous ne sont malheureusement pas pris en charge.",
         },
         {
           paragraph_id: 1,
           primary:
-            "Prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
+            "Le grade est déterminé par votre medecin traitant ou votre diabétologue.",
+        },
+        {
+          paragraph_id: 2,
+          primary:
+            "L'Assurance Maladie prend en charge, sur prescription médicale, les soins de pédicurie chez le patient diabétique de grade 2 ou 3.",
+        },
+        {
+          paragraph_id: 3,
+          primary:
+            "Le patient diabétique de grade 2 ou 3 a respectivement droit à 4 ou 6 séances de soins de pédicurie par an.",
+        },
+        {
+          paragraph_id: 4,
+          primary:
+            "Quelque soit votre grade, il est vivement conseillé de faire un bilan podologique au moins une fois par an. ",
         },
       ],
       bottom: "À très bientôt!",
@@ -658,41 +726,44 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
+            primary:
+              "- Pour réaliser un bilan de l’état de vos pieds, recevoir des conseils d'entretien et sur le chaussage.",
+            secondary: "",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
-            secondary: "accompagnée ou non de nausées, vertiges…",
+            primary: "- Pour réaliser un soin de pédicurie",
+            secondary:
+              "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
-            secondary: "lumbago, tour de reins, torticolis...",
+            primary: "- Pour réaliser des semelles orthopédiques",
+            secondary: "en préventif ou en curatif",
           },
         ],
       },
       {
         content_id: 2,
-        title: "Soins proposés",
+        title: "Combien ça coûte ?",
         subtitle: "",
         iconPath: "",
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
+            primary: "- 27 euros le soin de pédicurie au cabinet",
+            secondary: "",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
-            secondary: "accompagnée ou non de nausées, vertiges…",
+            primary: "- 29,50 euros le soin de pédicurie à domicile",
+            secondary: "",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
-            secondary: "lumbago, tour de reins, torticolis...",
+            primary: "",
+            secondary:
+              "Entièrement remboursés par la sécurité sociale pour les patients diabétique de grade 2 et 3.",
           },
         ],
       },
@@ -899,6 +970,8 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
+            primary: `- 27 euros pour les patients diabétiques de grade 2 ou 3`,
+            secondary: "remboursé par la sécurité sociale",
             primary: `- 32 euros adultes`,
           },
           {
