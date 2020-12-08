@@ -10,11 +10,6 @@ export default function Skill(props) {
           {skill}
         </Typography>
       ) : null}
-      {/* {secondary ? (
-        <Typography color="textSecondary" variant="body2" paragraph>
-          {props.secondary}
-        </Typography>
-      ) : null} */}
     </>
   );
 }

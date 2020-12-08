@@ -6,32 +6,37 @@ import Box from "@material-ui/core/Box";
 
 import AvatarGenerator from "../../generators/AvatarGenerator";
 import SkillGenerator from "../../generators/SkillGenerator";
-import Title from "../article/Title";
+import CardName from "./CardName";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(1, 1, 1),
-    backgroundColor: theme.palette.background,
+    flexGrow: 1,
   },
 }));
 
 export default function VisitCard(props) {
   const classes = useStyles();
-  const { name, avatarPath, skills } = props;
+  const { name, avatarPath, skills, specialities } = props;
   return (
-    <Box mx={2}>
+    <Box p={2}>
       <Paper elevation={2} square={false}>
-        <Box className={classes.root}>
-          <Grid direction="column" container>
-            <Grid item>
-              <AvatarGenerator avatarPath={avatarPath} />
-            </Grid>
-            <Grid item>
-              <Title title={name} />
-              <SkillGenerator skills={skills} />
-            </Grid>
+        <Grid
+          alignItems="center"
+          className={classes.root}
+          direction="row"
+          spacing={2}
+          container
+        >
+          <Grid item>
+            <AvatarGenerator avatarPath={avatarPath} />
           </Grid>
-        </Box>
+          <Grid item>
+            <Box p={1}>
+              <CardName title={name} />
+              <SkillGenerator skills={skills} specialities={specialities} />
+            </Box>
+          </Grid>
+        </Grid>
       </Paper>
     </Box>
   );

@@ -1,7 +1,7 @@
 const data = [
   {
     page_id: 0,
-    pageName: "Présentation",
+    pageName: "Accueil",
     path: "/",
     infoTip: {
       head: "Covid 19",
@@ -17,40 +17,100 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
-    content: [
+    users: [
       {
-        content_id: 0,
-        title: "Carole Richou",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
+        user_id: 0,
+        name: "Carole Richou",
+        avatarPath: "/carole01.png",
+        skills: [
           {
-            paragraph_id: 0,
-            primary: `- Formée en pédicurie, podologie, diabétologie`,
+            skill_id: 0,
+            skill: "Diplomée d'État",
           },
           {
-            paragraph_id: 1,
-            primary: `- Spécialisée en réflexologie`,
+            skill_id: 1,
+            skill: "- Pédicurie",
+          },
+          {
+            skill_id: 2,
+            skill: "- Podologie",
+          },
+          {
+            skill_id: 3,
+            skill: "- Diabétologie",
+          },
+        ],
+        specialities: [
+          {
+            speciality_id: 0,
+            speciality: "réflexologie",
           },
         ],
       },
       {
-        content_id: 1,
-        title: "Carine Da Costa",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
+        user_id: 1,
+        name: "Carine Da Costa",
+        avatarPath: "/carine01.png",
+        skills: [
           {
-            paragraph_id: 0,
-            primary: "- Formée en pédicurie, podologie, diabétologie",
+            skill_id: 0,
+            skill: "Diplomée d'État",
           },
           {
-            paragraph_id: 1,
-            primary: "- Spécialisée en posturologie",
+            skill_id: 1,
+            skill: "- Pédicurie",
+          },
+          {
+            skill_id: 2,
+            skill: "- Podologie",
+          },
+          {
+            skill_id: 3,
+            skill: "- Diabétologie",
+          },
+        ],
+        specialities: [
+          {
+            speciality_id: 0,
+            speciality: "posturologie",
           },
         ],
       },
     ],
+    // content: [
+    //   {
+    //     content_id: 0,
+    //     title: "Carole Richou",
+    //     subtitle: "",
+    //     iconPath: "",
+    //     paragraph: [
+    //       {
+    //         paragraph_id: 0,
+    //         primary: `- Formée en pédicurie, podologie, diabétologie`,
+    //       },
+    //       {
+    //         paragraph_id: 1,
+    //         primary: `- Spécialisée en réflexologie`,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     content_id: 1,
+    //     title: "Carine Da Costa",
+    //     subtitle: "",
+    //     iconPath: "",
+    //     paragraph: [
+    //       {
+    //         paragraph_id: 0,
+    //         primary: "- Formée en pédicurie, podologie, diabétologie",
+    //       },
+    //       {
+    //         paragraph_id: 1,
+    //         primary: "- Spécialisée en posturologie",
+    //       },
+    //     ],
+    //   },
+    // ],
   },
   {
     page_id: 1,
@@ -287,15 +347,10 @@ const data = [
             secondary: "",
           },
           {
-            paragraph_id: 1,
+            paragraph_id: 3,
             primary: "- Hématome sous unguéal",
             secondary:
               " -> Lié à un choc direct comme un marteau tombé sur l'orteil ou indirect comme une chaussure trop petite",
-          },
-          {
-            paragraph_id: 3,
-            primary: "- Ongle incarné",
-            secondary: "lumbago, tour de reins, torticolis...",
           },
           {
             paragraph_id: 4,
