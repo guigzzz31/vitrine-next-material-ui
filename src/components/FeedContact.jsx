@@ -4,7 +4,7 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
-import CardContact from "../src/helpers/static/CardContact";
+import CardContact from "../src/helpers/static/cardContact/CardContact";
 
 import data from "../src/data/data";
 
