@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
+import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,8 +14,8 @@ export default function InfoTipFooter(props) {
   const { bottom } = props;
   const classes = useStyles();
   return (
-    <Typography color="primary" paragraph>
-      {bottom}
-    </Typography>
+    <Box p={1}>
+      <Typography color="primary">{bottom}</Typography>
+    </Box>
   );
 }

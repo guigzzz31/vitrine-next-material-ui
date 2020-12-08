@@ -6,6 +6,7 @@ import theme from "../styles/theme";
 import Header from "../src/components/Header";
 import Head from "../src/helpers/Head";
 import Footer from "../src/components/Footer";
+import PageNameGenerator from "../src/helpers/generators/PageNameGenerator";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;

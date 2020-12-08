@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 
 import PageName from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
-import ContentGenerator from "../helpers/generators/ContentGenerator";
+import VisitCardGenerator from "../helpers/generators/VisitCardGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function FeedPage(props) {
+export default function FeedIndex(props) {
   const classes = useStyles();
   const { infoPage } = props;
   return (
@@ -26,9 +26,7 @@ export default function FeedPage(props) {
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
       ) : null}
-      {infoPage.content ? (
-        <ContentGenerator content={infoPage.content} />
-      ) : null}
+      {infoPage.users ? <VisitCardGenerator users={infoPage.users} /> : null}
     </Grid>
   );
 }

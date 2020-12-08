@@ -3,23 +3,22 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
-  pageName: {
+  title: {
     fontFamily: "Montserrat",
   },
 }));
 
-export default function PageNameGenerator(props) {
+export default function CardName(props) {
   const classes = useStyles();
   return (
     <Box>
       <Typography
-        className={classes.pageName}
-        align="center"
-        color="textPrimary"
-        variant="h4"
+        className={classes.title}
+        color="primary"
+        variant="h5"
         gutterBottom
       >
-        {props.pageName}
+        {props.title}
       </Typography>
     </Box>
   );

@@ -9,7 +9,6 @@ import InfoTipFooter from "./InfoTipFooter";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(1, 1, 1),
     backgroundColor: theme.palette.background,
   },
 }));
@@ -18,7 +17,7 @@ export default function InfoTip(props) {
   const { head, paragraph, bottom } = props.infoTip;
   const classes = useStyles();
   return (
-    <Box mx={1}>
+    <Box>
       <Paper elevation={2} square={false}>
         <Box className={classes.root}>
           <InfoTipHeader head={head} />
