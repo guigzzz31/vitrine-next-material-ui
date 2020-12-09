@@ -26,7 +26,7 @@ export default function CardName(props) {
         <Typography
           align="center"
           className={classes.title}
-          color="text.secondary"
+          color="textPrimary"
           variant="h5"
           gutterBottom
         >

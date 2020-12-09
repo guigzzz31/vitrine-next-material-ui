@@ -173,81 +173,26 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
-    content: [
-      {
-        content_id: 0,
-        title: "Coordonnées",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "05 34 57 10 41",
-          },
-        ],
-      },
-      {
-        content_id: 1,
-        title: "Adresse",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "Les commerces de Diane,",
-          },
 
-          {
-            paragraph_id: 1,
-            primary: "151 route de Toulouse",
-          },
-          {
-            paragraph_id: 2,
-            primary: "31270 Cugnaux",
-          },
-        ],
+    profil: {
+      contact: {
+        num: "05 34 57 10 41",
+        doctoLib: "",
       },
-      {
-        content_id: 2,
-        title: "Accès",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "En rez-de-chaussée",
-          },
-
-          {
-            paragraph_id: 1,
-            primary: "Accès handicapé",
-          },
-          {
-            paragraph_id: 2,
-            primary: "Parking Facile et gratuit",
-          },
-          {
-            paragraph_id: 2,
-            primary: "Bus Ligne 87 - Arrêt Diane",
-          },
-        ],
+      adress: {
+        name: "Les commerces de Diane,",
+        number: "151",
+        street: "Route de Toulouse",
+        postalCode: "31270",
+        city: "Cugnaux",
       },
-    ],
-    // info: {
-    //   num: "05 34 57 10 41",
-    //   adress: {
-    //     spe: "Les commerces de Diane,",
-    //     name: "151 route de Toulouse",
-    //     city: "Cugnaux",
-    //     postalCode: "31270",
-    //   },
-    //   acces: {
-    //     info: "En rez-de-chaussée",
-    //     handicap: true,
-    //     parking: "Facile et gratuit",
-    //     transport: "Bus Ligne 87 - Arrêt Diane",
-    //   },
-    // },
+      acces: {
+        info: "En rez-de-chaussée",
+        handicap: true,
+        parking: "Facile et gratuit",
+        transport: "Bus Ligne 87 - Arrêt Diane",
+      },
+    },
   },
   {
     page_id: 3,
@@ -738,19 +683,24 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary:
-              "- Pour réaliser un bilan de l’état de vos pieds, recevoir des conseils d'entretien et sur le chaussage.",
+            primary: "- un bilan général de l’état de vos pieds",
             secondary: "",
           },
           {
             paragraph_id: 1,
-            primary: "- Pour réaliser un soin de pédicurie",
+            primary: "- des conseils d'entretien & chaussage",
+            secondary:
+              "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
+          },
+          {
+            paragraph_id: 1,
+            primary: "- un soin de pédicurie",
             secondary:
               "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
           },
           {
             paragraph_id: 2,
-            primary: "- Pour réaliser des semelles orthopédiques",
+            primary: "- Réaliser des semelles orthopédiques sur mesure",
             secondary: "en préventif ou en curatif",
           },
         ],
