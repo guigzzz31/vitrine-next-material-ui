@@ -29,15 +29,15 @@ const data = [
           },
           {
             skill_id: 1,
-            skill: "- Pédicurie",
+            skill: "Pédicurie",
           },
           {
             skill_id: 2,
-            skill: "- Podologie",
+            skill: "Podologie",
           },
           {
             skill_id: 3,
-            skill: "- Diabétologie",
+            skill: "Diabétologie",
           },
         ],
         specialities: [
@@ -58,15 +58,15 @@ const data = [
           },
           {
             skill_id: 1,
-            skill: "- Pédicurie",
+            skill: "Pédicurie",
           },
           {
             skill_id: 2,
-            skill: "- Podologie",
+            skill: "Podologie",
           },
           {
             skill_id: 3,
-            skill: "- Diabétologie",
+            skill: "Diabétologie",
           },
         ],
         specialities: [
@@ -77,40 +77,6 @@ const data = [
         ],
       },
     ],
-    // content: [
-    //   {
-    //     content_id: 0,
-    //     title: "Carole Richou",
-    //     subtitle: "",
-    //     iconPath: "",
-    //     paragraph: [
-    //       {
-    //         paragraph_id: 0,
-    //         primary: `- Formée en pédicurie, podologie, diabétologie`,
-    //       },
-    //       {
-    //         paragraph_id: 1,
-    //         primary: `- Spécialisée en réflexologie`,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     content_id: 1,
-    //     title: "Carine Da Costa",
-    //     subtitle: "",
-    //     iconPath: "",
-    //     paragraph: [
-    //       {
-    //         paragraph_id: 0,
-    //         primary: "- Formée en pédicurie, podologie, diabétologie",
-    //       },
-    //       {
-    //         paragraph_id: 1,
-    //         primary: "- Spécialisée en posturologie",
-    //       },
-    //     ],
-    //   },
-    // ],
   },
   {
     page_id: 1,

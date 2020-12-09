@@ -18,23 +18,23 @@ const useStyles = makeStyles((theme) => ({
 const Scroll = (showBelow) => {
   const [show, setShow] = useState(showBelow ? false : true);
 
-  // const handleScroll = () => {
-  //   console.log("window.pageYOffset", window.pageYOffset);
-  //   console.log("showBelow", showBelow);
-  //   if (window.pageYOffset > showBelow) {
-  //     if (!show) setShow(true);
-  //   } else {
-  //     if (show) setShow(false);
-  //   }
-  // };
+  const handleScroll = () => {
+    console.log("window.pageYOffset", window.pageYOffset);
+    console.log("showBelow", showBelow);
+    if (window.pageYOffset > showBelow) {
+      if (!show) setShow(true);
+    } else {
+      if (show) setShow(false);
+    }
+  };
 
-  // useEffect(() => {
-  //   if (showBelow) {
-  //     window.addEventListener(`scroll`, handleScroll);
-  //     console.log("useffect", showBelow);
-  //     return () => window.removeEventListener(`scroll`, handleScroll);
-  //   }
-  // });
+  useEffect(() => {
+    if (showBelow) {
+      window.addEventListener(`scroll`, handleScroll);
+      console.log("useffect", showBelow);
+      return () => window.removeEventListener(`scroll`, handleScroll);
+    }
+  }, []);
 
   const handleClick = () => {
     window[`scrollTo`]({ top: 0, behavior: `smooth` });

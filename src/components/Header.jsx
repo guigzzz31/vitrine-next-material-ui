@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     top: 0,
     backgroundColor: theme.palette.primary.main,
+    zIndex: 1,
   },
 }));
 
@@ -24,7 +25,7 @@ export default function Header() {
       alignItems="center"
       className={classes.root}
     >
-      <Grid item>
+      <Grid xs item>
         <Logo />
       </Grid>
       <Grid item>

@@ -20,7 +20,7 @@ export default function SimpleMenu() {
   };
 
   return (
-    <Box>
+    <>
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
@@ -49,6 +49,6 @@ export default function SimpleMenu() {
           </MenuItem>
         ))}
       </Menu>
-    </Box>
+    </>
   );
 }
