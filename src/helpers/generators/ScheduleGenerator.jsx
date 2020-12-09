@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     minWidth: 52,
     minHeight: 52,
+    borderRadius: 8,
   },
   box_02: {
     display: "flex",
@@ -24,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
     minWidth: 52,
     minHeight: 52,
+    borderRadius: 8,
   },
 }));
 
@@ -56,7 +58,7 @@ export default function ScheduleGenerator(props) {
               <Box key={item.column_id} m={0.5}>
                 <Subtitle subtitle={item.day} />
                 <Grid direction="column" container>
-                  <Grid item>
+                  <Grid xs item>
                     <Box
                       className={conditionMorning}
                       border={1}
@@ -72,7 +74,7 @@ export default function ScheduleGenerator(props) {
                       </Typography>
                     </Box>
                   </Grid>
-                  <Grid item>
+                  <Grid xs item>
                     <Box
                       className={conditionAfternoon}
                       borderColor={conditionAfternoon.color}

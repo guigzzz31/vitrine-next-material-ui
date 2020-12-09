@@ -17,7 +17,7 @@ export default function FeedIndex(props) {
   const classes = useStyles();
   const { infoPage } = props;
   return (
-    <Grid className={classes.root} container>
+    <Grid justify="center" className={classes.root} container>
       <Grid item>
         <PageName pageName={infoPage.pageName} />
       </Grid>
