@@ -6,13 +6,13 @@ import Subtitle from "../static/article/Subtitle";
 
 import Typography from "@material-ui/core/Typography";
 
-
 const useStyles = makeStyles((theme) => ({
   box_01: {
     display: "flex",
     alignItems: "center",
     //purple
-    backgroundColor: "#6200B3",
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
     minWidth: 52,
     minHeight: 52,
   },
@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     //china pink
-    backgroundColor: "#E06C9F",
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     minWidth: 52,
     minHeight: 52,
   },
@@ -56,22 +57,32 @@ export default function ScheduleGenerator(props) {
                 <Subtitle subtitle={item.day} />
                 <Grid direction="column" container>
                   <Grid item>
-                    <Box className={conditionMorning} m={0.5}>
+                    <Box
+                      className={conditionMorning}
+                      border={1}
+                      borderColor={conditionMorning.color}
+                      m={0.5}
+                    >
                       <Typography
                         align="center"
                         variant="body1"
-                        color="secondary"
+                        color={conditionMorning.color}
                       >
                         {item.morning}
                       </Typography>
                     </Box>
                   </Grid>
                   <Grid item>
-                    <Box className={conditionAfternoon} m={0.5}>
+                    <Box
+                      className={conditionAfternoon}
+                      borderColor={conditionAfternoon.color}
+                      border={1}
+                      m={0.5}
+                    >
                       <Typography
                         align="center"
                         variant="body1"
-                        color="secondary"
+                        color={conditionAfternoon.color}
                       >
                         {item.afternoon}
                       </Typography>
