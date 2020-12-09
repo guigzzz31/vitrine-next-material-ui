@@ -6,7 +6,7 @@ import theme from "../styles/theme";
 import Header from "../src/components/Header";
 import Head from "../src/helpers/Head";
 import Footer from "../src/components/Footer";
-import PageNameGenerator from "../src/helpers/generators/PageNameGenerator";
+import Scroll from "../src/helpers/ScrollToTop";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -30,6 +30,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <Scroll showBelow={1} />
         <Footer />
       </ThemeProvider>
     </React.Fragment>
