@@ -177,7 +177,7 @@ const data = [
       },
       {
         content_id: 1,
-        title: "Horaires de Carine Da Costa",
+        title: "Carine Da Costa",
         subtitle: "",
         paragraph: [
           {

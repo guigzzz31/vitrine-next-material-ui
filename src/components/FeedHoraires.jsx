@@ -2,11 +2,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 
-import PageName from "../helpers/generators/PageNameGenerator";
+import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import ContentGenerator from "../helpers/generators/ContentGenerator";
-import Title from "../helpers/static/article/Title";
-import { Typography } from "@material-ui/core";
+import ScheduleGenerator from "../helpers/generators/ScheduleGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,7 +26,7 @@ export default function FeedHoraires(props) {
   return (
     <Grid className={classes.root} container>
       <Grid item>
-        <PageName pageName={infoPage.pageName} />
+        <PageNameGenerator pageName={infoPage.pageName} />
       </Grid>
       {infoPage.infoTip ? (
         <Grid item>
@@ -35,12 +34,11 @@ export default function FeedHoraires(props) {
         </Grid>
       ) : null}
       {infoPage.content ? (
-        <Grid>
-          <Typography>Carole Richou</Typography>
-          <Typography>Carole Richou</Typography>
-          <Typography>Carole Richou</Typography>
-          <Typography>Carine Da Costa</Typography>
-          <Typography>Carole Richou</Typography>
+        <ContentGenerator content={infoPage.content} />
+      ) : null}{" "}
+      {infoPage.schedule ? (
+        <Grid item>
+          <ScheduleGenerator schedule={infoPage.schedule} />
         </Grid>
       ) : null}
     </Grid>
