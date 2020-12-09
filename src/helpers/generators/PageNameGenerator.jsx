@@ -14,7 +14,6 @@ export default function PageNameGenerator(props) {
     <Box>
       <Typography
         className={classes.pageName}
-        align="center"
         color="textPrimary"
         variant="h4"
         gutterBottom

@@ -2,13 +2,14 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 
-import PageName from "../helpers/generators/PageNameGenerator";
+import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import ContentGenerator from "../helpers/generators/ContentGenerator";
+import DefinitionGenerator from "../helpers/generators/DefinitionGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: 100,
+    marginTop: 88,
     marginBottom: 20,
   },
 }));
@@ -19,11 +20,16 @@ export default function FeedPage(props) {
   return (
     <Grid className={classes.root} container>
       <Grid item>
-        <PageName pageName={infoPage.pageName} />
+        <PageNameGenerator pageName={infoPage.pageName} />
       </Grid>
       {infoPage.infoTip ? (
         <Grid item>
           <InfoTipGenerator infoTip={infoPage.infoTip} />
+        </Grid>
+      ) : null}
+      {infoPage.definition ? (
+        <Grid item>
+          <DefinitionGenerator definition={infoPage.definition} />
         </Grid>
       ) : null}
       {infoPage.content ? (

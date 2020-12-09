@@ -4,16 +4,24 @@ import Grid from "@material-ui/core/Grid";
 
 import PageName from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
-import VisitCardGenerator from "../helpers/generators/VisitCardGenerator";
+import ContentGenerator from "../helpers/generators/ContentGenerator";
+import Title from "../helpers/static/article/Title";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 88,
     marginBottom: 20,
   },
+  carole: {
+    color: "#6200B3",
+  },
+  carine: {
+    color: "#E06C9F",
+  },
 }));
 
-export default function FeedIndex(props) {
+export default function FeedHoraires(props) {
   const classes = useStyles();
   const { infoPage } = props;
   return (
@@ -26,9 +34,13 @@ export default function FeedIndex(props) {
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
       ) : null}
-      {infoPage.users ? (
-        <Grid item>
-          <VisitCardGenerator users={infoPage.users} />
+      {infoPage.content ? (
+        <Grid>
+          <Typography>Carole Richou</Typography>
+          <Typography>Carole Richou</Typography>
+          <Typography>Carole Richou</Typography>
+          <Typography>Carine Da Costa</Typography>
+          <Typography>Carole Richou</Typography>
         </Grid>
       ) : null}
     </Grid>

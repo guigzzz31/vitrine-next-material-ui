@@ -18,15 +18,9 @@ export default function VisitCard(props) {
   const classes = useStyles();
   const { name, avatarPath, skills, specialities } = props;
   return (
-    <Box p={2}>
+    <Box m={2}>
       <Paper elevation={2} square={false}>
-        <Grid
-          alignItems="center"
-          className={classes.root}
-          direction="row"
-          spacing={2}
-          container
-        >
+        <Grid alignItems="center" direction="row" spacing={2} container>
           <Grid item>
             <AvatarGenerator avatarPath={avatarPath} />
           </Grid>

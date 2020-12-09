@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CardName(props) {
   const classes = useStyles();
   return (
-    <Box>
+    <Box ml={-1}>
       <Typography
         className={classes.title}
         color="primary"
