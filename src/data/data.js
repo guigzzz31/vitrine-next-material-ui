@@ -4,7 +4,7 @@ const data = [
     pageName: "Accueil",
     path: "/",
     infoTip: {
-      head: "Covid 19",
+      head: "Bienvenue",
       paragraph: [
         {
           paragraph_id: 0,
@@ -209,7 +209,7 @@ const data = [
     },
     content: [
       {
-        content_id: 1,
+        content_id: 0,
         title: "Coordonnées",
         subtitle: "",
         iconPath: "",
@@ -312,19 +312,18 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Définition",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: `La pédicurie concerne le soin et le traitement des affections de la peau et des ongles de vos pieds.`,
+        },
+      ],
+    },
     content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La pédicurie concerne le soin et le traitement des affections de la peau et des ongles de vos pieds.`,
-          },
-        ],
-      },
       {
         content_id: 1,
         title: "Pourquoi consulter ?",
@@ -446,20 +445,19 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Définition",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: `La podologie étudie l'ensemble des troubles statiques et dynamiques du
+          pied ainsi que les pathologies sus-jacentes.`,
+        },
+      ],
+    },
     content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La podologie étudie l'ensemble des troubles statiques et dynamiques du
-        pied ainsi que les pathologies sus-jacentes.`,
-          },
-        ],
-      },
       {
         content_id: 1,
         title: "Pourquoi consulter ?",
@@ -558,31 +556,30 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Définition",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: `La posturologie est une discipline qui étudie la position et l’équilibre de l’être humain dans l’espace, à l’état statique et en mouvement.`,
+        },
+        {
+          paragraph_id: 1,
+          primary: `Pour se tenir debout, l'être humain doit lutter contre la gravité et adapter continuellement sa position afin de garder l’équilibre.`,
+        },
+        {
+          paragraph_id: 2,
+          primary: `Cette adaptation se fait grâce aux informations reçues par les capteurs posturaux qui sont : la peau, les articulations, la plante des pieds, les yeux, l’oreille interne et les dents. Le cerveau reçoit toutes ces informations et adapte la posture du corps à tout moment.`,
+        },
+        {
+          paragraph_id: 3,
+          primary: `La posturologie est un outil diagnostic qui permet d’analyser et traiter les causes d’une dysfonction posturale fonctionnelle (contrairement à la podologie classique qui elle analyse et traite les causes d'une dysfonction organique) au moyen de semelles dites de posture.`,
+        },
+      ],
+    },
     content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La posturologie est une discipline qui étudie la position et l’équilibre de l’être humain dans l’espace, à l’état statique et en mouvement.`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `Pour se tenir debout, l'être humain doit lutter contre la gravité et adapter continuellement sa position afin de garder l’équilibre.`,
-          },
-          {
-            paragraph_id: 2,
-            primary: `Cette adaptation se fait grâce aux informations reçues par les capteurs posturaux qui sont : la peau, les articulations, la plante des pieds, les yeux, l’oreille interne et les dents. Le cerveau reçoit toutes ces informations et adapte la posture du corps à tout moment.`,
-          },
-          {
-            paragraph_id: 3,
-            primary: `La posturologie est un outil diagnostic qui permet d’analyser et traiter les causes d’une dysfonction posturale fonctionnelle (contrairement à la podologie classique qui elle analyse et traite les causes d'une dysfonction organique) au moyen de semelles dites de posture.`,
-          },
-        ],
-      },
       {
         content_id: 1,
         title: "Pourquoi consulter ?",
@@ -650,27 +647,26 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Définition",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: `C'est une méthode thérapeutique qui utilise le processus d’autoguérison naturel du corps.`,
+        },
+        {
+          paragraph_id: 1,
+          primary: `Le pied est une représentation miniature du corps humain où chaque zone du pied correspond à un organe ou une partie de corps humain.`,
+        },
+        {
+          paragraph_id: 2,
+          primary: `La réflexologie soulage le corps par le pied. En stimulant manuellement ces zones réflexes, il est donc possible d’agir sur les organes ou les fonctions qu’elles représentent.`,
+        },
+      ],
+    },
     content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `C'est une méthode thérapeutique qui utilise le processus d’autoguérison naturel du corps.`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `Le pied est une représentation miniature du corps humain où chaque zone du pied correspond à un organe ou une partie de corps humain.`,
-          },
-          {
-            paragraph_id: 2,
-            primary: `La réflexologie soulage le corps par le pied. En stimulant manuellement ces zones réflexes, il est donc possible d’agir sur les organes ou les fonctions qu’elles représentent.`,
-          },
-        ],
-      },
       {
         content_id: 1,
         title: "Pourquoi consulter ?",
@@ -736,43 +732,38 @@ const data = [
         {
           paragraph_id: 1,
           primary:
-            "Le grade est déterminé par votre medecin traitant ou votre diabétologue.",
+            "L'Assurance Maladie prend en charge, sur prescription médicale, les soins de pédicurie chez le patient diabétique de grade 2 ou 3.",
         },
         {
           paragraph_id: 2,
           primary:
-            "L'Assurance Maladie prend en charge, sur prescription médicale, les soins de pédicurie chez le patient diabétique de grade 2 ou 3.",
-        },
-        {
-          paragraph_id: 3,
-          primary:
             "Le patient diabétique de grade 2 ou 3 a respectivement droit à 4 ou 6 séances de soins de pédicurie par an.",
         },
         {
-          paragraph_id: 4,
+          paragraph_id: 3,
           primary:
             "Quelque soit votre grade, il est vivement conseillé de faire un bilan podologique au moins une fois par an. ",
         },
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Définition",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
+        },
+        {
+          paragraph_id: 1,
+          primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
+        },
+      ],
+    },
+
     content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
-          },
-        ],
-      },
       {
         content_id: 1,
         title: "Pourquoi consulter ?",
@@ -868,17 +859,17 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
+            primary: "- Diminue les maux du quotidien",
             secondary: "sclérose en plaques, de diabète ou de cancer",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
+            primary: "- Aide la vie de tous les jours",
             secondary: "accompagnée ou non de nausées, vertiges…",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
+            primary: "- Conventionnées par la sécurité sociale",
             secondary: "lumbago, tour de reins, torticolis...",
           },
         ],
@@ -891,17 +882,17 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
+            primary: "- 27 euros le soin de pédicurie au cabinet",
             secondary: "sclérose en plaques, de diabète ou de cancer",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
+            primary: "- 27 euros le soin de pédicurie au cabinet",
             secondary: "accompagnée ou non de nausées, vertiges…",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
+            primary: "- 29,50 euros le soin de pédicurie à domicile",
             secondary: "lumbago, tour de reins, torticolis...",
           },
         ],
@@ -952,17 +943,17 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
+            primary: "- Diminue les maux du quotidien",
             secondary: "sclérose en plaques, de diabète ou de cancer",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
+            primary: "- Aide la vie de tous les jours",
             secondary: "accompagnée ou non de nausées, vertiges…",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
+            primary: "- Conventionnées par la sécurité sociale",
             secondary: "lumbago, tour de reins, torticolis...",
           },
         ],
@@ -975,17 +966,17 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- ",
+            primary: "- 27 euros le soin de pédicurie au cabinet",
             secondary: "sclérose en plaques, de diabète ou de cancer",
           },
           {
             paragraph_id: 1,
-            primary: "- ",
+            primary: "- 27 euros le soin de pédicurie au cabinet",
             secondary: "accompagnée ou non de nausées, vertiges…",
           },
           {
             paragraph_id: 2,
-            primary: "- ",
+            primary: "- 29,50 euros le soin de pédicurie à domicile",
             secondary: "lumbago, tour de reins, torticolis...",
           },
         ],

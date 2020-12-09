@@ -10,12 +10,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Title(props) {
   const classes = useStyles();
   return (
-    <Typography
-      className={classes.title}
-      color="primary"
-      variant="h5"
-      gutterBottom
-    >
+    <Typography className={classes.title} color="primary" variant="h5">
       {props.title}
     </Typography>
   );
