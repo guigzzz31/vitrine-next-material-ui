@@ -6,6 +6,7 @@ import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import ContentGenerator from "../helpers/generators/ContentGenerator";
 import DefinitionGenerator from "../helpers/generators/DefinitionGenerator";
+import Scroll from "../helpers/ScrollToTop";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,6 +23,9 @@ export default function FeedPage(props) {
       <Grid item>
         <PageNameGenerator pageName={infoPage.pageName} />
       </Grid>
+      <Grid item>
+        <Scroll showBelow={250} />
+      </Grid>
       {infoPage.infoTip ? (
         <Grid item>
           <InfoTipGenerator infoTip={infoPage.infoTip} />
@@ -35,6 +39,9 @@ export default function FeedPage(props) {
       {infoPage.content ? (
         <ContentGenerator content={infoPage.content} />
       ) : null}
+      <Grid item>
+        <Scroll showBelow={200} />
+      </Grid>
     </Grid>
   );
 }

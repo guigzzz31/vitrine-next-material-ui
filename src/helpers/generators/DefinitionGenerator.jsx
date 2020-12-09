@@ -2,18 +2,15 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 import Box from "@material-ui/core/Box";
+import Grid from "@material-ui/core/Grid";
+import clsx from "clsx";
+import Collapse from "@material-ui/core/Collapse";
+import IconButton from "@material-ui/core/IconButton";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 import Title from "../static/article/Title";
 import Subtitle from "../static/article/Subtitle";
 import ParagraphGenerator from "./ParagraphGenerator";
-
-import clsx from "clsx";
-
-import Collapse from "@material-ui/core/Collapse";
-import IconButton from "@material-ui/core/IconButton";
-import { red } from "@material-ui/core/colors";
-
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
