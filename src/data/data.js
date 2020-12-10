@@ -128,7 +128,7 @@ const data = [
     content: [
       {
         content_id: 0,
-        title: "Horaires de Carole Richou",
+        title: "Carole Richou",
         subtitle: "",
         paragraph: [
           {

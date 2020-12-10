@@ -29,28 +29,15 @@ export default function CardContact(props) {
   const { contact } = props;
   const classes = useStyles();
   return (
-    <Box
-      className={classes.container}
-      boxShadow={3}
-      m={0.5}
-      p={1}
-      minWidth={280}
-    >
-      <CardHeader />
-      <Grid justify="space-around" alignItems="center" container>
-        <Grid item>
-          <Typography className={classes.cardLine} gutterBottom>
-            {contact.num}
-          </Typography>
-          <MuiLink
-            color="inherit"
-            href="https://www.doctolib.fr/pedicure-podologue/cugnaux/carine-da-costa"
-            gutterBottom
-          >
-            Réservez sur Doctolib
-          </MuiLink>
-        </Grid>
+    <Grid justify="space-around" alignItems="center" container>
+      <Grid item>
+        <CallIcon color="primary" fontSize="large" />
       </Grid>
-    </Box>
+      <Grid item>
+        <Typography className={classes.cardLine} gutterBottom>
+          {contact.num}
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }
