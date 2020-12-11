@@ -58,10 +58,9 @@ export default function DefinitionGenerator(props) {
                 })}
                 onClick={handleExpandClick}
                 aria-expanded={expanded}
-                aria-label="show more"
-                color="primary"
+                aria-label="voir plus"
               >
-                <ExpandMoreIcon />
+                <ExpandMoreIcon color="error" />
               </IconButton>
             </Grid>
           </Grid>
