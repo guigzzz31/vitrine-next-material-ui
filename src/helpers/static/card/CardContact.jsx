@@ -36,18 +36,31 @@ export default function CardContact(props) {
       p={1}
       minWidth={280}
     >
-      <CardHeader />
+      {/* <CardHeader /> */}
+
       <Grid justify="space-around" alignItems="center" container>
         <Grid item>
+          <PersonIcon fontSize="large" color="primary" />
+        </Grid>
+        <Grid item>
+          <Typography
+            className={classes.title}
+            variant="h5"
+            color="primary"
+            gutterBottom
+          >
+            Coordonées
+          </Typography>
           <Typography className={classes.cardLine} gutterBottom>
             {contact.num}
           </Typography>
           <MuiLink
-            color="inherit"
+            color="error"
+            underline="hover"
             href="https://www.doctolib.fr/pedicure-podologue/cugnaux/carine-da-costa"
             gutterBottom
           >
-            Réservez sur Doctolib
+            Réservez en ligne sur Doctolib
           </MuiLink>
         </Grid>
       </Grid>

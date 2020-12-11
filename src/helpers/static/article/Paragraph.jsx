@@ -11,7 +11,7 @@ export default function Paragraph(props) {
         </Typography>
       ) : null}
       {secondary ? (
-        <Typography color="textSecondary" variant="body2" paragraph>
+        <Typography color="error" variant="body2" paragraph>
           {props.secondary}
         </Typography>
       ) : null}

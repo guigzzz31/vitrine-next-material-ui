@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: 10,
     right: -8,
-    color: theme.palette.primary.main,
+    color: theme.palette.error.main,
     padding: theme.spacing(1),
   },
 }));

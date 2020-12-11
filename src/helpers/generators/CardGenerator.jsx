@@ -16,10 +16,18 @@ export default function CardGenerator(props) {
   }));
   const classes = useStyles();
   return (
-    <Box>
-      <CardContact contact={info.contact} />
-      <CardAdress adress={info.adress} />
-      <CardAcces acces={info.acces} />
+    <Box m={1}>
+      <Grid spacing={2} justify="center" container>
+        <Grid item>
+          <CardContact contact={info.contact} />
+        </Grid>
+        <Grid item>
+          <CardAdress adress={info.adress} />
+        </Grid>
+        <Grid item>
+          <CardAcces acces={info.acces} />
+        </Grid>
+      </Grid>
     </Box>
   );
 }

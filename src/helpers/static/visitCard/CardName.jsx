@@ -10,11 +10,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
   },
   divider: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.error.main,
     height: 3,
     width: 120,
     marginBottom: 10,
-    boxShadow: "rgb(108, 193, 186) 0px 8px 15px 1px",
+    boxShadow: "rgb(218, 98, 125) 0px 8px 27px 1px",
   },
 }));
 
