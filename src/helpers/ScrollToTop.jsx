@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: 10,
     right: -8,
-    color: theme.palette.primary.main,
+    color: theme.palette.error.main,
     padding: theme.spacing(1),
   },
 }));
@@ -19,8 +19,8 @@ const Scroll = (showBelow) => {
   const [show, setShow] = useState(showBelow ? false : true);
 
   const handleScroll = () => {
-    console.log("window.pageYOffset", window.pageYOffset);
-    console.log("showBelow", showBelow);
+    // console.log("window.pageYOffset", window.pageYOffset);
+    // console.log("showBelow", showBelow);
     if (window.pageYOffset > showBelow) {
       if (!show) setShow(true);
     } else {
@@ -31,7 +31,7 @@ const Scroll = (showBelow) => {
   useEffect(() => {
     if (showBelow) {
       window.addEventListener(`scroll`, handleScroll);
-      console.log("useffect", showBelow);
+      // console.log("useffect", showBelow);
       return () => window.removeEventListener(`scroll`, handleScroll);
     }
   }, []);

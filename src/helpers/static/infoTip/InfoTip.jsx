@@ -19,12 +19,10 @@ export default function InfoTip(props) {
   const { head, paragraph, bottom } = props.infoTip;
   const classes = useStyles();
   return (
-    <Box className={classes.container} boxShadow={3} m={1}>
-      <Box className={classes.root}>
-        <InfoTipHeader head={head} />
-        <ParagraphGenerator paragraphs={paragraph} />
-        <InfoTipFooter bottom={bottom} />
-      </Box>
+    <Box className={classes.container} boxShadow={3} p={1}>
+      <InfoTipHeader head={head} />
+      <ParagraphGenerator paragraphs={paragraph} />
+      <InfoTipFooter bottom={bottom} />
     </Box>
   );
 }

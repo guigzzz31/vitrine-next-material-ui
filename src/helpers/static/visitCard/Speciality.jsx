@@ -15,7 +15,7 @@ export default function Speciality(props) {
     <>
       {speciality ? (
         <Typography
-          color="primary"
+          color="error"
           align="center"
           variant="h6"
           className={classes.speciality}

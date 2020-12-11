@@ -5,6 +5,8 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   pageName: {
     fontFamily: "Montserrat",
+    fontWeight: 400,
+    paddingLeft: 17,
   },
 }));
 
@@ -14,7 +16,7 @@ export default function PageNameGenerator(props) {
     <Box>
       <Typography
         className={classes.pageName}
-        color="textPrimary"
+        color="error"
         variant="h4"
         gutterBottom
       >

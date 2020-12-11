@@ -1,42 +1,37 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
+import PageName from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
-import CardContact from "../src/helpers/static/cardContact/CardContact";
+import CardGenerator from "../helpers/generators/CardGenerator";
 
-import data from "../src/data/data";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: 88,
+    marginBottom: 20,
+  },
+}));
 
-import useWindowDimensions from "../src/hooks/useWindowDimensions";
-
-export default function contact() {
-  const { height, width } = useWindowDimensions();
-  const contact = data.find((category) => category.pageName === "Contact");
-
-  const useStyles = makeStyles((theme) => ({
-    container: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-around",
-      alignItems: "flex-start",
-      top: 12,
-      height: height - 160,
-    },
-    title: {
-      paddingTop: theme.spacing(1),
-    },
-  }));
+export default function FeedContact(props) {
   const classes = useStyles();
+  const { infoPage } = props;
+  console.log("feedContact", infoPage);
   return (
-    <>
-      <Typography className={classes.title} variant="h4" align="center">
-        Contact
-      </Typography>
-      <Container className={classes.container} maxWidth="sm">
-        <InfoTipGenerator info={contact.infoBulle} />
-        <CardContact info={contact.info} />
-      </Container>
-    </>
+    <Grid justify="center" className={classes.root} container>
+      <Grid item>
+        <PageName pageName={infoPage.pageName} />
+      </Grid>
+      {/* {infoPage.infoTip ? (
+        <Grid item>
+          <InfoTipGenerator infoTip={infoPage.infoTip} />
+        </Grid>
+      ) : null} */}
+      {infoPage.profil ? (
+        <Grid item>
+          <CardGenerator info={infoPage.profil} />
+        </Grid>
+      ) : null}
+    </Grid>
   );
 }

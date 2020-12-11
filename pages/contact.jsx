@@ -1,7 +1,7 @@
 import data from "../src/data/data";
-import FeedPage from "../src/components/FeedPage";
+import FeedContact from "../src/components/FeedContact";
 
 export default function contact() {
   const infoPage = data.find((category) => category.pageName === "Contact");
-  return <FeedPage infoPage={infoPage} />;
+  return <FeedContact infoPage={infoPage} />;
 }

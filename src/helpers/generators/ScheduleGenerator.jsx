@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
   box_01: {
     display: "flex",
     alignItems: "center",
-    //purple
-    backgroundColor: theme.palette.primary.main,
+    //carole
+    backgroundColor: theme.palette.error.main,
     color: theme.palette.secondary.main,
     minWidth: 52,
     minHeight: 52,
@@ -20,9 +20,9 @@ const useStyles = makeStyles((theme) => ({
   box_02: {
     display: "flex",
     alignItems: "center",
-    //china pink
+    //carine
     backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.primary.main,
+    color: theme.palette.error.main,
     minWidth: 52,
     minHeight: 52,
     borderRadius: 8,
