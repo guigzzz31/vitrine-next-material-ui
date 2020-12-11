@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 
-import CardContact from "../static/card/CardContact";
-import CardAdress from "../static/card/CardAdress";
-import CardAcces from "../static/card/CardAcces";
+import CardCoord from "../static/cardContact/CardCoord";
+import CardAdress from "../static/cardContact/CardAdress";
+import CardAcces from "../static/cardContact/CardAcces";
 import { Container } from "@material-ui/core";
 
 export default function CardGenerator(props) {
@@ -19,7 +19,7 @@ export default function CardGenerator(props) {
     <Box m={1}>
       <Grid spacing={2} justify="center" container>
         <Grid item>
-          <CardContact contact={info.contact} />
+          <CardCoord contact={info.contact} />
         </Grid>
         <Grid item>
           <CardAdress adress={info.adress} />

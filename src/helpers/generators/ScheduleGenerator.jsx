@@ -11,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     //carole
-    backgroundColor: theme.palette.error.main,
-    color: theme.palette.secondary.main,
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
     minWidth: 52,
     minHeight: 52,
     borderRadius: 8,
@@ -35,7 +35,7 @@ export default function ScheduleGenerator(props) {
   const { schedule } = props;
   return (
     <Grid direction="row" container>
-      <Box mt={3}>
+      <Box mt={1.5}>
         <Box my={3}>
           <Typography>9h</Typography>
         </Box>

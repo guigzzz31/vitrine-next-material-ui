@@ -4,10 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import MuiLink from "@material-ui/core/Link";
-import CallIcon from "@material-ui/icons/Call";
-import LinkIcon from "@material-ui/icons/Link";
-import PersonIcon from "@material-ui/icons/Person";
-import CardHeader from "./CardHeader";
+import HomeIcon from "@material-ui/icons/Home";
+import ImageMap from "../../ImageMap";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -19,14 +17,10 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontFamily: "Montserrat",
   },
-  cardLine: {
-    fontFamily: "Roboto",
-    fontWeight: 500,
-  },
 }));
 
-export default function CardContact(props) {
-  const { contact } = props;
+export default function CardAdress(props) {
+  const { adress } = props;
   const classes = useStyles();
   return (
     <Box
@@ -36,11 +30,15 @@ export default function CardContact(props) {
       p={1}
       minWidth={280}
     >
-      {/* <CardHeader /> */}
-
       <Grid justify="space-around" alignItems="center" container>
         <Grid item>
-          <PersonIcon fontSize="large" color="primary" />
+          <MuiLink
+            underline="hover"
+            href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
+          >
+            <HomeIcon fontSize="large" color="primary" />
+            {/* <ImageMap /> */}
+          </MuiLink>
         </Grid>
         <Grid item>
           <Typography
@@ -49,18 +47,22 @@ export default function CardContact(props) {
             color="primary"
             gutterBottom
           >
-            Coordonées
+            Adresse
           </Typography>
-          <Typography className={classes.cardLine} gutterBottom>
-            {contact.num}
+          <Typography>{adress.name}</Typography>
+          <Typography>
+            {adress.number}&nbsp;{adress.street}
+          </Typography>
+          <Typography>
+            {adress.postalCode}&nbsp;{adress.city}
           </Typography>
           <MuiLink
-            color="error"
             underline="hover"
-            href="https://www.doctolib.fr/pedicure-podologue/cugnaux/carine-da-costa"
-            gutterBottom
+            color="error"
+            href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
           >
-            Réservez en ligne sur Doctolib
+            Voir sur google maps
+            {/* <ImageMap /> */}
           </MuiLink>
         </Grid>
       </Grid>
