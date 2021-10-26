@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
 
-import PageName from "../helpers/generators/PageNameGenerator";
+import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import VisitCardGenerator from "../helpers/generators/VisitCardGenerator";
 
@@ -19,13 +19,15 @@ export default function FeedIndex(props) {
   return (
     <Grid justify="center" className={classes.root} container>
       <Grid item>
-        <PageName pageName={infoPage.pageName} />
+        <PageNameGenerator pageName={infoPage.pageName} />
       </Grid>
+      {/* infoTip est le bandeau informatif en haut de page */}
       {infoPage.infoTip ? (
         <Grid item>
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
       ) : null}
+      {/* VisitCardGenerator est le composant responsable de générer les cartes de visite */}
       {infoPage.users ? (
         <Grid item>
           <VisitCardGenerator users={infoPage.users} />

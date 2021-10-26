@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Title(props) {
   const classes = useStyles();
   return (
-    <Typography className={classes.title} color="primary" variant="h5">
+    <Typography className={classes.title} color={props.title === "Carole Richou" ? "primary" : "error"} variant="h5">
       {props.title}
     </Typography>
   );
