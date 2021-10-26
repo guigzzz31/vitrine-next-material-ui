@@ -25,7 +25,7 @@ export default function Header() {
       alignItems="center"
       className={classes.root}
     >
-      <Grid xs item>
+      <Grid item>
         <Logo />
       </Grid>
       <Grid item>
