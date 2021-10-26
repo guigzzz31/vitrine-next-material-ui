@@ -21,7 +21,7 @@ const data = [
       {
         user_id: 0,
         name: "Carole Richou",
-        avatarPath: "/carole01.png",
+        avatarPath: "/carole.svg",
         skills: [
           {
             skill_id: 0,
@@ -50,7 +50,7 @@ const data = [
       {
         user_id: 1,
         name: "Carine Da Costa",
-        avatarPath: "/carine01.png",
+        avatarPath: "/carine.svg",
         skills: [
           {
             skill_id: 0,

@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
 export default function FeedContact(props) {
   const classes = useStyles();
   const { infoPage } = props;
-  console.log("feedContact", infoPage);
+  // console.log("feedContact", infoPage);
   return (
     <Grid justify="center" className={classes.root} container>
       <Grid item>
