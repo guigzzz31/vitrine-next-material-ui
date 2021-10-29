@@ -1,6 +1,5 @@
-import { createMuiTheme } from "@material-ui/core/styles";
-
-const theme = createMuiTheme({
+import { createTheme } from '@mui/material/styles';
+const theme = createTheme({
   palette: {
     primary: {
       //wintergreen Dream
@@ -30,12 +29,7 @@ const theme = createMuiTheme({
     },
     //font families
     typography: {
-      fontFamily: [
-        "Quicksand",
-        "Roboto",
-        "Montserrat",
-        "Lato",
-      ].join(","),
+      fontFamily: ["Quicksand", "Roboto", "Montserrat", "Lato"].join(","),
     },
   },
 });

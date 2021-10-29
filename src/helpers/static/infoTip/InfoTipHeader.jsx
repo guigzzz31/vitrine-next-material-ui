@@ -1,10 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import { Grid, Box, Typography } from "@mui/material";
 
-import LightBulbIcon from "../LightBulbIcon";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const useStyles = makeStyles((theme) => ({
   head: {
@@ -21,7 +19,7 @@ export default function InfoTipHeader(props) {
     <Box p={1}>
       <Grid spacing={1} container>
         <Grid item>
-          <LightBulbIcon />
+          <InfoOutlinedIcon color="primary" />
         </Grid>
         <Grid item>
           <Typography className={classes.head} color="primary">

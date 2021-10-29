@@ -1,6 +1,5 @@
-import { makeStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@mui/styles";
+import { Box, Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   title: {

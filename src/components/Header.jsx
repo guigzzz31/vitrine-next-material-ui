@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 import Menu from "./Menu";
 import Logo from "../helpers/static/Logo";

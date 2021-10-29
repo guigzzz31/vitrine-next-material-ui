@@ -1,7 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
+import { Box } from "@mui/material";
 
 import ParagraphGenerator from "../../generators/ParagraphGenerator";
 import InfoTipHeader from "./InfoTipHeader";

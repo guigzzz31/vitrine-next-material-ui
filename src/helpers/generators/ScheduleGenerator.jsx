@@ -1,10 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
-
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
+import { makeStyles } from "@mui/styles";
+import { Grid, Box, Typography } from "@mui/material";
 import Subtitle from "../static/article/Subtitle";
-
-import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
   box_01: {

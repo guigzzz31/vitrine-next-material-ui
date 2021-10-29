@@ -1,12 +1,9 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
+import { Button, Menu, MenuItem } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import Link from "../helpers/Link";
-import MenuIcon from "@material-ui/icons/Menu";
 
 import data from "../data/data";
-import { Box } from "@material-ui/core";
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);

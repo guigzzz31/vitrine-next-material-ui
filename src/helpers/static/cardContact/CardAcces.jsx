@@ -1,9 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import RoomIcon from "@material-ui/icons/Room";
-import { Typography } from "@material-ui/core";
+import { Grid, Box, Typography } from "@mui/material";
+
+import RoomIcon from "@mui/icons-material/Room";
 
 const useStyles = makeStyles((theme) => ({
   container: {

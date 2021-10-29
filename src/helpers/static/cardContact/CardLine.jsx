@@ -1,13 +1,9 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import CallIcon from "@material-ui/icons/Call";
-import LinkIcon from "@material-ui/icons/Link";
-import PersonIcon from "@material-ui/icons/Person";
-import CardHeader from "./CardHeader";
+import { Grid, Typography } from "@mui/material";
+
+import CallIcon from "@mui/icons-material/Call";
+
 
 const useStyles = makeStyles((theme) => ({
   container: {

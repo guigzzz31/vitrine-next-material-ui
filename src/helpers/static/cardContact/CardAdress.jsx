@@ -1,10 +1,9 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import HomeIcon from "@material-ui/icons/Home";
+import { Grid, Box, Typography, Link } from "@mui/material";
+
+import HomeIcon from "@mui/icons-material/Home";
+
 import ImageMap from "../../ImageMap";
 
 const useStyles = makeStyles((theme) => ({
@@ -32,13 +31,13 @@ export default function CardAdress(props) {
     >
       <Grid justify="space-around" alignItems="center" container>
         <Grid item>
-          <MuiLink
+          <Link
             underline="hover"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
           >
             <HomeIcon fontSize="large" color="primary" />
             {/* <ImageMap /> */}
-          </MuiLink>
+          </Link>
         </Grid>
         <Grid item>
           <Typography
@@ -56,14 +55,14 @@ export default function CardAdress(props) {
           <Typography>
             {adress.postalCode}&nbsp;{adress.city}
           </Typography>
-          <MuiLink
+          <Link
             underline="hover"
             color="error"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
           >
             Voir sur google maps
             {/* <ImageMap /> */}
-          </MuiLink>
+          </Link>
         </Grid>
       </Grid>
     </Box>

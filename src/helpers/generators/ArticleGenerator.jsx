@@ -1,11 +1,10 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
+import { Box } from "@mui/material";
 import Title from "../static/article/Title";
 import Subtitle from "../static/article/Subtitle";
 import ParagraphGenerator from "./ParagraphGenerator";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
