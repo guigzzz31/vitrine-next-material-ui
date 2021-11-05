@@ -7,8 +7,8 @@ const theme = createTheme({
     },
     secondary: {
       //mint cream
-      main: "#EDF7F6",
       light: "#FFF",
+      main: "#EDF7F6",
     },
     text: {
       //smokey black
@@ -21,16 +21,15 @@ const theme = createTheme({
       main: "#DA627D",
     },
     info: {
-      main: "#64b5f6",
+      main: "#4a8e89",
     },
     //mint cream
     background: {
       default: "#EDF7F6",
     },
-    //font families
-    typography: {
-      fontFamily: ["Quicksand", "Roboto", "Montserrat", "Lato"].join(","),
-    },
+  },
+  typography: {
+    fontFamily: ["Quicksand", "Roboto", "Montserrat", "Lato"].join(","),
   },
 });
 

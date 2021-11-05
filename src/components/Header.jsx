@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
     top: 0,
+    left: 0,
     backgroundColor: theme.palette.primary.main,
     zIndex: 1,
   },

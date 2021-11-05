@@ -8,8 +8,10 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     position: "fixed",
     bottom: 0,
+    left: 0,
     backgroundColor: theme.palette.primary.main,
     padding: 0,
+    width: "100%",
   },
 }));
 
@@ -23,13 +25,13 @@ export default function Footer() {
       alignItems="center"
       className={classes.footer}
     >
-      <Grid item></Grid>
+      {/* <Grid item></Grid> */}
       <Grid item>
         <Box>
           <Copyright />
         </Box>
       </Grid>
-      <Grid item></Grid>
+      {/* <Grid item></Grid> */}
     </Grid>
   );
 }
