@@ -1,14 +1,22 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Link from "../helpers/Link";
-import MenuIcon from "@material-ui/icons/Menu";
 
+import { makeStyles } from "@mui/styles";
+import { Button, Menu, MenuItem } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+
+import Link from "../helpers/Link";
 import data from "../data/data";
-import { Box } from "@material-ui/core";
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    color: theme.palette.secondary.main,
+  },
+}));
 
 export default function SimpleMenu() {
+  const classes = useStyles();
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -25,7 +33,7 @@ export default function SimpleMenu() {
         aria-controls="simple-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        color="secondary"
+        className={classes.root}
       >
         <MenuIcon fontSize="large" />
       </Button>

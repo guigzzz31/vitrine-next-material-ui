@@ -1,5 +1,4 @@
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+import { Box, Typography } from "@mui/material";
 
 export default function Paragraph(props) {
   const { primary, secondary } = props;

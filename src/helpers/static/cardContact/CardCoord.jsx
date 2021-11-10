@@ -1,12 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import CallIcon from "@material-ui/icons/Call";
-import LinkIcon from "@material-ui/icons/Link";
-import PersonIcon from "@material-ui/icons/Person";
+import { Grid, Box, Typography, Link } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
+import Theme from "../../../../styles/theme"
 import CardHeader from "./CardHeader";
 
 const useStyles = makeStyles((theme) => ({
@@ -17,17 +13,29 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(2),
   },
   title: {
+    color: theme.palette.primary.main,
     fontFamily: "Montserrat",
   },
   cardLine: {
     fontFamily: "Roboto",
     fontWeight: 500,
   },
+  icon: {
+    color: theme.palette.primary.main,
+    display: "flex",
+    justifyContent: "center",
+    width: "90%",
+  },
+  link: {
+    fontFamily: "Montserrat",
+    fontSize: 15,
+  },
 }));
 
 export default function CardCoord(props) {
   const { contact } = props;
   const classes = useStyles();
+  const theme = useTheme();
   return (
     <Box
       className={classes.container}
@@ -38,30 +46,26 @@ export default function CardCoord(props) {
     >
       {/* <CardHeader /> */}
 
-      <Grid justify="space-around" alignItems="center" container>
-        <Grid item>
-          <PersonIcon fontSize="large" color="primary" />
+      <Grid justify="space-between" alignItems="center" container>
+        <Grid item xs={3}>
+          <PersonIcon className={classes.icon} fontSize="large" />
         </Grid>
         <Grid item>
-          <Typography
-            className={classes.title}
-            variant="h5"
-            color="primary"
-            gutterBottom
-          >
+          <Typography className={classes.title} variant="h5" gutterBottom>
             Coordonées
           </Typography>
           <Typography className={classes.cardLine} gutterBottom>
             {contact.num}
           </Typography>
-          <MuiLink
+          <Link
             color="error"
             underline="hover"
             href="https://www.doctolib.fr/pedicure-podologue/cugnaux/carine-da-costa"
             gutterBottom
+            className={classes.link}
           >
-            Réservez en ligne sur Doctolib
-          </MuiLink>
+            Réservez sur Doctolib
+          </Link>
         </Grid>
       </Grid>
     </Box>

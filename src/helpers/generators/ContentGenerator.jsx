@@ -1,7 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
+import { Box } from "@mui/material";
 import Title from "../static/article/Title";
 import Subtitle from "../static/article/Subtitle";
 import ParagraphGenerator from "./ParagraphGenerator";
@@ -21,7 +21,12 @@ export default function ContentGenerator(props) {
       {content
         ? content.map((item) => {
             return (
-              <Box key={item.content_id} m={3}>
+              <Box
+                key={item.content_id}
+                mx={3}
+                mt={3}
+                mb={item.title === "Carole Richou" ? 0 : 3}
+              >
                 <Title title={item.title} />
                 <Subtitle subtitle={item.subtitle} />
                 <ParagraphGenerator paragraphs={item.paragraph} />

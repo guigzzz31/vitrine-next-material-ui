@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
+import { Box } from "@mui/material";
 import InfoTip from "../static/infoTip/InfoTip";
 
 const useStyles = makeStyles((theme) => ({

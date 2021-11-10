@@ -1,11 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-
+import { makeStyles } from "@mui/styles";
+import { Grid, Box } from "@mui/material";
 import CardCoord from "../static/cardContact/CardCoord";
 import CardAdress from "../static/cardContact/CardAdress";
 import CardAcces from "../static/cardContact/CardAcces";
-import { Container } from "@material-ui/core";
 
 export default function CardGenerator(props) {
   const { info } = props;

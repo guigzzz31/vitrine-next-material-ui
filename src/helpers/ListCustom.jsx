@@ -1,7 +1,5 @@
 import React from "react";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
+import { List, ListItem, ListItemText } from "@mui/material";
 
 export default function ListCustom(props) {
   return (

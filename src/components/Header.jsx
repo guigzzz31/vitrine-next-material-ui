@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 import Menu from "./Menu";
 import Logo from "../helpers/static/Logo";
@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: "fixed",
     top: 0,
+    left: 0,
     backgroundColor: theme.palette.primary.main,
     zIndex: 1,
   },

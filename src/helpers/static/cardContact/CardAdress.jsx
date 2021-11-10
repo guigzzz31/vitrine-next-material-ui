@@ -1,10 +1,9 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import HomeIcon from "@material-ui/icons/Home";
+import { Grid, Box, Typography, Link } from "@mui/material";
+
+import HomeIcon from "@mui/icons-material/Home";
+
 import ImageMap from "../../ImageMap";
 
 const useStyles = makeStyles((theme) => ({
@@ -15,7 +14,18 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(2),
   },
   title: {
+    color: theme.palette.primary.main,
     fontFamily: "Montserrat",
+  },
+  icon: {
+    color: theme.palette.primary.main,
+    display: "flex",
+    justifyContent: "center",
+    width: "90%",
+  },
+  link: {
+    fontFamily: "Montserrat",
+    fontSize: 15,
   },
 }));
 
@@ -30,21 +40,21 @@ export default function CardAdress(props) {
       p={1}
       minWidth={280}
     >
-      <Grid justify="space-around" alignItems="center" container>
-        <Grid item>
-          <MuiLink
+      <Grid width="100%" justify="space-around" alignItems="center" container>
+        <Grid item xs={3}>
+          <Link
             underline="hover"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
           >
-            <HomeIcon fontSize="large" color="primary" />
+            <HomeIcon className={classes.icon} fontSize="large" />
             {/* <ImageMap /> */}
-          </MuiLink>
+          </Link>
         </Grid>
         <Grid item>
           <Typography
             className={classes.title}
             variant="h5"
-            color="primary"
+            //color="primary"
             gutterBottom
           >
             Adresse
@@ -56,14 +66,15 @@ export default function CardAdress(props) {
           <Typography>
             {adress.postalCode}&nbsp;{adress.city}
           </Typography>
-          <MuiLink
+          <Link
             underline="hover"
             color="error"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
+            className={classes.link}
           >
             Voir sur google maps
             {/* <ImageMap /> */}
-          </MuiLink>
+          </Link>
         </Grid>
       </Grid>
     </Box>

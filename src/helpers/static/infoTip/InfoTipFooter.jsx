@@ -1,10 +1,10 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+import { Box, Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   bottom: {
+    color: theme.palette.info.main,
     fontFamily: "Montserrat",
     fontSize: "1.1rem",
     fontWeight: 500,
@@ -16,7 +16,7 @@ export default function InfoTipFooter(props) {
   const classes = useStyles();
   return (
     <Box p={1}>
-      <Typography className={classes.bottom} color="primary">
+      <Typography className={classes.bottom} >
         {bottom}
       </Typography>
     </Box>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import NextLink from "next/link";
-import MuiLink from "@material-ui/core/Link";
+import Link from "@mui/material/Link";
 
 const NextComposed = React.forwardRef(function NextComposed(props, ref) {
   const { as, href, ...other } = props;
@@ -22,7 +22,7 @@ NextComposed.propTypes = {
 };
   
 // https://nextjs.org/docs/#with-link
-function Link(props) {
+function LinkCustom(props) {
   const {
     href,
     activeClassName = "active",
@@ -50,7 +50,7 @@ function Link(props) {
   }
 
   return (
-    <MuiLink
+    <Link
       component={NextComposed}
       className={className}
       ref={innerRef}
@@ -60,7 +60,7 @@ function Link(props) {
   );
 }
 
-Link.propTypes = {
+LinkCustom.propTypes = {
   activeClassName: PropTypes.string,
   as: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   className: PropTypes.string,
@@ -72,5 +72,5 @@ Link.propTypes = {
 };
 
 export default React.forwardRef((props, ref) => (
-  <Link {...props} innerRef={ref} />
+  <LinkCustom {...props} innerRef={ref} />
 ));

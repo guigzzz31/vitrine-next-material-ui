@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 88,
     marginBottom: 20,
+    //backgroundColor: theme.palette.secondary.main
   },
 }));
 

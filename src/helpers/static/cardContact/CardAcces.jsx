@@ -1,9 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import RoomIcon from "@material-ui/icons/Room";
-import { Typography } from "@material-ui/core";
+import { Grid, Box, Typography, Link } from "@mui/material";
+
+import RoomIcon from "@mui/icons-material/Room";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -13,7 +12,18 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(2),
   },
   title: {
+    color: theme.palette.primary.main,
     fontFamily: "Montserrat",
+  },
+  icon: {
+    color: theme.palette.primary.main,
+    display: "flex",
+    justifyContent: "center",
+    width: "90%",
+  },
+  link: {
+    fontFamily: "Montserrat",
+    fontSize: 15,
   },
 }));
 
@@ -29,23 +39,24 @@ export default function CardAcces(props) {
       minWidth={280}
     >
       <Grid justify="space-around" alignItems="center" container>
-        <Grid item>
-          <RoomIcon fontSize="large" color="primary" />
+        <Grid item xs={3}>
+          <RoomIcon className={classes.icon} fontSize="large" />
         </Grid>
         <Grid item>
-          <Typography
-            className={classes.title}
-            variant="h5"
-            color="primary"
-            gutterBottom
-          >
+          <Typography className={classes.title} variant="h5" gutterBottom>
             Accès
           </Typography>
           <Typography>{acces.info}</Typography>
           {acces.handicap ? <Typography>Accès handicapé</Typography> : null}
           <Typography>Parking - {acces.parking}</Typography>
-
-          <Typography>{acces.transport}</Typography>
+          <Link
+            underline="hover"
+            color="error"
+            href="https://www.tisseo.fr/sites/default/files/ligne87.html"
+            className={classes.link}
+          >
+            {acces.transport}
+          </Link>
         </Grid>
       </Grid>
     </Box>

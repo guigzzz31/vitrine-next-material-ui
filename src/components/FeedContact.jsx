@@ -1,6 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 import PageName from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
@@ -22,11 +22,11 @@ export default function FeedContact(props) {
       <Grid item>
         <PageName pageName={infoPage.pageName} />
       </Grid>
-      {/* {infoPage.infoTip ? (
+      {infoPage.infoTip ? (
         <Grid item>
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
-      ) : null} */}
+      ) : null}
       {infoPage.profil ? (
         <Grid item>
           <CardGenerator info={infoPage.profil} />

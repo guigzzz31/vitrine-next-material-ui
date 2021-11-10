@@ -1,12 +1,23 @@
 import Image from "next/image";
-//import { FootCareIcon } from "../../../public/footCareIcon.png"
+import { makeStyles } from "@mui/styles";
 
+
+const useStyles = makeStyles((theme) => ({
+  logo: {
+    color: theme.palette.secondary.main,
+  },
+}));
 
 export default function Logo() {
+  const classes = useStyles();
+  
   return (
-    // <Box onClick={}>
-
-      <Image src="/foot_care_icon_5.svg" alt="pédicurie" width="64" height="64" />
-    // </Box>
+    <Image
+      src="/logo.svg"
+      alt="pédicurie"
+      width="64"
+      height="64"
+      className={classes.logo}
+    />
   );
 }

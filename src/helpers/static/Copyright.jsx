@@ -1,18 +1,23 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import { Container } from "@material-ui/core";
+import { Container, Typography, Link } from "@mui/material";
+
+const useStyles = makeStyles((theme) => ({
+  text: {
+    color: theme.palette.secondary.light,
+  },
+}));
 
 export default function Copyright() {
+  const classes = useStyles();
   return (
     <Container>
-      <Typography variant="body2" color="secondary" align="center">
+      <Typography variant="body2" className={classes.text} align="center">
         {"Copyright © "}
-        <MuiLink color="inherit" href="https://github.com/guigzzz31">
+        <Link color="inherit" href="https://github.com/guigzzz31">
           guigzzzo
-        </MuiLink>{" "}
+        </Link>{" "}
         {new Date().getFullYear()}
         {"."}
       </Typography>

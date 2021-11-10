@@ -1,7 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
+import { Grid, Box } from "@mui/material";
 
 import Copyright from "../helpers/static/Copyright";
 
@@ -9,8 +8,10 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     position: "fixed",
     bottom: 0,
+    left: 0,
     backgroundColor: theme.palette.primary.main,
     padding: 0,
+    width: "100%",
   },
 }));
 
@@ -24,13 +25,13 @@ export default function Footer() {
       alignItems="center"
       className={classes.footer}
     >
-      <Grid item></Grid>
+      {/* <Grid item></Grid> */}
       <Grid item>
         <Box>
           <Copyright />
         </Box>
       </Grid>
-      <Grid item></Grid>
+      {/* <Grid item></Grid> */}
     </Grid>
   );
 }

@@ -1,10 +1,7 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
-import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-
-import PersonIcon from "@material-ui/icons/Person";
+import { Grid, Box, Typography, Link } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
 
 const useStyles = makeStyles((theme) => ({
   head: {
