@@ -31,15 +31,15 @@ export default function ScheduleGenerator(props) {
   const { schedule } = props;
   return (
     <Grid direction="row" container>
-      <Box mt={1.5}>
-        <Box my={3}>
-          <Typography>9h</Typography>
+      <Box mt={-0.5}>
+        <Box my={4}>
+          <Typography variant="subtitle2">9h</Typography>
         </Box>
-        <Box my={3}>
-          <Typography>14h</Typography>
+        <Box my={4}>
+          <Typography variant="subtitle2">14h</Typography>
         </Box>
-        <Box my={3}>
-          <Typography>19h</Typography>
+        <Box my={4}>
+          <Typography variant="subtitle2">19h</Typography>
         </Box>
       </Box>
       {schedule
@@ -51,7 +51,7 @@ export default function ScheduleGenerator(props) {
               item.afternoon === "Carole" ? classes.box_01 : classes.box_02;
 
             return (
-              <Box key={item.column_id} m={0.5}>
+              <Box key={item.column_id} m={0.2}>
                 <Subtitle subtitle={item.day} />
                 <Grid direction="column" container>
                   <Grid xs item>
@@ -59,7 +59,7 @@ export default function ScheduleGenerator(props) {
                       className={conditionMorning}
                       border={1}
                       borderColor={conditionMorning.color}
-                      m={0.5}
+                      m={0.4}
                     >
                       <Typography
                         align="center"
@@ -75,7 +75,7 @@ export default function ScheduleGenerator(props) {
                       className={conditionAfternoon}
                       borderColor={conditionAfternoon.color}
                       border={1}
-                      m={0.5}
+                      m={0.4}
                     >
                       <Typography
                         align="center"

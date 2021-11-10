@@ -6,10 +6,21 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+    justifyContent: 'flex-start',
+    marginTop: 8,
+    marginBottom: 8,
+    alignItems: "center"
+  },
   icon: {
     color: theme.palette.info.main,
+    paddingRight: 8,
   },
   head: {
+    //width: "80%",
+    ///wordBreak: "break-all",
+    flex: 1,
     color: theme.palette.info.main,
     fontFamily: "Montserrat",
     fontWeight: 500,
@@ -21,17 +32,9 @@ export default function InfoTipHeader(props) {
   const { head } = props;
   const classes = useStyles();
   return (
-    <Box p={1}>
-      <Grid spacing={1} container>
-        <Grid item>
-          <InfoOutlinedIcon className={classes.icon} />
-        </Grid>
-        <Grid item>
-          <Typography className={classes.head} >
-            {head}
-          </Typography>
-        </Grid>
-      </Grid>
+    <Box className={classes.container}>
+      <InfoOutlinedIcon className={classes.icon} />
+      <Typography className={classes.head}>{head}</Typography>
     </Box>
   );
 }
