@@ -22,11 +22,11 @@ export default function FeedContact(props) {
       <Grid item>
         <PageName pageName={infoPage.pageName} />
       </Grid>
-      {/* {infoPage.infoTip ? (
+      {infoPage.infoTip ? (
         <Grid item>
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Grid>
-      ) : null} */}
+      ) : null}
       {infoPage.profil ? (
         <Grid item>
           <CardGenerator info={infoPage.profil} />

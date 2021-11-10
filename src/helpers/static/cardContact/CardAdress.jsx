@@ -14,7 +14,18 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(2),
   },
   title: {
+    color: theme.palette.primary.main,
     fontFamily: "Montserrat",
+  },
+  icon: {
+    color: theme.palette.primary.main,
+    display: "flex",
+    justifyContent: "center",
+    width: "90%",
+  },
+  link: {
+    fontFamily: "Montserrat",
+    fontSize: 15,
   },
 }));
 
@@ -29,13 +40,13 @@ export default function CardAdress(props) {
       p={1}
       minWidth={280}
     >
-      <Grid justify="space-around" alignItems="center" container>
-        <Grid item>
+      <Grid width="100%" justify="space-around" alignItems="center" container>
+        <Grid item xs={3}>
           <Link
             underline="hover"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
           >
-            <HomeIcon fontSize="large" color="primary" />
+            <HomeIcon className={classes.icon} fontSize="large" />
             {/* <ImageMap /> */}
           </Link>
         </Grid>
@@ -43,7 +54,7 @@ export default function CardAdress(props) {
           <Typography
             className={classes.title}
             variant="h5"
-            color="primary"
+            //color="primary"
             gutterBottom
           >
             Adresse
@@ -59,6 +70,7 @@ export default function CardAdress(props) {
             underline="hover"
             color="error"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
+            className={classes.link}
           >
             Voir sur google maps
             {/* <ImageMap /> */}
