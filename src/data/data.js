@@ -628,277 +628,277 @@ const data = [
       },
     ],
   },
-  {
-    page_id: 7,
-    pageName: "Diabétologie",
-    path: "/diabetologie",
-    infoTip: {
-      head: "Le saviez-vous ?",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary:
-            "Il existe 4 grades (allant de 0 à 3) dans le diabète et tous ne sont malheureusement pas pris en charge.",
-        },
-        {
-          paragraph_id: 1,
-          primary:
-            "L'Assurance Maladie prend en charge, sur prescription médicale, les soins de pédicurie chez le patient diabétique de grade 2 ou 3.",
-        },
-        {
-          paragraph_id: 2,
-          primary:
-            "Le patient diabétique de grade 2 ou 3 a respectivement droit à 4 ou 6 séances de soins de pédicurie par an.",
-        },
-        {
-          paragraph_id: 3,
-          primary:
-            "Quelque soit votre grade, il est vivement conseillé de faire un bilan podologique au moins une fois par an. ",
-        },
-      ],
-      bottom: "À très bientôt!",
-    },
-    definition: {
-      definition_id: 0,
-      title: "Définition",
-      subtitle: "",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
-        },
-        {
-          paragraph_id: 1,
-          primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
-        },
-      ],
-    },
+  // {
+  //   page_id: 7,
+  //   pageName: "Diabétologie",
+  //   path: "/diabetologie",
+  //   infoTip: {
+  //     head: "Le saviez-vous ?",
+  //     paragraph: [
+  //       {
+  //         paragraph_id: 0,
+  //         primary:
+  //           "Il existe 4 grades (allant de 0 à 3) dans le diabète et tous ne sont malheureusement pas pris en charge.",
+  //       },
+  //       {
+  //         paragraph_id: 1,
+  //         primary:
+  //           "L'Assurance Maladie prend en charge, sur prescription médicale, les soins de pédicurie chez le patient diabétique de grade 2 ou 3.",
+  //       },
+  //       {
+  //         paragraph_id: 2,
+  //         primary:
+  //           "Le patient diabétique de grade 2 ou 3 a respectivement droit à 4 ou 6 séances de soins de pédicurie par an.",
+  //       },
+  //       {
+  //         paragraph_id: 3,
+  //         primary:
+  //           "Quelque soit votre grade, il est vivement conseillé de faire un bilan podologique au moins une fois par an. ",
+  //       },
+  //     ],
+  //     bottom: "À très bientôt!",
+  //   },
+  //   definition: {
+  //     definition_id: 0,
+  //     title: "Définition",
+  //     subtitle: "",
+  //     paragraph: [
+  //       {
+  //         paragraph_id: 0,
+  //         primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
+  //       },
+  //       {
+  //         paragraph_id: 1,
+  //         primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
+  //       },
+  //     ],
+  //   },
 
-    content: [
-      {
-        content_id: 1,
-        title: "Pourquoi consulter ?",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- un bilan général de l’état de vos pieds",
-            secondary: "",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- des conseils d'entretien & chaussage",
-            secondary:
-              "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- un soin de pédicurie",
-            secondary:
-              "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
-          },
-          {
-            paragraph_id: 2,
-            primary: "- Réaliser des semelles orthopédiques sur mesure",
-            secondary: "en préventif ou en curatif",
-          },
-        ],
-      },
-      {
-        content_id: 2,
-        title: "Combien ça coûte ?",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 27 euros le soin de pédicurie au cabinet",
-            secondary: "",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- 29,50 euros le soin de pédicurie à domicile",
-            secondary: "",
-          },
-          {
-            paragraph_id: 2,
-            primary: "",
-            secondary:
-              "Entièrement remboursés par la sécurité sociale pour les patients diabétique de grade 2 et 3.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    page_id: 8,
-    pageName: "Malformations du pied",
-    path: "/malformations",
-    infoTip: {
-      head: "Conventionnées par la sécurité sociale",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary: "Sous prescription médicale:",
-        },
-        {
-          paragraph_id: 1,
-          primary:
-            "Prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
-        },
-      ],
-      bottom: "À très bientôt!",
-    },
-    content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
-          },
-        ],
-      },
-      {
-        content_id: 1,
-        title: "Pourquoi consulter ?",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- Diminue les maux du quotidien",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- Aide la vie de tous les jours",
-            secondary: "accompagnée ou non de nausées, vertiges…",
-          },
-          {
-            paragraph_id: 2,
-            primary: "- Conventionnées par la sécurité sociale",
-            secondary: "lumbago, tour de reins, torticolis...",
-          },
-        ],
-      },
-      {
-        content_id: 2,
-        title: "Soins proposés",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 27 euros le soin de pédicurie au cabinet",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- 27 euros le soin de pédicurie au cabinet",
-            secondary: "accompagnée ou non de nausées, vertiges…",
-          },
-          {
-            paragraph_id: 2,
-            primary: "- 29,50 euros le soin de pédicurie à domicile",
-            secondary: "lumbago, tour de reins, torticolis...",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    page_id: 9,
-    pageName: "Enfants",
-    path: "/kids",
-    infoTip: {
-      head: "Conventionnées par la sécurité sociale",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary: "Sous prescription médicale:",
-        },
-        {
-          paragraph_id: 1,
-          primary:
-            "Prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
-        },
-      ],
-      bottom: "À très bientôt!",
-    },
-    content: [
-      {
-        content_id: 0,
-        title: "Définition",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
-          },
-          {
-            paragraph_id: 1,
-            primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
-          },
-        ],
-      },
-      {
-        content_id: 1,
-        title: "Pourquoi consulter ?",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- Diminue les maux du quotidien",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- Aide la vie de tous les jours",
-            secondary: "accompagnée ou non de nausées, vertiges…",
-          },
-          {
-            paragraph_id: 2,
-            primary: "- Conventionnées par la sécurité sociale",
-            secondary: "lumbago, tour de reins, torticolis...",
-          },
-        ],
-      },
-      {
-        content_id: 2,
-        title: "Soins proposés",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 27 euros le soin de pédicurie au cabinet",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
-          },
-          {
-            paragraph_id: 1,
-            primary: "- 27 euros le soin de pédicurie au cabinet",
-            secondary: "accompagnée ou non de nausées, vertiges…",
-          },
-          {
-            paragraph_id: 2,
-            primary: "- 29,50 euros le soin de pédicurie à domicile",
-            secondary: "lumbago, tour de reins, torticolis...",
-          },
-        ],
-      },
-    ],
-  },
+  //   content: [
+  //     {
+  //       content_id: 1,
+  //       title: "Pourquoi consulter ?",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- un bilan général de l’état de vos pieds",
+  //           secondary: "",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- des conseils d'entretien & chaussage",
+  //           secondary:
+  //             "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- un soin de pédicurie",
+  //           secondary:
+  //             "soins de la peau et des ongles, ongles incarnés, corne, plaie...",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "- Réaliser des semelles orthopédiques sur mesure",
+  //           secondary: "en préventif ou en curatif",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       content_id: 2,
+  //       title: "Combien ça coûte ?",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- 27 euros le soin de pédicurie au cabinet",
+  //           secondary: "",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- 29,50 euros le soin de pédicurie à domicile",
+  //           secondary: "",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "",
+  //           secondary:
+  //             "Entièrement remboursés par la sécurité sociale pour les patients diabétique de grade 2 et 3.",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   page_id: 8,
+  //   pageName: "Malformations du pied",
+  //   path: "/malformations",
+  //   infoTip: {
+  //     head: "Conventionnées par la sécurité sociale",
+  //     paragraph: [
+  //       {
+  //         paragraph_id: 0,
+  //         primary: "Sous prescription médicale:",
+  //       },
+  //       {
+  //         paragraph_id: 1,
+  //         primary:
+  //           "Prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
+  //       },
+  //     ],
+  //     bottom: "À très bientôt!",
+  //   },
+  //   content: [
+  //     {
+  //       content_id: 0,
+  //       title: "Définition",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       content_id: 1,
+  //       title: "Pourquoi consulter ?",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- Diminue les maux du quotidien",
+  //           secondary: "sclérose en plaques, de diabète ou de cancer",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- Aide la vie de tous les jours",
+  //           secondary: "accompagnée ou non de nausées, vertiges…",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "- Conventionnées par la sécurité sociale",
+  //           secondary: "lumbago, tour de reins, torticolis...",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       content_id: 2,
+  //       title: "Soins proposés",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- 27 euros le soin de pédicurie au cabinet",
+  //           secondary: "sclérose en plaques, de diabète ou de cancer",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- 27 euros le soin de pédicurie au cabinet",
+  //           secondary: "accompagnée ou non de nausées, vertiges…",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "- 29,50 euros le soin de pédicurie à domicile",
+  //           secondary: "lumbago, tour de reins, torticolis...",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   page_id: 9,
+  //   pageName: "Enfants",
+  //   path: "/kids",
+  //   infoTip: {
+  //     head: "Conventionnées par la sécurité sociale",
+  //     paragraph: [
+  //       {
+  //         paragraph_id: 0,
+  //         primary: "Sous prescription médicale:",
+  //       },
+  //       {
+  //         paragraph_id: 1,
+  //         primary:
+  //           "Prise en charge intégrale par la sécurité sociale des soins de pédicurie chez le patient diabétique de grade 2 et 3.",
+  //       },
+  //     ],
+  //     bottom: "À très bientôt!",
+  //   },
+  //   content: [
+  //     {
+  //       content_id: 0,
+  //       title: "Définition",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: `La prise en charge du pied du patient diabétique par le pédicure-podologue s’inscrit dans une prise en charge médicale globale et pluridisciplinaire.`,
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: `Elle comporte l’examen du pied et la gradation du risque podologique, les soins de pédicurie-podologie, l’éducation du patient, l’évaluation du chaussage et la mise en place d’un traitement orthétique (semelles) et d’un chaussage adapté, si nécessaire.`,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       content_id: 1,
+  //       title: "Pourquoi consulter ?",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- Diminue les maux du quotidien",
+  //           secondary: "sclérose en plaques, de diabète ou de cancer",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- Aide la vie de tous les jours",
+  //           secondary: "accompagnée ou non de nausées, vertiges…",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "- Conventionnées par la sécurité sociale",
+  //           secondary: "lumbago, tour de reins, torticolis...",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       content_id: 2,
+  //       title: "Soins proposés",
+  //       subtitle: "",
+  //       iconPath: "",
+  //       paragraph: [
+  //         {
+  //           paragraph_id: 0,
+  //           primary: "- 27 euros le soin de pédicurie au cabinet",
+  //           secondary: "sclérose en plaques, de diabète ou de cancer",
+  //         },
+  //         {
+  //           paragraph_id: 1,
+  //           primary: "- 27 euros le soin de pédicurie au cabinet",
+  //           secondary: "accompagnée ou non de nausées, vertiges…",
+  //         },
+  //         {
+  //           paragraph_id: 2,
+  //           primary: "- 29,50 euros le soin de pédicurie à domicile",
+  //           secondary: "lumbago, tour de reins, torticolis...",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     page_id: 10,
     pageName: "Honoraires",
