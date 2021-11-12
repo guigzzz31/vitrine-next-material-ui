@@ -18,20 +18,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Footer() {
   const classes = useStyles();
   return (
-    <Grid
-      container
-      direction="row"
-      justify="space-between"
-      alignItems="center"
-      className={classes.footer}
-    >
-      {/* <Grid item></Grid> */}
-      <Grid item>
-        <Box>
-          <Copyright />
-        </Box>
-      </Grid>
-      {/* <Grid item></Grid> */}
-    </Grid>
+    <Box className={classes.footer}>
+      <Copyright />
+    </Box>
   );
 }
