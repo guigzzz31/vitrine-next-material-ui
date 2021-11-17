@@ -1,21 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import { makeStyles } from "@mui/styles";
-import {
-  Button,
-  Menu,
-  MenuItem,
-  Box,
-  Typography,
-  Tabs,
-  Tab,
-} from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Tabs, Tab } from "@mui/material";
 
-//import Link from "../helpers/Link";
-import Link from "next/link";
 import data from "../data/data";
-import { getURL } from "next/dist/next-server/lib/utils";
 
 import { useTabs } from "../contexts/context";
 
@@ -54,12 +42,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function MenuDesktop() {
-  const { currentTab, setCurrentTab } = useTabs();
+  const { currentTab, handleChange } = useTabs();
 
   const classes = useStyles();
 
   return (
-    <Tabs value={currentTab} onChange={setCurrentTab} className={classes.root}>
+    <Tabs value={currentTab} onChange={handleChange} className={classes.root}>
       {data.map((item, i) => {
         return (
           <Tab

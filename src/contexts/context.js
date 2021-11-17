@@ -9,13 +9,18 @@ export function TabContext({ children }) {
     setCurrentTab(newValue);
   };
 
+  const handleClick = (event) => {
+    setCurrentTab(event);
+  };
+
   console.log("CONTEXT", currentTab);
 
   return (
     <AppContext.Provider
       value={{
         currentTab,
-        setCurrentTab: handleChange,
+        handleChange,
+        handleClick,
       }}
     >
       {children}
