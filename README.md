@@ -9,6 +9,12 @@ First, install packages:
 ```bash
 npm install
 ```
+Then, build the development server:
+
+```bash
+npm run build
+```
+
 Then, run the development server:
 
 ```bash
