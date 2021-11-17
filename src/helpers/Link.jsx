@@ -20,7 +20,7 @@ NextComposed.propTypes = {
   href: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   prefetch: PropTypes.bool,
 };
-  
+
 // https://nextjs.org/docs/#with-link
 function LinkCustom(props) {
   const {

@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { ThemeProvider } from "@mui/styles";
 //import CssBaseline from "@material-ui/core/CssBaseline";
+import { Box, Tabs, Tab, Typography } from "@mui/material";
 import theme from "../styles/theme";
 import Header from "../src/components/Header";
 import Head from "../src/helpers/Head";
 import Footer from "../src/components/Footer";
 import Scroll from "../src/helpers/ScrollToTop";
+import { TabContext } from "../src/contexts/context";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
-  React.useEffect(() => {
+
+  useEffect(() => {
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
@@ -27,16 +30,20 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         {/* <CssBaseline /> */}
-        <Header />
-        <Component {...pageProps} />
-        <Scroll showBelow={1} />
-        <Footer />
+        <>
+          <TabContext>
+            <Header />
+            <Component {...pageProps} />
+            <Scroll showBelow={1} />
+            <Footer />
+          </TabContext>
+        </>
       </ThemeProvider>
     </React.Fragment>
   );
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
+  //Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.object.isRequired,
 };

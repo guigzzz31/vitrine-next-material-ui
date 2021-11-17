@@ -1,58 +1,85 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { makeStyles } from "@mui/styles";
-import { Button, Menu, MenuItem, Box } from "@mui/material";
+import {
+  Button,
+  Menu,
+  MenuItem,
+  Box,
+  Typography,
+  Tabs,
+  Tab,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-import Link from "../helpers/Link";
+//import Link from "../helpers/Link";
+import Link from "next/link";
 import data from "../data/data";
+import { getURL } from "next/dist/next-server/lib/utils";
+
+import { useTabs } from "../contexts/context";
 
 const useStyles = makeStyles((theme) => ({
-  // root: {
-  //   color: theme.palette.secondary.main,
-  // },
+  root: {
+    "& .MuiTabs-indicator": {
+      display: "flex",
+      justifyContent: "center",
+      backgroundColor: "transparent",
+    },
+    "& .MuiTabs-indicatorSpan": {
+      maxWidth: 40,
+      width: "100%",
+      backgroundColor: theme.palette.primary.main,
+    },
+    minHeight: 30,
+  },
   button: {
-    color: theme.palette.secondary.main,
+    backgroundColor: theme.palette.primary.main,
     fontSize: 20,
+    color: theme.palette.secondary.main,
+    textTransform: "none",
   },
   buttonSelected: {
     backgroundColor: theme.palette.secondary.main,
+    fontSize: 20,
     color: theme.palette.primary.main,
+    textTransform: "none",
+    "&.Mui-selected": {
+      color: theme.palette.primary.main,
+    },
+    "&.Mui-focusVisible": {
+      backgroundColor: theme.palette.primary.main,
+    },
   },
 }));
 
 export default function MenuDesktop() {
+  const { currentTab, setCurrentTab } = useTabs();
+
   const classes = useStyles();
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = (event) => {
-    console.log("handleClick", event.currentTarget);
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  console.log("state", anchorEl);
-
   return (
-    <Box>
-      {data.map((item) => {
-        console.log("item", item.pageName);
+    <Tabs value={currentTab} onChange={setCurrentTab} className={classes.root}>
+      {data.map((item, i) => {
         return (
-          <Button
+          <Tab
             key={item.page_id}
-            component={Link}
-            onClick={handleClose}
-            href={item.path}
-            className={classes.button}
-          >
-            {item.pageName}
-          </Button>
+            label={item.pageName}
+            value={item.path}
+            sx={{
+              borderTopLeftRadius: 8,
+              borderTopRightRadius: 8,
+              paddingBottom: "4px",
+              paddingTop: "8px",
+              minHeight: 30,
+              fontWeight: "normal",
+            }}
+            className={
+              currentTab === item.path ? classes.buttonSelected : classes.button
+            }
+          />
         );
       })}
-    </Box>
+    </Tabs>
   );
 }
