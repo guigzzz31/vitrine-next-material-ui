@@ -7,6 +7,8 @@ import Logo from "../helpers/static/Logo";
 import HeaderContent from "../helpers/static/HeaderContent";
 import MenuDesktop from "./MenuDesktop";
 
+import { useTabs } from "../contexts/context";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -21,19 +23,38 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  desktopContainer: {},
+  desktopContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  menuContainer: {
+    alignSelf: "flex-end",
+    //backgroundColor: "red",
+  },
 }));
 
 export default function Header() {
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:1060px)");
-  console.log("matches", matches);
+
+  const { currentTab, setCurrentTab } = useTabs();
+
+  //console.log("context in header", currentTab);
+
   return (
     <Box className={classes.root}>
-      <Box className={classes.mobileContainer}>
+      <Box
+        className={matches ? classes.desktopContainer : classes.mobileContainer}
+      >
         <Logo />
-        <HeaderContent />
-        {matches ? <MenuDesktop /> : <Menu />}
+        {matches ? null : <HeaderContent />}
+        {matches ? (
+          <Box className={classes.menuContainer}>
+            <MenuDesktop />
+          </Box>
+        ) : (
+          <Menu />
+        )}
       </Box>
     </Box>
   );
