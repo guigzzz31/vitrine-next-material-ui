@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { makeStyles } from "@mui/styles";
 import { Button, Menu, MenuItem } from "@mui/material";
@@ -7,6 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Link from "../helpers/Link";
 import data from "../data/data";
 
+import { useTabs } from "../contexts/context";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,17 +15,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleMenu() {
+export default function MenuMobile() {
   const classes = useStyles();
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const { currentTab, handleClick } = useTabs();
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleMenuItem = (tab) => {
+    handleClick(tab);
+    setIsOpen(false);
   };
 
   return (
@@ -32,26 +33,24 @@ export default function SimpleMenu() {
       <Button
         aria-controls="simple-menu"
         aria-haspopup="true"
-        onClick={handleClick}
+        onClick={() => setIsOpen(!isOpen)}
         className={classes.root}
       >
         <MenuIcon fontSize="large" />
       </Button>
       <Menu
         id="simple-menu"
-        anchorEl={anchorEl}
+        //anchorEl={currentTab}
         keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
       >
         {data.map((item) => (
           <MenuItem
             key={item.page_id}
-            component={Link}
-            onClick={handleClose}
-            href={item.path}
+            onClick={() => handleMenuItem(item.path)}
             color="secondary"
-            naked
+            //naked
           >
             {item.pageName}
           </MenuItem>

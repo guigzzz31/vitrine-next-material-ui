@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 import { Grid, Box, useMediaQuery } from "@mui/material";
 
-import Menu from "./Menu";
+import MenuMobile from "./MenuMobile";
 import Logo from "../helpers/static/Logo";
 import HeaderContent from "../helpers/static/HeaderContent";
 import MenuDesktop from "./MenuDesktop";
@@ -29,17 +29,12 @@ const useStyles = makeStyles((theme) => ({
   },
   menuContainer: {
     alignSelf: "flex-end",
-    //backgroundColor: "red",
   },
 }));
 
 export default function Header() {
   const classes = useStyles();
   const matches = useMediaQuery("(min-width:1060px)");
-
-  const { currentTab, setCurrentTab } = useTabs();
-
-  //console.log("context in header", currentTab);
 
   return (
     <Box className={classes.root}>
@@ -53,7 +48,7 @@ export default function Header() {
             <MenuDesktop />
           </Box>
         ) : (
-          <Menu />
+          <MenuMobile />
         )}
       </Box>
     </Box>
