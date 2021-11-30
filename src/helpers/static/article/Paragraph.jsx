@@ -44,7 +44,7 @@ export default function Paragraph(props) {
           variant="body1"
           gutterBottom
         >
-          ({secondary})
+          {secondary}
         </Typography>
       ) : null}
     </Box>

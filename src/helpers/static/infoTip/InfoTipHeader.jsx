@@ -4,24 +4,23 @@ import { Grid, Box, Typography } from "@mui/material";
 
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
-
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
-    justifyContent: 'flex-start',
+    justifyContent: "flex-start",
     marginTop: 8,
     marginBottom: 8,
-    alignItems: "center"
+    alignItems: "center",
   },
   icon: {
-    color: theme.palette.info.main,
+    color: theme.palette.primary.main,
     paddingRight: 8,
   },
   head: {
     //width: "80%",
     ///wordBreak: "break-all",
     flex: 1,
-    color: theme.palette.info.main,
+    color: theme.palette.primary.main,
     fontFamily: "Montserrat",
     fontWeight: 500,
     fontSize: "1.1rem",

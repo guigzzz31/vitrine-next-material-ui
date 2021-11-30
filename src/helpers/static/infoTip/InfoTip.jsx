@@ -8,9 +8,11 @@ import InfoTipFooter from "./InfoTipFooter";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.secondary.main,
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: 25,
+    ///boxShadow: "20px 20px 60px #d9d7d2, -20px -20px 60px #ffffff",
+    boxShadow: "14px 14px 28px #bebebe,-14px -14px 28px #ffffff",
   },
 }));
 
@@ -18,7 +20,7 @@ export default function InfoTip(props) {
   const { head, paragraph, bottom } = props.infoTip;
   const classes = useStyles();
   return (
-    <Box className={classes.container} boxShadow={3} p={1}>
+    <Box className={classes.container} p={1}>
       <InfoTipHeader head={head} />
       <ParagraphGenerator paragraphs={paragraph} />
       <InfoTipFooter bottom={bottom} />

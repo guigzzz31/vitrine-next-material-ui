@@ -3,18 +3,19 @@ const theme = createTheme({
   palette: {
     primary: {
       //wintergreen Dream
-      main: "#4a8e89",
+      main: "#43726e",
     },
     secondary: {
-      //mint cream
       light: "#FFF",
-      main: "#EDF7F6",
+      //cream
+      main: "#fffdf7",
+      //main: "#d1f4e7",
     },
     text: {
       //smokey black
       primary: "#191516",
-      //lavanda
-      secondary: "#9b9bc4",
+      //cinereous
+      secondary: "#987D7C",
     },
     error: {
       //blush

@@ -7,7 +7,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Montserrat",
     fontWeight: 600,
   },
-  divider: {
+  divider01: {
+    backgroundColor: theme.palette.primary.main,
+    height: 3,
+    width: 120,
+    marginBottom: 10,
+    boxShadow: "rgb(74, 142, 137) 0px 8px 27px 1px",
+  },
+  divider02: {
     backgroundColor: theme.palette.error.main,
     height: 3,
     width: 120,
@@ -30,7 +37,13 @@ export default function CardName(props) {
         >
           {props.title}
         </Typography>
-        <Box className={classes.divider}></Box>
+        <Box
+          className={
+            props.title === "Carole Richou"
+              ? classes.divider01
+              : classes.divider02
+          }
+        ></Box>
       </Grid>
     </Box>
   );
