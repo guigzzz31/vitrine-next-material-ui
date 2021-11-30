@@ -23,13 +23,16 @@ export default function ContentGenerator(props) {
             return (
               <Box
                 key={item.content_id}
-                mx={3}
-                mt={3}
-                mb={item.title === "Carole Richou" ? 0 : 3}
+                mx={2}
+                mt={2}
+                //mb={item.title === "Carole Richou" ? 0 : 3}
               >
                 <Title title={item.title} />
-                <Subtitle subtitle={item.subtitle} />
-                <ParagraphGenerator paragraphs={item.paragraph} />
+                {/* <Subtitle subtitle={item.subtitle} /> */}
+                <ParagraphGenerator
+                  subtitle={item.subtitle}
+                  paragraphs={item.paragraph}
+                />
               </Box>
             );
           })

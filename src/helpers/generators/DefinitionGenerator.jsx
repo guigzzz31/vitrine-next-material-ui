@@ -25,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: "rotate(180deg)",
   },
+  icon: {
+    color: theme.palette.error.main,
+  },
 }));
 
 export default function DefinitionGenerator(props) {
@@ -40,11 +43,10 @@ export default function DefinitionGenerator(props) {
   return (
     <>
       {definition ? (
-        <Box m={3}>
+        <Box m={2}>
           <Grid direction="row" alignItems="center" container>
             <Grid item>
               <Title title={definition.title} />
-              {/* <Subtitle subtitle={subtitle} /> */}
             </Grid>
             <Grid item>
               <IconButton
@@ -55,12 +57,15 @@ export default function DefinitionGenerator(props) {
                 aria-expanded={expanded}
                 aria-label="voir plus"
               >
-                <ExpandMoreIcon color="error" />
+                <ExpandMoreIcon className={classes.icon} />
               </IconButton>
             </Grid>
           </Grid>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <ParagraphGenerator paragraphs={definition.paragraph} />
+            <ParagraphGenerator
+              subtitle={definition.subtitle}
+              paragraphs={definition.paragraph}
+            />
           </Collapse>
         </Box>
       ) : null}
