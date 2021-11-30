@@ -125,34 +125,94 @@ const data = [
         afternoon: "Carine",
       },
     ],
-    content: [
+    // content: [
+    //   {
+    //     content_id: 0,
+    //     title: "Carole Richou",
+    //     subtitle: "",
+    //     paragraph: [
+    //       {
+    //         paragraph_id: 0,
+    //         primary: "- Pédicurie, podologie, diabétologie",
+    //       },
+    //       {
+    //         paragraph_id: 1,
+    //         primary: "- Spécialisée en réflexologie",
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     content_id: 1,
+    //     title: "Carine Da Costa",
+    //     subtitle: "",
+    //     paragraph: [
+    //       {
+    //         paragraph_id: 0,
+    //         primary: "- Pédicurie, podologie, diabétologie",
+    //       },
+    //       {
+    //         paragraph_id: 1,
+    //         primary: "- Spécialisée en posturologie",
+    //       },
+    //     ],
+    //   },
+    // ],
+    users: [
       {
-        content_id: 0,
-        title: "Carole Richou",
-        subtitle: "",
-        paragraph: [
+        user_id: 0,
+        name: "Carole Richou",
+        avatarPath: "/carole.svg",
+        skills: [
           {
-            paragraph_id: 0,
-            primary: "- Pédicurie, podologie, diabétologie",
+            skill_id: 0,
+            skill: "Diplomée d'État",
           },
           {
-            paragraph_id: 1,
-            primary: "- Spécialisée en réflexologie",
+            skill_id: 1,
+            skill: "Pédicurie",
+          },
+          {
+            skill_id: 2,
+            skill: "Podologie",
+          },
+          {
+            skill_id: 3,
+            skill: "Diabétologie",
+          },
+        ],
+        specialities: [
+          {
+            speciality_id: 0,
+            speciality: "réflexologie",
           },
         ],
       },
       {
-        content_id: 1,
-        title: "Carine Da Costa",
-        subtitle: "",
-        paragraph: [
+        user_id: 1,
+        name: "Carine Da Costa",
+        avatarPath: "/carine.svg",
+        skills: [
           {
-            paragraph_id: 0,
-            primary: "- Pédicurie, podologie, diabétologie",
+            skill_id: 0,
+            skill: "Diplomée d'État",
           },
           {
-            paragraph_id: 1,
-            primary: "- Spécialisée en posturologie",
+            skill_id: 1,
+            skill: "Pédicurie",
+          },
+          {
+            skill_id: 2,
+            skill: "Podologie",
+          },
+          {
+            skill_id: 3,
+            skill: "Diabétologie",
+          },
+        ],
+        specialities: [
+          {
+            speciality_id: 0,
+            speciality: "posturologie",
           },
         ],
       },

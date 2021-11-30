@@ -3,8 +3,13 @@ import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
-  speciality: {
+  speciality01: {
     fontWeight: 400,
+    color: theme.palette.primary.main,
+  },
+  speciality02: {
+    fontWeight: 400,
+    color: theme.palette.error.main,
   },
 }));
 
@@ -18,7 +23,11 @@ export default function Speciality(props) {
           color="error"
           align="center"
           variant="h6"
-          className={classes.speciality}
+          className={
+            speciality === "réflexologie"
+              ? classes.speciality01
+              : classes.speciality02
+          }
         >
           Spécialisée en {speciality}
         </Typography>

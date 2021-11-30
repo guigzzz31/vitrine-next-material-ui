@@ -30,7 +30,7 @@ export default function ScheduleGenerator(props) {
 
   const { schedule } = props;
   return (
-    <Grid direction="row" container>
+    <Grid direction="row" container m={2}>
       <Box mt={-0.5}>
         <Box my={4}>
           <Typography variant="subtitle2">9h</Typography>

@@ -13,7 +13,7 @@ export default function InfoTipGenerator(props) {
   const { infoTip } = props;
   const classes = useStyles();
   return (
-    <Box mx={2}>
+    <Box m={2}>
       <InfoTip infoTip={infoTip} />
     </Box>
   );
