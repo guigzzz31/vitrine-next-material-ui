@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Montserrat",
     fontWeight: 400,
     paddingLeft: 17,
+    color: theme.palette.error.main,
   },
 }));
 
@@ -13,12 +14,7 @@ export default function PageNameGenerator(props) {
   const classes = useStyles();
   return (
     <Box>
-      <Typography
-        className={classes.pageName}
-        color="error"
-        variant="h4"
-        gutterBottom
-      >
+      <Typography className={classes.pageName} variant="h4" gutterBottom>
         {props.pageName}
       </Typography>
     </Box>

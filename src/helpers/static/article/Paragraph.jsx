@@ -1,17 +1,45 @@
+import { makeStyles } from "@mui/styles";
+
 import { Box, Typography } from "@mui/material";
 
+const useStyles = makeStyles((theme) => ({
+  container: {
+    //display: "flex",
+  },
+  bold: {
+    fontWeight: 500,
+  },
+  primary: {
+    //flex: 1,
+    //height: "22px",
+    //width: "auto",
+  },
+  secondary: {
+    paddingLeft: 12,
+  },
+}));
 export default function Paragraph(props) {
-  const { primary, secondary } = props;
+  const { bold, primary, secondary } = props;
+  const classes = useStyles();
+
   return (
-    <Box pl={1}>
+    <Box pl={0.5}>
       {primary ? (
-        <Typography color="textPrimary" variant="body1" gutterBottom>
-          {props.primary}
-        </Typography>
+        <Box className={classes.container}>
+          <Typography color="textPrimary" variant="body1" gutterBottom>
+            {bold && <strong>{bold}&nbsp;</strong>}
+            {primary}
+          </Typography>
+        </Box>
       ) : null}
       {secondary ? (
-        <Typography color="error" variant="body2" paragraph>
-          {props.secondary}
+        <Typography
+          className={classes.secondary}
+          color="textPrimary"
+          variant="body1"
+          gutterBottom
+        >
+          {secondary}
         </Typography>
       ) : null}
     </Box>

@@ -28,8 +28,11 @@ export default function ContentGenerator(props) {
                 mb={item.title === "Carole Richou" ? 0 : 3}
               >
                 <Title title={item.title} />
-                <Subtitle subtitle={item.subtitle} />
-                <ParagraphGenerator paragraphs={item.paragraph} />
+                {/* <Subtitle subtitle={item.subtitle} /> */}
+                <ParagraphGenerator
+                  subtitle={item.subtitle}
+                  paragraphs={item.paragraph}
+                />
               </Box>
             );
           })

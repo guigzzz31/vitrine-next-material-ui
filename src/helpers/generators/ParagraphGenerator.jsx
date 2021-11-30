@@ -2,7 +2,7 @@ import React from "react";
 import Paragraph from "../static/article/Paragraph";
 
 export default function ParagraphGenerator(props) {
-  const { paragraphs } = props;
+  const { subtitle, paragraphs } = props;
   return (
     <>
       {paragraphs
@@ -10,6 +10,7 @@ export default function ParagraphGenerator(props) {
             return (
               <Paragraph
                 key={item.paragraph_id}
+                bold={item.bold}
                 primary={item.primary}
                 secondary={item.secondary}
               />

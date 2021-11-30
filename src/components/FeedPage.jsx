@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-import Grid from "@mui/material/Grid";
+import { Grid, useMediaQuery } from "@mui/material";
 
 import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
@@ -19,12 +19,16 @@ const useStyles = makeStyles((theme) => ({
 export default function FeedPage(props) {
   const classes = useStyles();
   const { infoPage } = props;
+  const matches = useMediaQuery("(max-width:1060px)");
+
   return (
     <>
       {infoPage && (
         <Grid className={classes.root} container>
           <Grid item>
-            <PageNameGenerator pageName={infoPage.pageName} />
+            {matches ? (
+              <PageNameGenerator pageName={infoPage.pageName} />
+            ) : null}
           </Grid>
           <Grid item>
             <Scroll showBelow={250} />

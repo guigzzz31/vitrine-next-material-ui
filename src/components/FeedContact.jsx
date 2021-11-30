@@ -1,8 +1,8 @@
 import { makeStyles } from "@mui/styles";
 
-import Grid from "@mui/material/Grid";
+import { Grid, useMediaQuery } from "@mui/material";
 
-import PageName from "../helpers/generators/PageNameGenerator";
+import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import CardGenerator from "../helpers/generators/CardGenerator";
 
@@ -16,11 +16,12 @@ const useStyles = makeStyles((theme) => ({
 export default function FeedContact(props) {
   const classes = useStyles();
   const { infoPage } = props;
-  // console.log("feedContact", infoPage);
+  const matches = useMediaQuery("(max-width:1060px)");
+
   return (
     <Grid justify="center" className={classes.root} container>
       <Grid item>
-        <PageName pageName={infoPage.pageName} />
+        {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
       </Grid>
       {infoPage.infoTip ? (
         <Grid item>

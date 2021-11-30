@@ -2,7 +2,7 @@ import { makeStyles, useTheme } from "@mui/styles";
 
 import { Grid, Box, Typography, Link } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
-import Theme from "../../../../styles/theme"
+import Theme from "../../../../styles/theme";
 import CardHeader from "./CardHeader";
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
 export default function CardCoord(props) {
   const { contact } = props;
   const classes = useStyles();
-  const theme = useTheme();
   return (
     <Box
       className={classes.container}
@@ -60,7 +59,7 @@ export default function CardCoord(props) {
           <Link
             color="error"
             underline="hover"
-            href="https://www.doctolib.fr/pedicure-podologue/cugnaux/carine-da-costa"
+            href="https://www.doctolib.fr/cabinet-paramedical/cugnaux/cugnaux"
             gutterBottom
             className={classes.link}
           >
