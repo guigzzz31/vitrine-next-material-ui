@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   secondary: {
     paddingLeft: 12,
+    color: theme.palette.text.secondary,
   },
 }));
 export default function Paragraph(props) {
@@ -26,7 +27,11 @@ export default function Paragraph(props) {
     <Box pl={0.5}>
       {primary ? (
         <Box className={classes.container}>
-          <Typography color="textPrimary" variant="body1" gutterBottom>
+          <Typography
+            color="textPrimary"
+            variant="body1"
+            gutterBottom={!secondary}
+          >
             {bold && <strong>{bold}&nbsp;</strong>}
             {primary}
           </Typography>
@@ -39,7 +44,7 @@ export default function Paragraph(props) {
           variant="body1"
           gutterBottom
         >
-          {secondary}
+          ({secondary})
         </Typography>
       ) : null}
     </Box>

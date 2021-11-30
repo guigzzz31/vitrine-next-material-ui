@@ -43,7 +43,7 @@ export default function DefinitionGenerator(props) {
   return (
     <>
       {definition ? (
-        <Box m={3}>
+        <Box m={2}>
           <Grid direction="row" alignItems="center" container>
             <Grid item>
               <Title title={definition.title} />

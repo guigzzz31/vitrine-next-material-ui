@@ -230,7 +230,8 @@ const data = [
       paragraph: [
         {
           paragraph_id: 0,
-          primary: `La pédicurie concerne le soin et le traitement des affections de la peau et des ongles de vos pieds.`,
+          bold: "Un soin de pédicurie",
+          primary: `vise à soigner et traiter les affections de la peau et des ongles du pied.`,
         },
       ],
     },
@@ -954,8 +955,8 @@ const data = [
           {
             paragraph_id: 0,
             primary: `- 27 euros pour les patients diabétiques de grade 2 ou 3`,
-            secondary: "remboursé par la sécurité sociale",
-            primary: `- 32 euros adultes`,
+            //secondary: "(remboursé par la sécurité sociale)",
+            primary: `- 35 euros adultes`,
           },
           {
             paragraph_id: 1,
@@ -981,18 +982,6 @@ const data = [
         ],
       },
       {
-        content_id: 2,
-        title: "Séance de réflexologie",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 1,
-            primary: "- 35 euros",
-          },
-        ],
-      },
-      {
         content_id: 3,
         title: "Consultation posturologique",
         subtitle: "",
@@ -1006,6 +995,18 @@ const data = [
             paragraph_id: 1,
             primary:
               "- entre 50 et 100 euros pour la paire de semelle sur mesure",
+          },
+        ],
+      },
+      {
+        content_id: 2,
+        title: "Séance de réflexologie",
+        subtitle: "",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 1,
+            primary: "- 35 euros",
           },
         ],
       },
