@@ -1,15 +1,22 @@
 import { makeStyles } from "@mui/styles";
 
-import { Grid, useMediaQuery } from "@mui/material";
+import { Box, Grid, useMediaQuery } from "@mui/material";
 
 import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import CardGenerator from "../helpers/generators/CardGenerator";
+import VisitCardGenerator from "../helpers/generators/VisitCardGenerator";
+import ScheduleGenerator from "../helpers/generators/ScheduleGenerator";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  container: {
     marginTop: 88,
-    marginBottom: 20,
+    marginBottom: 40,
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
 }));
 
@@ -19,20 +26,16 @@ export default function FeedContact(props) {
   const matches = useMediaQuery("(max-width:1060px)");
 
   return (
-    <Grid justify="center" className={classes.root} container>
-      <Grid item>
-        {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
-      </Grid>
-      {infoPage.infoTip ? (
-        <Grid item>
-          <InfoTipGenerator infoTip={infoPage.infoTip} />
-        </Grid>
-      ) : null}
-      {infoPage.profil ? (
-        <Grid item>
-          <CardGenerator info={infoPage.profil} />
-        </Grid>
-      ) : null}
-    </Grid>
+    <Box className={classes.container}>
+      {matches && <PageNameGenerator pageName={infoPage.pageName} />}
+      {infoPage.infoTip && <InfoTipGenerator infoTip={infoPage.infoTip} />}
+      {infoPage.users && <VisitCardGenerator users={infoPage.users} />}
+      <Box paddingY={4}>
+        {infoPage.schedule && (
+          <ScheduleGenerator schedule={infoPage.schedule} />
+        )}
+      </Box>
+      {infoPage.profil && <CardGenerator info={infoPage.profil} />}
+    </Box>
   );
 }
