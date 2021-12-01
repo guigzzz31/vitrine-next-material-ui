@@ -1,19 +1,12 @@
 import { makeStyles } from "@mui/styles";
 
-import { Grid, Box, Typography, Link } from "@mui/material";
+import { Grid, Typography, Link } from "@mui/material";
 
 import HomeIcon from "@mui/icons-material/Home";
 
-import ImageMap from "../../ImageMap";
+import CardContainer from "../../containers/CardContainer";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    backgroundColor: theme.palette.secondary.main,
-    borderWidth: 1,
-    borderRadius: 30,
-    boxShadow: "20px 20px 60px #d9d7d2, -20px -20px 60px #ffffff",
-    paddingBottom: theme.spacing(2),
-  },
   title: {
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
@@ -34,13 +27,7 @@ export default function CardAdress(props) {
   const { adress } = props;
   const classes = useStyles();
   return (
-    <Box
-      className={classes.container}
-      boxShadow={3}
-      m={0.5}
-      p={1}
-      minWidth={280}
-    >
+    <CardContainer>
       <Grid width="100%" justify="space-around" alignItems="center" container>
         <Grid item xs={3}>
           <Link
@@ -78,6 +65,6 @@ export default function CardAdress(props) {
           </Link>
         </Grid>
       </Grid>
-    </Box>
+    </CardContainer>
   );
 }

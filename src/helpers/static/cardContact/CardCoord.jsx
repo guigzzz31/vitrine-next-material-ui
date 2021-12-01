@@ -1,18 +1,10 @@
-import { makeStyles, useTheme } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
 
-import { Grid, Box, Typography, Link } from "@mui/material";
+import { Grid, Typography, Link } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
-import Theme from "../../../../styles/theme";
-import CardHeader from "./CardHeader";
+import CardContainer from "../../containers/CardContainer";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    backgroundColor: theme.palette.secondary.main,
-    borderWidth: 1,
-    borderRadius: 30,
-    boxShadow: "20px 20px 60px #d9d7d2, -20px -20px 60px #ffffff",
-    paddingBottom: theme.spacing(2),
-  },
   title: {
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
@@ -37,9 +29,7 @@ export default function CardCoord(props) {
   const { contact } = props;
   const classes = useStyles();
   return (
-    <Box className={classes.container} m={0.5} p={1} minWidth={280}>
-      {/* <CardHeader /> */}
-
+    <CardContainer>
       <Grid justify="space-between" alignItems="center" container>
         <Grid item xs={3}>
           <PersonIcon className={classes.icon} fontSize="large" />
@@ -62,6 +52,6 @@ export default function CardCoord(props) {
           </Link>
         </Grid>
       </Grid>
-    </Box>
+    </CardContainer>
   );
 }

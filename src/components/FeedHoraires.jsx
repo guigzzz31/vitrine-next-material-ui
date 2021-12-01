@@ -43,9 +43,7 @@ export default function FeedHoraires(props) {
       {infoPage.infoTip ? (
         <InfoTipGenerator infoTip={infoPage.infoTip} />
       ) : null}
-      {/* {infoPage.content ? (
-        <ContentGenerator content={infoPage.content} />
-      ) : null}{" "} */}
+
       {infoPage.schedule ? (
         <ScheduleGenerator schedule={infoPage.schedule} />
       ) : null}

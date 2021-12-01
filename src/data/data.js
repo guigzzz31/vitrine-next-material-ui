@@ -78,10 +78,58 @@ const data = [
       },
     ],
   },
+  // {
+  //   page_id: 1,
+  //   pageName: "Horaires",
+  //   path: "/horaires",
+  //   infoTip: {
+  //     head: "Prise de Rendez-vous",
+  //     paragraph: [
+  //       {
+  //         paragraph_id: 0,
+  //         primary:
+  //           "La prise de rendez-vous s'effectue par téléphone ou sur place.",
+  //       },
+  //     ],
+  //     bottom: "À très bientôt!",
+  //   },
+  //   // content: [
+  //   //   {
+  //   //     content_id: 0,
+  //   //     title: "Carole Richou",
+  //   //     subtitle: "",
+  //   //     paragraph: [
+  //   //       {
+  //   //         paragraph_id: 0,
+  //   //         primary: "- Pédicurie, podologie, diabétologie",
+  //   //       },
+  //   //       {
+  //   //         paragraph_id: 1,
+  //   //         primary: "- Spécialisée en réflexologie",
+  //   //       },
+  //   //     ],
+  //   //   },
+  //   //   {
+  //   //     content_id: 1,
+  //   //     title: "Carine Da Costa",
+  //   //     subtitle: "",
+  //   //     paragraph: [
+  //   //       {
+  //   //         paragraph_id: 0,
+  //   //         primary: "- Pédicurie, podologie, diabétologie",
+  //   //       },
+  //   //       {
+  //   //         paragraph_id: 1,
+  //   //         primary: "- Spécialisée en posturologie",
+  //   //       },
+  //   //     ],
+  //   //   },
+  //   // ],
+  // },
   {
-    page_id: 1,
-    pageName: "Horaires",
-    path: "/horaires",
+    page_id: 2,
+    pageName: "Contact",
+    path: "/contact",
     infoTip: {
       head: "Prise de Rendez-vous",
       paragraph: [
@@ -93,70 +141,6 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
-    schedule: [
-      {
-        column_id: 0,
-        day: "lun",
-        morning: "Carole",
-        afternoon: "Carole",
-      },
-      {
-        column_id: 1,
-        day: "mar",
-        morning: "Carine",
-        afternoon: "Carine",
-      },
-      {
-        column_id: 2,
-        day: "mer",
-        morning: "Carine",
-        afternoon: "Carole",
-      },
-      {
-        column_id: 3,
-        day: "jeu",
-        morning: "Carole",
-        afternoon: "Carole",
-      },
-      {
-        column_id: 4,
-        day: "ven",
-        morning: "Carine",
-        afternoon: "Carine",
-      },
-    ],
-    // content: [
-    //   {
-    //     content_id: 0,
-    //     title: "Carole Richou",
-    //     subtitle: "",
-    //     paragraph: [
-    //       {
-    //         paragraph_id: 0,
-    //         primary: "- Pédicurie, podologie, diabétologie",
-    //       },
-    //       {
-    //         paragraph_id: 1,
-    //         primary: "- Spécialisée en réflexologie",
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     content_id: 1,
-    //     title: "Carine Da Costa",
-    //     subtitle: "",
-    //     paragraph: [
-    //       {
-    //         paragraph_id: 0,
-    //         primary: "- Pédicurie, podologie, diabétologie",
-    //       },
-    //       {
-    //         paragraph_id: 1,
-    //         primary: "- Spécialisée en posturologie",
-    //       },
-    //     ],
-    //   },
-    // ],
     users: [
       {
         user_id: 0,
@@ -217,23 +201,38 @@ const data = [
         ],
       },
     ],
-  },
-  {
-    page_id: 2,
-    pageName: "Contact",
-    path: "/contact",
-    infoTip: {
-      head: "Prise de Rendez-vous",
-      paragraph: [
-        {
-          paragraph_id: 0,
-          primary:
-            "La prise de rendez-vous s'effectue par téléphone ou sur place.",
-        },
-      ],
-      bottom: "À très bientôt!",
-    },
-
+    schedule: [
+      {
+        column_id: 0,
+        day: "lun",
+        morning: "Carole",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 1,
+        day: "mar",
+        morning: "Carine",
+        afternoon: "Carine",
+      },
+      {
+        column_id: 2,
+        day: "mer",
+        morning: "Carine",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 3,
+        day: "jeu",
+        morning: "Carole",
+        afternoon: "Carole",
+      },
+      {
+        column_id: 4,
+        day: "ven",
+        morning: "Carine",
+        afternoon: "Carine",
+      },
+    ],
     profil: {
       contact: {
         num: "05 34 57 10 41",
