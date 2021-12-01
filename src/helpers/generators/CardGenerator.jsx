@@ -1,30 +1,29 @@
 import { makeStyles } from "@mui/styles";
-import { Grid, Box } from "@mui/material";
+
+import { Box, useMediaQuery } from "@mui/material";
 import CardCoord from "../static/cardContact/CardCoord";
 import CardAdress from "../static/cardContact/CardAdress";
 import CardAcces from "../static/cardContact/CardAcces";
 
+const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+  },
+}));
+
 export default function CardGenerator(props) {
   const { info } = props;
-  const useStyles = makeStyles((theme) => ({
-    cardInfoContainer: {
-      // paddingTop:
-    },
-  }));
   const classes = useStyles();
+  const matches = useMediaQuery("(min-width:500px)");
+
   return (
-    <Box m={1}>
-      <Grid spacing={2} justify="center" container>
-        <Grid item>
-          <CardCoord contact={info.contact} />
-        </Grid>
-        <Grid item>
-          <CardAdress adress={info.adress} />
-        </Grid>
-        <Grid item>
-          <CardAcces acces={info.acces} />
-        </Grid>
-      </Grid>
+    <Box
+      flexDirection={matches ? "row" : "column"}
+      className={classes.container}
+    >
+      <CardCoord contact={info.contact} />
+      <CardAdress adress={info.adress} />
+      <CardAcces acces={info.acces} />
     </Box>
   );
 }

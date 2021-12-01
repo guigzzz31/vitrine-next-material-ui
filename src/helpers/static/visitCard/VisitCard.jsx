@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     borderWidth: 1,
     borderRadius: 30,
     boxShadow: "20px 20px 60px #d9d7d2, -20px -20px 60px #ffffff",
+    maxWidth: "320px",
   },
 }));
 
