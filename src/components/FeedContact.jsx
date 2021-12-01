@@ -11,7 +11,7 @@ import ScheduleGenerator from "../helpers/generators/ScheduleGenerator";
 const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: 88,
-    marginBottom: 20,
+    marginBottom: 40,
     width: "100%",
     display: "flex",
     flexDirection: "column",
@@ -27,17 +27,15 @@ export default function FeedContact(props) {
 
   return (
     <Box className={classes.container}>
-      {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
-      {infoPage.infoTip ? (
-        <Grid item>
-          <InfoTipGenerator infoTip={infoPage.infoTip} />
-        </Grid>
-      ) : null}
-      {infoPage.users ? <VisitCardGenerator users={infoPage.users} /> : null}
-      {infoPage.schedule ? (
-        <ScheduleGenerator schedule={infoPage.schedule} />
-      ) : null}
-      {infoPage.profil ? <CardGenerator info={infoPage.profil} /> : null}
+      {matches && <PageNameGenerator pageName={infoPage.pageName} />}
+      {infoPage.infoTip && <InfoTipGenerator infoTip={infoPage.infoTip} />}
+      {infoPage.users && <VisitCardGenerator users={infoPage.users} />}
+      <Box paddingY={4}>
+        {infoPage.schedule && (
+          <ScheduleGenerator schedule={infoPage.schedule} />
+        )}
+      </Box>
+      {infoPage.profil && <CardGenerator info={infoPage.profil} />}
     </Box>
   );
 }

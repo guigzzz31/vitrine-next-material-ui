@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   cardLine: {
     fontFamily: "Roboto",
     fontWeight: 500,
+    fontSize: "20px",
   },
   icon: {
     color: theme.palette.primary.main,

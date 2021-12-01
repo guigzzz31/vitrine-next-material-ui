@@ -8,6 +8,8 @@ import CardAcces from "../static/cardContact/CardAcces";
 const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
+    width: "100%",
+    justifyContent: "space-around",
   },
 }));
 
@@ -20,6 +22,7 @@ export default function CardGenerator(props) {
     <Box
       flexDirection={matches ? "row" : "column"}
       className={classes.container}
+      paddingY={2}
     >
       <CardCoord contact={info.contact} />
       <CardAdress adress={info.adress} />
