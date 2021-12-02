@@ -28,8 +28,9 @@ export default function Paragraph(props) {
       {primary ? (
         <Box className={classes.container}>
           <Typography
+            fontFamily="Lato"
             color="textPrimary"
-            variant="body1"
+            fontSize={["16px", "18px", "20px", "22px"]}
             gutterBottom={!secondary}
           >
             {bold && <strong>{bold}&nbsp;</strong>}

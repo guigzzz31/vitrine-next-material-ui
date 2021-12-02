@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
   bottom: {
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
-    fontSize: "1.1rem",
     fontWeight: 500,
   },
 }));
@@ -16,7 +15,12 @@ export default function InfoTipFooter(props) {
   const classes = useStyles();
   return (
     <Box p={1}>
-      <Typography className={classes.bottom}>{bottom}</Typography>
+      <Typography
+        fontSize={["16px", "17px", "17px", "20px", "20px", "22px"]}
+        className={classes.bottom}
+      >
+        {bottom}
+      </Typography>
     </Box>
   );
 }

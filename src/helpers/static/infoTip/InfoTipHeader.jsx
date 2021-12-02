@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
     fontWeight: 500,
-    fontSize: "1.1rem",
   },
 }));
 
@@ -32,8 +31,16 @@ export default function InfoTipHeader(props) {
   const classes = useStyles();
   return (
     <Box className={classes.container}>
-      <InfoOutlinedIcon className={classes.icon} />
-      <Typography className={classes.head}>{head}</Typography>
+      <InfoOutlinedIcon
+        sx={{ fontSize: [["16px", "16px", "22px", "24px"]] }}
+        className={classes.icon}
+      />
+      <Typography
+        fontSize={["16px", "18px", "18px", "22px", "22px", "24px"]}
+        className={classes.head}
+      >
+        {head}
+      </Typography>
     </Box>
   );
 }

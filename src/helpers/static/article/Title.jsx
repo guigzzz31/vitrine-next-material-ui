@@ -1,11 +1,6 @@
 import { makeStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import Theme from "../../../../styles/theme";
 const useStyles = makeStyles((theme) => ({
-  title: {
-    fontFamily: "Montserrat",
-  },
   carole: {
     fontFamily: "Montserrat",
     color: theme.palette.primary.main,
@@ -18,13 +13,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Title(props) {
   const classes = useStyles();
-  const theme = useTheme(Theme);
   return (
     <Typography
       className={
         props.title === "Carole Richou" ? classes.carole : classes.carine
       }
-      variant="h5"
+      fontSize={["22px", "24px", "28px", "33px", "36px"]}
     >
       {props.title}
     </Typography>
