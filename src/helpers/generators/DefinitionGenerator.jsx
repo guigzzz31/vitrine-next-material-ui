@@ -4,7 +4,6 @@ import { Box, Grid, Collapse, IconButton } from "@mui/material";
 import clsx from "clsx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Title from "../static/article/Title";
-import Subtitle from "../static/article/Subtitle";
 import ParagraphGenerator from "./ParagraphGenerator";
 
 const useStyles = makeStyles((theme) => ({

@@ -17,9 +17,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     width: "90%",
   },
+  textInfo: {
+    fontSize: ["16px", "18px", "20px", "22px"],
+  },
   link: {
     fontFamily: "Montserrat",
-    fontSize: 15,
   },
 }));
 
@@ -41,17 +43,17 @@ export default function CardAdress(props) {
         <Grid item>
           <Typography
             className={classes.title}
-            variant="h5"
-            //color="primary"
-            gutterBottom
+            fontSize={["16px", "18px", "18px", "22px", "22px", "24px"]}
           >
             Adresse
           </Typography>
-          <Typography>{adress.name}</Typography>
-          <Typography>
+          <Typography fontSize={["16px", "18px", "20px", "22px"]}>
+            {adress.name}
+          </Typography>
+          <Typography fontSize={["16px", "18px", "20px", "22px"]}>
             {adress.number}&nbsp;{adress.street}
           </Typography>
-          <Typography>
+          <Typography fontSize={["16px", "18px", "20px", "22px"]}>
             {adress.postalCode}&nbsp;{adress.city}
           </Typography>
           <Link
@@ -59,6 +61,7 @@ export default function CardAdress(props) {
             color="error"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
             className={classes.link}
+            sx={{ fontSize: ["16px", "18px", "20px", "20px"] }}
           >
             Voir sur google maps
             {/* <ImageMap /> */}
