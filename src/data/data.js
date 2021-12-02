@@ -492,7 +492,7 @@ const data = [
           },
           {
             paragraph_id: 1,
-            primary: "- apprendre de la posture",
+            primary: "- Apprendre de la posture",
             secondary: "",
           },
           {

@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   cardLine: {
     fontFamily: "Roboto",
     fontWeight: 500,
-    fontSize: "20px",
+    fontSize: "24px",
   },
   icon: {
     color: theme.palette.primary.main,
@@ -32,14 +32,14 @@ export default function CardCoord(props) {
   return (
     <CardContainer>
       <Grid justify="space-between" alignItems="center" container>
-        <Grid item xs={3}>
+        <Grid item xs={3} paddingTop={2}>
           <PersonIcon className={classes.icon} fontSize="large" />
         </Grid>
         <Grid item>
-          <Typography className={classes.title} variant="h5" gutterBottom>
+          <Typography className={classes.title} variant="h5">
             Coordonées
           </Typography>
-          <Typography className={classes.cardLine} gutterBottom>
+          <Typography className={classes.cardLine} paddingTop={2} gutterBottom>
             {contact.num}
           </Typography>
           <Link

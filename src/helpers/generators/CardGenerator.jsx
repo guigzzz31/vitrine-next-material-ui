@@ -22,7 +22,7 @@ export default function CardGenerator(props) {
     <Box
       flexDirection={matches ? "row" : "column"}
       className={classes.container}
-      paddingY={2}
+      paddingBottom={2}
     >
       <CardCoord contact={info.contact} />
       <CardAdress adress={info.adress} />

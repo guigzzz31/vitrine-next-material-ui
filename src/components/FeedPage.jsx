@@ -11,7 +11,12 @@ import Scroll from "../helpers/ScrollToTop";
 const useStyles = makeStyles((theme) => ({
   root: {
     marginTop: 88,
-    marginBottom: 20,
+    marginBottom: 40,
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
     //backgroundColor: theme.palette.secondary.main
   },
 }));
