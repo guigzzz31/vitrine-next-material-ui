@@ -1,12 +1,15 @@
 import { makeStyles } from "@mui/styles";
 
-import { Grid, Typography, Link } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 
 import HomeIcon from "@mui/icons-material/Home";
 
 import CardContainer from "../../containers/CardContainer";
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+  },
   title: {
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
@@ -30,8 +33,8 @@ export default function CardAdress(props) {
   const classes = useStyles();
   return (
     <CardContainer>
-      <Grid width="100%" justify="space-around" alignItems="center" container>
-        <Grid item xs={3}>
+      <Box className={classes.container}>
+        <Box item xs={3}>
           <Link
             underline="hover"
             href="https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248"
@@ -39,7 +42,7 @@ export default function CardAdress(props) {
             <HomeIcon className={classes.icon} fontSize="large" />
             {/* <ImageMap /> */}
           </Link>
-        </Grid>
+        </Box>
         <Grid item>
           <Typography
             className={classes.title}
@@ -67,7 +70,7 @@ export default function CardAdress(props) {
             {/* <ImageMap /> */}
           </Link>
         </Grid>
-      </Grid>
+      </Box>
     </CardContainer>
   );
 }
