@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-import { Box, Grid, useMediaQuery } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 
 import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
@@ -35,7 +35,7 @@ export default function FeedContact(props) {
           <ScheduleGenerator schedule={infoPage.schedule} />
         )}
       </Box>
-      {infoPage.profil && <CardGenerator info={infoPage.profil} />}
+      {infoPage.profil && <CardGenerator cards={infoPage.cards} />}
     </Box>
   );
 }

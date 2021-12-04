@@ -252,6 +252,43 @@ const data = [
         transport: "Bus Ligne 87 - Arrêt Diane",
       },
     },
+    cards: [
+      {
+        id: 0,
+        name: "Contact",
+        lines: ["05 34 57 10 41"],
+        link: {
+          url: "https://www.doctolib.fr/cabinet-paramedical/cugnaux/cugnaux",
+          desc: "Réservez sur Doctolib",
+        },
+      },
+      {
+        id: 1,
+        name: "Adresse",
+        lines: [
+          "Les commerces de Diane,",
+          "151 Route de Toulouse",
+          "31270 Cugnaux",
+        ],
+        link: {
+          url: "https://www.google.com/maps/place/LES+COMMERCES+DE+DIANE/@43.5580539,1.3657896,19z/data=!4m5!3m4!1s0x12aeb0a9ef3f14fd:0x1fab75f5b7a37663!8m2!3d43.5583885!4d1.3654248",
+          desc: "Voir sur google maps",
+        },
+      },
+      {
+        id: 2,
+        name: "Accès",
+        lines: [
+          "En rez-de-chaussée",
+          "Accès handicapé",
+          "Parking - Facile et gratuit",
+        ],
+        link: {
+          url: "https://www.tisseo.fr/sites/default/files/ligne87.html",
+          desc: "Bus Ligne 87 - Arrêt Diane",
+        },
+      },
+    ],
   },
   {
     page_id: 3,
