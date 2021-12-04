@@ -18,12 +18,14 @@ export default function CardContainer(props) {
   return (
     <Box
       className={classes.container}
+      // sx={{ width: ["280px", "320px", "360px", "420px"] }}
       my={2}
       mx={1}
       py={2}
       px={1}
-      minWidth={280}
-      minHeight={132}
+      width={["280px", "340px", "360px", "420px", "480px"]}
+      // minWidth={280}
+      // minHeight={132}
     >
       {props.children}
     </Box>

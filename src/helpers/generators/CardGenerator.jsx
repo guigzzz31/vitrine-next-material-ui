@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     width: "100%",
-    justifyContent: "space-around",
+    //justifyContent: "space-around",
+    flexWrap: "wrap",
   },
 }));
 
@@ -21,6 +22,7 @@ export default function CardGenerator(props) {
   return (
     <Box
       flexDirection={matches ? "row" : "column"}
+      justifyContent={matches ? "space-around" : "center"}
       className={classes.container}
       paddingBottom={2}
     >
