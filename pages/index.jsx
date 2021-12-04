@@ -10,8 +10,6 @@ export default function index() {
 
   const infoPage = data.find((p) => p.path === currentTab);
 
-  console.log("currentTab", currentTab);
-
   const renderTab = () => {
     switch (currentTab) {
       case "/":
