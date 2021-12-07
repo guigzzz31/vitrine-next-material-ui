@@ -20,9 +20,10 @@ export default function Speciality(props) {
     <>
       {speciality ? (
         <Typography
+          noWrap
           color="error"
           align="center"
-          variant="h6"
+          fontSize={["18px", "18x", "22px", "24px", "28px", "32px"]}
           className={
             speciality === "réflexologie"
               ? classes.speciality01

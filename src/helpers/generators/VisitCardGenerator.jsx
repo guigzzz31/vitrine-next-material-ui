@@ -7,18 +7,22 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     width: "100%",
-    justifyContent: "space-evenly",
+    //alignItems: "center",
+    //flexWrap: "wrap",
   },
 }));
 
 export default function VisitCardGenerator(props) {
   const { users } = props;
   const classes = useStyles();
-  const matches = useMediaQuery("(min-width:500px)");
-
+  const matches = useMediaQuery("(max-width:500px)");
+  const matches600 = useMediaQuery("max-width:600px");
+  console.log("matches600", matches600);
   return (
     <Box
-      flexDirection={matches ? "row" : "column"}
+      flexWrap="wrap"
+      //justifyContent={matches ? "space-evenly" : "center"}
+      justifyContent={["center", "space-evenly"]}
       paddingY={4}
       className={classes.container}
     >

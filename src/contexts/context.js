@@ -13,8 +13,6 @@ export function TabContext({ children }) {
     setCurrentTab(event);
   };
 
-  console.log("CONTEXT", currentTab);
-
   return (
     <AppContext.Provider
       value={{
