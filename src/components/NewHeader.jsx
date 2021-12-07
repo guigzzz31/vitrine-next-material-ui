@@ -12,36 +12,37 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTabs-indicator": {
       display: "flex",
       justifyContent: "center",
-      backgroundColor: "transparent",
+      backgroundColor: theme.palette.error.main,
+      width: "80%",
     },
     "& .MuiTabs-indicatorSpan": {
       maxWidth: 40,
-      width: "100%",
-      backgroundColor: theme.palette.primary.main,
+      width: "80%",
+      backgroundColor: "transparent",
     },
     minHeight: 30,
   },
   button: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: "transparent",
     fontSize: 20,
-    color: theme.palette.secondary.main,
+    color: theme.palette.text.primary,
     textTransform: "none",
   },
   buttonSelected: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: "transparent",
     fontSize: 20,
     color: theme.palette.primary.main,
     textTransform: "none",
     "&.Mui-selected": {
-      color: theme.palette.primary.main,
+      color: theme.palette.text.primary,
     },
     "&.Mui-focusVisible": {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: "transparent",
     },
   },
 }));
 
-export default function MenuDesktop() {
+export default function NewHeader() {
   const { currentTab, handleChange } = useTabs();
 
   const classes = useStyles();

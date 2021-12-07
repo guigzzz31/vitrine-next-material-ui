@@ -78,54 +78,6 @@ const data = [
       },
     ],
   },
-  // {
-  //   page_id: 1,
-  //   pageName: "Horaires",
-  //   path: "/horaires",
-  //   infoTip: {
-  //     head: "Prise de Rendez-vous",
-  //     paragraph: [
-  //       {
-  //         paragraph_id: 0,
-  //         primary:
-  //           "La prise de rendez-vous s'effectue par téléphone ou sur place.",
-  //       },
-  //     ],
-  //     bottom: "À très bientôt!",
-  //   },
-  //   // content: [
-  //   //   {
-  //   //     content_id: 0,
-  //   //     title: "Carole Richou",
-  //   //     subtitle: "",
-  //   //     paragraph: [
-  //   //       {
-  //   //         paragraph_id: 0,
-  //   //         primary: "- Pédicurie, podologie, diabétologie",
-  //   //       },
-  //   //       {
-  //   //         paragraph_id: 1,
-  //   //         primary: "- Spécialisée en réflexologie",
-  //   //       },
-  //   //     ],
-  //   //   },
-  //   //   {
-  //   //     content_id: 1,
-  //   //     title: "Carine Da Costa",
-  //   //     subtitle: "",
-  //   //     paragraph: [
-  //   //       {
-  //   //         paragraph_id: 0,
-  //   //         primary: "- Pédicurie, podologie, diabétologie",
-  //   //       },
-  //   //       {
-  //   //         paragraph_id: 1,
-  //   //         primary: "- Spécialisée en posturologie",
-  //   //       },
-  //   //     ],
-  //   //   },
-  //   // ],
-  // },
   {
     page_id: 2,
     pageName: "Contact",

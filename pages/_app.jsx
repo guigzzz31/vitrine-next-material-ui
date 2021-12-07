@@ -30,14 +30,19 @@ export default function MyApp(props) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         {/* <CssBaseline /> */}
-        <>
+        <Box
+          sx={{
+            backgroundColor:
+              "linear-gradient(0deg, rgba(255,253,247,1) 4%, rgba(255,255,255,1) 100%)",
+          }}
+        >
           <TabContext>
             <Header />
             <Component {...pageProps} />
             <Scroll showBelow={1} />
             <Footer />
           </TabContext>
-        </>
+        </Box>
       </ThemeProvider>
     </React.Fragment>
   );

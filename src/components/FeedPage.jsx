@@ -30,7 +30,7 @@ export default function FeedPage(props) {
     <Box className={classes.container}>
       {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
       <Scroll showBelow={250} />
-      {infoPage.infoTip ? (
+      {infoPage.infoTip && infoPage.infoTip ? (
         <Box alignSelf="center">
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Box>
