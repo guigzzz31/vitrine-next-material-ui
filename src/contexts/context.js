@@ -5,15 +5,13 @@ const AppContext = createContext();
 export function TabContext({ children }) {
   const [currentTab, setCurrentTab] = useState("/");
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (event, newValue, name) => {
     setCurrentTab(newValue);
   };
 
-  const handleClick = (event) => {
+  const handleClick = (event, name) => {
     setCurrentTab(event);
   };
-
-  console.log("CONTEXT", currentTab);
 
   return (
     <AppContext.Provider

@@ -32,7 +32,7 @@ export default function CardName(props) {
           align="center"
           className={classes.title}
           color="textPrimary"
-          variant="h5"
+          fontSize={["22px", "24px", "28px", "32px"]}
           gutterBottom
         >
           {props.title}

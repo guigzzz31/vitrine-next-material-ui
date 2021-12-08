@@ -6,7 +6,6 @@ import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import ContentGenerator from "../helpers/generators/ContentGenerator";
 import DefinitionGenerator from "../helpers/generators/DefinitionGenerator";
-import Scroll from "../helpers/ScrollToTop";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,13 +23,10 @@ const useStyles = makeStyles((theme) => ({
 export default function FeedPage(props) {
   const classes = useStyles();
   const { infoPage } = props;
-  const matches = useMediaQuery("(max-width:1060px)");
 
   return (
     <Box className={classes.container}>
-      {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
-      <Scroll showBelow={250} />
-      {infoPage.infoTip ? (
+      {infoPage.infoTip && infoPage.infoTip ? (
         <Box alignSelf="center">
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Box>
@@ -41,7 +37,6 @@ export default function FeedPage(props) {
       {infoPage.content ? (
         <ContentGenerator content={infoPage.content} />
       ) : null}
-      <Scroll showBelow={200} />
     </Box>
   );
 }

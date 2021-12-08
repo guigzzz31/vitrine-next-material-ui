@@ -17,115 +17,27 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
-    users: [
+    images: [
       {
-        user_id: 0,
-        name: "Carole Richou",
-        avatarPath: "/carole.svg",
-        skills: [
-          {
-            skill_id: 0,
-            skill: "Diplomée d'État",
-          },
-          {
-            skill_id: 1,
-            skill: "Pédicurie",
-          },
-          {
-            skill_id: 2,
-            skill: "Podologie",
-          },
-          {
-            skill_id: 3,
-            skill: "Diabétologie",
-          },
-        ],
-        specialities: [
-          {
-            speciality_id: 0,
-            speciality: "réflexologie",
-          },
-        ],
+        image_id: 0,
+        name: "Podologie",
+        image: "/podologie.svg",
+        path: "/podologie",
       },
       {
-        user_id: 1,
-        name: "Carine Da Costa",
-        avatarPath: "/carine.svg",
-        skills: [
-          {
-            skill_id: 0,
-            skill: "Diplomée d'État",
-          },
-          {
-            skill_id: 1,
-            skill: "Pédicurie",
-          },
-          {
-            skill_id: 2,
-            skill: "Podologie",
-          },
-          {
-            skill_id: 3,
-            skill: "Diabétologie",
-          },
-        ],
-        specialities: [
-          {
-            speciality_id: 0,
-            speciality: "posturologie",
-          },
-        ],
+        image_id: 1,
+        name: "Posturologie",
+        image: "/posturologie.svg",
+        path: "/posturologie",
+      },
+      {
+        image_id: 2,
+        name: "Réflexologie",
+        image: "/reflexologie.svg",
+        path: "/reflexologie",
       },
     ],
   },
-  // {
-  //   page_id: 1,
-  //   pageName: "Horaires",
-  //   path: "/horaires",
-  //   infoTip: {
-  //     head: "Prise de Rendez-vous",
-  //     paragraph: [
-  //       {
-  //         paragraph_id: 0,
-  //         primary:
-  //           "La prise de rendez-vous s'effectue par téléphone ou sur place.",
-  //       },
-  //     ],
-  //     bottom: "À très bientôt!",
-  //   },
-  //   // content: [
-  //   //   {
-  //   //     content_id: 0,
-  //   //     title: "Carole Richou",
-  //   //     subtitle: "",
-  //   //     paragraph: [
-  //   //       {
-  //   //         paragraph_id: 0,
-  //   //         primary: "- Pédicurie, podologie, diabétologie",
-  //   //       },
-  //   //       {
-  //   //         paragraph_id: 1,
-  //   //         primary: "- Spécialisée en réflexologie",
-  //   //       },
-  //   //     ],
-  //   //   },
-  //   //   {
-  //   //     content_id: 1,
-  //   //     title: "Carine Da Costa",
-  //   //     subtitle: "",
-  //   //     paragraph: [
-  //   //       {
-  //   //         paragraph_id: 0,
-  //   //         primary: "- Pédicurie, podologie, diabétologie",
-  //   //       },
-  //   //       {
-  //   //         paragraph_id: 1,
-  //   //         primary: "- Spécialisée en posturologie",
-  //   //       },
-  //   //     ],
-  //   //   },
-  //   // ],
-  // },
   {
     page_id: 2,
     pageName: "Contact",
@@ -639,18 +551,22 @@ const data = [
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- Perte d'équilibre",
-            secondary: "sclérose en plaques, de diabète ou de cancer",
+            primary: `Les semelles proprioceptives dites "de posture" sont des semelles très fines réalisées sur mesure en fonction d'un examen clinique.`,
           },
           {
             paragraph_id: 1,
-            primary: "- Douleurs diverses",
-            secondary: "accompagnée ou non de nausées, vertiges…",
+            primary: `La correction s'effectue par des micro-reliefs n'excédant que rarement les 3 mm.`,
+            //secondary: "accompagnée ou non de nausées, vertiges…",
           },
           {
             paragraph_id: 2,
-            primary: "- Blocages et/ou raideurs",
-            secondary: "lumbago, tour de reins, torticolis...",
+            primary: `Ces reliefs agissent comme des leurres sensoriels qui stimulent les capteurs de pression sous lesquels ils sont placés.`,
+            //secondary: "lumbago, tour de reins, torticolis...",
+          },
+          {
+            paragraph_id: 3,
+            primary: `Ils ordonnent au cerveau d'ajuster le tonus musculaire et permet ainsi de rééqulibrer et de recentrer le patient.`,
+            //secondary: "lumbago, tour de reins, torticolis...",
           },
         ],
       },

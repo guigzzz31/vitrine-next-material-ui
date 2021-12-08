@@ -39,15 +39,20 @@ export default function ScheduleGenerator(props) {
   const classes = useStyles();
   const matches = useMediaQuery("(max-width:580px)");
 
-  const hours = ["14px", "16px", "22px", "23px", "23px"];
+  const hours = ["14px", "16px", "20px", "22px", "22px"];
   const square = ["15px", "16px", "22px", "28px", "28px"];
   const size = ["46px", "60px", "72px", "92px", "108px", "124px"];
 
   return (
     <Box display="flex">
-      <Box className={classes.hoursContainer} mt={4}>
+      <Box className={classes.hoursContainer} mt={[2, 2, 4, 5, 5]}>
         <Box>
-          <Typography fontFamily="Lato" fontWeight={500} fontSize={hours}>
+          <Typography
+            textAlign="end"
+            fontFamily="Lato"
+            fontWeight={500}
+            fontSize={hours}
+          >
             9h
           </Typography>
         </Box>

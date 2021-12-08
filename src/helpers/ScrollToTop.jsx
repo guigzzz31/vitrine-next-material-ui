@@ -6,20 +6,21 @@ import { ExpandLess } from "@mui/icons-material";
 const useStyles = makeStyles((theme) => ({
   toTop: {
     zIndex: 2,
-    position: "fixed",
-    bottom: 10,
-    right: -8,
+    // position: "fixed",
+    // bottom: 10,
+    // right: -8,
     color: theme.palette.error.main,
-    padding: theme.spacing(1),
+    //padding: theme.spacing(1),
+    padding: 0,
+    // /paddingRight: 1,
+    //justifySelf: "flex-end",
   },
 }));
 
-const Scroll = (showBelow) => {
+const ScrollToTop = (showBelow) => {
   const [show, setShow] = useState(showBelow ? false : true);
 
   const handleScroll = () => {
-    // console.log("window.pageYOffset", window.pageYOffset);
-    // console.log("showBelow", showBelow);
     if (window.pageYOffset > showBelow) {
       if (!show) setShow(true);
     } else {
@@ -30,7 +31,6 @@ const Scroll = (showBelow) => {
   useEffect(() => {
     if (showBelow) {
       window.addEventListener(`scroll`, handleScroll);
-      // console.log("useffect", showBelow);
       return () => window.removeEventListener(`scroll`, handleScroll);
     }
   }, []);
@@ -51,4 +51,4 @@ const Scroll = (showBelow) => {
   );
 };
 
-export default Scroll;
+export default ScrollToTop;

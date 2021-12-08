@@ -2,9 +2,8 @@ import { makeStyles } from "@mui/styles";
 
 import { Box, useMediaQuery } from "@mui/material";
 
-import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
-import CardGenerator from "../helpers/generators/CardGenerator";
+import ContactCardGenerator from "../helpers/generators/ContactCardGenerator";
 import VisitCardGenerator from "../helpers/generators/VisitCardGenerator";
 import ScheduleGenerator from "../helpers/generators/ScheduleGenerator";
 
@@ -27,15 +26,15 @@ export default function FeedContact(props) {
 
   return (
     <Box className={classes.container}>
-      {matches && <PageNameGenerator pageName={infoPage.pageName} />}
-      {infoPage.infoTip && <InfoTipGenerator infoTip={infoPage.infoTip} />}
+      {/* {matches && <PageNameGenerator pageName={infoPage.pageName} />} */}
+      <InfoTipGenerator infoTip={infoPage.infoTip} />
       {infoPage.users && <VisitCardGenerator users={infoPage.users} />}
       <Box paddingY={4}>
         {infoPage.schedule && (
           <ScheduleGenerator schedule={infoPage.schedule} />
         )}
       </Box>
-      {infoPage.profil && <CardGenerator cards={infoPage.cards} />}
+      {infoPage.profil && <ContactCardGenerator cards={infoPage.cards} />}
     </Box>
   );
 }

@@ -8,7 +8,7 @@ import InfoTipFooter from "./InfoTipFooter";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: theme.palette.secondary.main,
+    backgroundColor: theme.palette.secondary.light,
     borderWidth: 1,
     borderRadius: 25,
     boxShadow: "10px 10px 22px #c9c8c3, -10px -10px 24px #ffffff",

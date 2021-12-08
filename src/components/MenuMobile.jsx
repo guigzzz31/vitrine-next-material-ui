@@ -11,7 +11,7 @@ import { width } from "@mui/material/node_modules/@mui/system";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    color: theme.palette.secondary.main,
+    color: theme.palette.error.main,
   },
 }));
 

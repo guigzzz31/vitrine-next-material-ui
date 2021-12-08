@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardCustom(props) {
+export default function ContactCard(props) {
   const { name, lines, link } = props.card;
   const classes = useStyles();
   return (
@@ -78,7 +78,7 @@ export default function CardCustom(props) {
                     fontFamily="Lato"
                     fontSize={
                       name === "Contact"
-                        ? ["18px", "18x", "22px", "24px", "28px", "32px"]
+                        ? ["18px", "18px", "22px", "24px", "28px", "32px"]
                         : ["16px", "16px", "18px", "20px", "22px"]
                     }
                     fontWeight={name === "Contact" ? 600 : 400}

@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
   skill: {
     fontFamily: "Montserrat",
     fontWeight: 400,
-    fontSize: "1.1rem",
   },
 }));
 
@@ -21,6 +20,7 @@ export default function Skill(props) {
           align="center"
           color="textPrimary"
           letterSpacing={2}
+          fontSize={["16px", "18px", "20px", "22px", "24px"]}
           gutterBottom
         >
           {skill}

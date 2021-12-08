@@ -1,6 +1,14 @@
-import Image from "next/image";
+import { Avatar } from "@mui/material";
 
 export default function AvatarGenerator(props) {
   const { avatarPath } = props;
-  return <Image src={avatarPath} alt="me" width="110" height="110" />;
+  return (
+    <Avatar
+      src={avatarPath}
+      sx={{
+        width: [110, 120, 130, 140, 150],
+        height: [110, 120, 130, 140, 150],
+      }}
+    />
+  );
 }
