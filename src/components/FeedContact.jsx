@@ -27,8 +27,8 @@ export default function FeedContact(props) {
 
   return (
     <Box className={classes.container}>
-      {matches && <PageNameGenerator pageName={infoPage.pageName} />}
-      {infoPage.infoTip && <InfoTipGenerator infoTip={infoPage.infoTip} />}
+      {/* {matches && <PageNameGenerator pageName={infoPage.pageName} />} */}
+      <InfoTipGenerator infoTip={infoPage.infoTip} />
       {infoPage.users && <VisitCardGenerator users={infoPage.users} />}
       <Box paddingY={4}>
         {infoPage.schedule && (

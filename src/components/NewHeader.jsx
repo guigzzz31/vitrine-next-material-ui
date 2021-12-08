@@ -54,7 +54,7 @@ export default function NewHeader() {
           <Tab
             key={item.page_id}
             label={item.pageName}
-            value={item.pageName}
+            value={item.path}
             sx={{
               borderTopLeftRadius: 8,
               borderTopRightRadius: 8,
@@ -64,9 +64,7 @@ export default function NewHeader() {
               fontWeight: "normal",
             }}
             className={
-              currentTab === item.pageName
-                ? classes.buttonSelected
-                : classes.button
+              currentTab === item.path ? classes.buttonSelected : classes.button
             }
           />
         );

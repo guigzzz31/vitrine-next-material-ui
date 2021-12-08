@@ -28,7 +28,7 @@ export default function FeedPage(props) {
 
   return (
     <Box className={classes.container}>
-      {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null}
+      {/* {matches ? <PageNameGenerator pageName={infoPage.pageName} /> : null} */}
       <Scroll showBelow={250} />
       {infoPage.infoTip && infoPage.infoTip ? (
         <Box alignSelf="center">
