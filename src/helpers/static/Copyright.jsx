@@ -5,22 +5,32 @@ import { Container, Typography, Link } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   text: {
-    color: theme.palette.secondary.light,
+    color: theme.palette.text.primary,
+    fontFamily: "Montserrat",
+  },
+  link: {
+    color: theme.palette.error.main,
   },
 }));
 
 export default function Copyright() {
   const classes = useStyles();
   return (
-    <Container>
-      <Typography variant="body2" className={classes.text} align="center">
-        {"Copyright © "}
-        <Link color="inherit" href="https://github.com/guigzzz31">
-          guigzzzo
-        </Link>{" "}
-        {new Date().getFullYear()}
-        {"."}
-      </Typography>
-    </Container>
+    <Typography
+      fontSize={["14px", "14px", "15px", "16px"]}
+      className={classes.text}
+      align="center"
+    >
+      {"Copyright © "}
+      <Link
+        color="inherit"
+        className={classes.link}
+        href="https://github.com/guigzzz31"
+      >
+        guigz
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
   );
 }

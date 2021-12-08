@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   divider: {
     backgroundColor: theme.palette.error.main,
     height: 3,
-    width: "40%",
+    width: "50%",
     marginBottom: 10,
     boxShadow: "rgb(218, 98, 125) 0px 8px 27px 1px",
   },
@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HeaderContent() {
   const classes = useStyles();
-  const matches = useMediaQuery("(min-width:1060px)");
   const { currentTab } = useTabs();
 
   const tabName = () => {

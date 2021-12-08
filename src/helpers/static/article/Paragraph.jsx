@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   },
   bold: {
     fontWeight: 500,
+    color: theme.palette.primary.main,
   },
   primary: {
     //flex: 1,
@@ -33,7 +34,7 @@ export default function Paragraph(props) {
             fontSize={["16px", "18px", "20px", "22px"]}
             gutterBottom={!secondary}
           >
-            {bold && <strong>{bold}&nbsp;</strong>}
+            {bold && <strong className={classes.bold}>{bold}&nbsp;</strong>}
             {primary}
           </Typography>
         </Box>

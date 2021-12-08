@@ -39,7 +39,7 @@ export default function MyApp(props) {
           <TabContext>
             <Header />
             <Component {...pageProps} />
-            <Scroll showBelow={1} />
+            {/* <Scroll showBelow={1} /> */}
             <Footer />
           </TabContext>
         </Box>
