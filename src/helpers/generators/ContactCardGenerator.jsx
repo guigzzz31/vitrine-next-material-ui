@@ -1,7 +1,7 @@
 import { makeStyles } from "@mui/styles";
 
 import { Box, useMediaQuery } from "@mui/material";
-import CardCustom from "../static/article/CardCustom";
+import ContactCard from "../static/article/ContactCard";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -25,7 +25,7 @@ export default function CardGenerator(props) {
     >
       {cards &&
         cards.map((card) => {
-          return <CardCustom card={card} />;
+          return <ContactCard card={card} />;
         })}
     </Box>
   );

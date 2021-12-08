@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CardCustom(props) {
+export default function ContactCard(props) {
   const { name, lines, link } = props.card;
   const classes = useStyles();
   return (

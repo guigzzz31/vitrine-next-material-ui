@@ -15,10 +15,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     top: 0,
     left: 0,
-    //backgroundColor: theme.palette.secondary.light,
     background: "rgb(255,253,247)",
-    // background:
-    //   "linear-gradient(0deg, rgba(255,253,247,1) 0%, rgba(255,255,255,1) 51%)",
     background:
       "linear-gradient(0deg, rgba(255,253,247,1) 2%, rgba(255,254,250,1) 36%, rgba(255,255,255,1) 68%)",
     zIndex: 1,
@@ -31,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
   },
   desktopContainer: {
     display: "flex",
-    //alignItems: "flex-start",
     justifyContent: "space-between",
   },
   menuContainer: {

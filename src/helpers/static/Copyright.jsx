@@ -17,7 +17,7 @@ export default function Copyright() {
   const classes = useStyles();
   return (
     <Typography
-      fontSize={["14px", "14px", "15px", "16px"]}
+      fontSize={["12px", "14px", "15px", "16px"]}
       className={classes.text}
       align="center"
     >
