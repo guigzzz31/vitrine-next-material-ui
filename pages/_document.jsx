@@ -18,7 +18,12 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
           />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+          />
         </Head>
         <body style={{ backgroundColor: theme.palette.secondary.main }}>
           <Main />
