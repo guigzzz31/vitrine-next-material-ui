@@ -57,22 +57,6 @@ export default function HeaderContent() {
 
   return (
     <Box className={classes.container}>
-      {/* <Typography
-        fontSize={["18px", "22px", "24px", "28px", "32px"]}
-        align="center"
-        className={classes.title}
-      >
-        Pédicurie - Podologie
-      </Typography>
-      {matches ? null : (
-        <Typography
-          fontSize={["16px", "18px", "20px", "32px"]}
-          align="center"
-          className={classes.subtitle}
-        >
-          Cugnaux
-        </Typography>
-      )} */}
       <Box
         sx={{
           display: "flex",
