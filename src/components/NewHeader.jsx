@@ -35,6 +35,8 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "none",
     "&.Mui-selected": {
       color: theme.palette.text.primary,
+      fontFamily: "Montserrat",
+      fontWeight: 600,
     },
     "&.Mui-focusVisible": {
       backgroundColor: "transparent",

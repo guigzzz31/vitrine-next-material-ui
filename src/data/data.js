@@ -268,8 +268,8 @@ const data = [
           {
             paragraph_id: 3,
             primary: "- Hématome sous unguéal",
-            secondary:
-              " -> Lié à un choc direct comme un marteau tombé sur l'orteil ou indirect comme une chaussure trop petite",
+            // secondary:
+            // " -> Lié à un choc direct comme un marteau tombé sur l'orteil ou indirect comme une chaussure trop petite",
           },
           {
             paragraph_id: 4,
@@ -295,7 +295,7 @@ const data = [
       },
       {
         content_id: 2,
-        title: "Soins proposés",
+        title: "Quelle prise en charge ?",
         subtitle: "",
         iconPath: "",
         paragraph: [
@@ -307,19 +307,19 @@ const data = [
           },
           {
             paragraph_id: 1,
-            primary: "- L'orthonyxie",
+            primary: "- L'orthonyxie (en cas d'ongle incarné et récidive)",
             secondary:
               "-> Technique non douloureuse qui consite à poser un fil de titane sur l'ongle afin de corriger la courbure de celui ci, reduisant ainsi la recidive d'ongles incarnés et de cors sous ungéaux",
           },
           {
             paragraph_id: 2,
-            primary: "- L'onychoplastie",
+            primary: "- L'onychoplastie (en cas de transpiration excessive)",
             secondary:
               "-> Pose d'un faux ongle total ou partiel dans le cas d'une chute de l'ongle liée à un choc direct ou indirect, ou mycose",
           },
           {
             paragraph_id: 3,
-            primary: `- Ionophorèse`,
+            primary: `- Ionophorèse (en cas de transpiration excessive)`,
             secondary:
               "-> Traitement qui consiste à exposer le pied à un courant électrique de faible intensité afin de diminuer efficacement la sudation. Nous louons le materiel pendant une période de 3 semaines, sous réserve du versement d'une caution de 400 euros",
           },

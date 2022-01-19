@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
-import { Box, Grid, Collapse, IconButton } from "@mui/material";
+import { Box, Grid, Collapse, IconButton, useMediaQuery } from "@mui/material";
 import clsx from "clsx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Title from "../static/article/Title";
@@ -33,7 +33,8 @@ export default function DefinitionGenerator(props) {
   const { definition } = props;
 
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+
+  const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
