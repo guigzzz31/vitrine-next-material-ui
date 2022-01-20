@@ -2,7 +2,6 @@ import { makeStyles } from "@mui/styles";
 
 import { Grid, Box, useMediaQuery } from "@mui/material";
 
-import PageNameGenerator from "../helpers/generators/PageNameGenerator";
 import InfoTipGenerator from "../helpers/generators/InfoTipGenerator";
 import ContentGenerator from "../helpers/generators/ContentGenerator";
 import DefinitionGenerator from "../helpers/generators/DefinitionGenerator";
@@ -26,13 +25,13 @@ export default function FeedPage(props) {
 
   return (
     <Box className={classes.container}>
+      {infoPage.definition ? (
+        <DefinitionGenerator definition={infoPage.definition} />
+      ) : null}
       {infoPage.infoTip && infoPage.infoTip ? (
         <Box alignSelf="center">
           <InfoTipGenerator infoTip={infoPage.infoTip} />
         </Box>
-      ) : null}
-      {infoPage.definition ? (
-        <DefinitionGenerator definition={infoPage.definition} />
       ) : null}
       {infoPage.content ? (
         <ContentGenerator content={infoPage.content} />

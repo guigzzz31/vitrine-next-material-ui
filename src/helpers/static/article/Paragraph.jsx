@@ -17,11 +17,15 @@ const useStyles = makeStyles((theme) => ({
   },
   secondary: {
     paddingLeft: 12,
-    color: theme.palette.text.secondary,
+    color: theme.palette.primary.main,
+  },
+  def: {
+    paddingLeft: 12,
+    color: theme.palette.text.primary,
   },
 }));
 export default function Paragraph(props) {
-  const { bold, primary, secondary } = props;
+  const { bold, primary, secondary, def } = props;
   const classes = useStyles();
 
   return (
@@ -41,8 +45,7 @@ export default function Paragraph(props) {
       ) : null}
       {secondary ? (
         <Typography
-          className={classes.secondary}
-          color="textPrimary"
+          className={def ? classes.def : classes.secondary}
           variant="body1"
           gutterBottom
         >

@@ -43,7 +43,7 @@ export default function DefinitionGenerator(props) {
   return (
     <>
       {definition ? (
-        <Box m={2}>
+        <Box my={4} pl={[1, 1, 8]}>
           <Grid direction="row" alignItems="center" container>
             <Grid item>
               <Title title={definition.title} />
@@ -65,6 +65,7 @@ export default function DefinitionGenerator(props) {
             <ParagraphGenerator
               subtitle={definition.subtitle}
               paragraphs={definition.paragraph}
+              def
             />
           </Collapse>
         </Box>

@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import ParagraphGenerator from "../../generators/ParagraphGenerator";
 import InfoTipHeader from "./InfoTipHeader";
 import InfoTipFooter from "./InfoTipFooter";
+import Paragraph from "../article/Paragraph";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,7 +25,18 @@ export default function InfoTip(props) {
       <Box pl={0.5}>
         <InfoTipHeader head={head} />
         <Box pl={2}>
-          <ParagraphGenerator paragraphs={paragraph} />
+          {paragraph
+            ? paragraph.map((item) => {
+                return (
+                  <Paragraph
+                    key={item.paragraph_id}
+                    bold={item.bold}
+                    primary={item.primary}
+                    secondary={item.secondary}
+                  />
+                );
+              })
+            : null}
         </Box>
         <InfoTipFooter bottom={bottom} />
       </Box>

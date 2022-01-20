@@ -313,7 +313,7 @@ const data = [
           },
           {
             paragraph_id: 2,
-            primary: "- L'onychoplastie (en cas de transpiration excessive)",
+            primary: "- L'onychoplastie (en cas de totale de l'ongle)",
             secondary:
               "-> Pose d'un faux ongle total ou partiel dans le cas d'une chute de l'ongle liée à un choc direct ou indirect, ou mycose",
           },
@@ -391,45 +391,109 @@ const data = [
     },
     content: [
       {
-        content_id: 1,
+        content_id: 0,
         title: "Pourquoi consulter ?",
-        subtitle: "",
+        subtitle: "chez l'adulte",
         iconPath: "",
         paragraph: [
           {
             paragraph_id: 0,
-            primary: "- Troubles de la marche",
+            primary:
+              "- douleurs chroniques articulaires ou musclaires (talons, tendons, genoux, dos...)",
             secondary: "",
           },
           {
             paragraph_id: 1,
-            primary: "- Troubles de la posture",
+            primary:
+              "- appuis douloureux du pied (durillons, syndrôme de Morton, épine calcanéenne...)",
             secondary: "",
           },
           {
             paragraph_id: 2,
-            primary: "- Douleur mécanique",
+            primary:
+              "- prise en charge post traumatique (entorse cheville, rupture du tendon d'Achille...)",
             secondary: "",
           },
           {
             paragraph_id: 3,
-            primary: "- Malformation",
-            secondary: "",
-          },
-          {
-            paragraph_id: 4,
-            primary: "- Prise en charge post traumatique",
-            secondary: "",
-          },
-          {
-            paragraph_id: 5,
-            primary: "- Prise en charge post chirurgicale",
+            primary:
+              "- prise en charge post chirurgicale (hallux valgus ou oignon, prothèse de hanche ou de genou...)",
             secondary: "",
           },
         ],
       },
       {
+        content_id: 1,
+        title: "",
+        subtitle: "chez le jeune enfant",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- chutes fréquentes",
+            secondary: "",
+          },
+          {
+            paragraph_id: 1,
+            primary: "- troubles de la posture",
+            secondary: "",
+          },
+          {
+            paragraph_id: 2,
+            primary: "- genoux en X",
+            secondary: "",
+          },
+          // {
+          //   paragraph_id: 3,
+          //   primary: "- Malformation",
+          //   secondary: "",
+          // },
+          // {
+          //   paragraph_id: 4,
+          //   primary: "- Prise en charge post traumatique",
+          //   secondary: "",
+          // },
+          // {
+          //   paragraph_id: 5,
+          //   primary: "- Prise en charge post chirurgicale",
+          //   secondary: "",
+          // },
+        ],
+      },
+      {
         content_id: 2,
+        title: "",
+        subtitle: "chez l'adolescent",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- douleurs aux talons ou aux genoux",
+            secondary: "",
+          },
+        ],
+      },
+      {
+        content_id: 3,
+        title: "",
+        subtitle: "chez le sportif",
+        iconPath: "",
+        paragraph: [
+          {
+            paragraph_id: 0,
+            primary: "- douleurs chroniques pendant ou après l'effort",
+            secondary: "",
+          },
+          {
+            paragraph_id: 1,
+            primary:
+              "- préparation d'un évènement sportif (trail, marathon...)",
+            secondary: "",
+          },
+        ],
+      },
+      {
+        content_id: 4,
         title: "Soins proposés",
         subtitle: "",
         iconPath: "",

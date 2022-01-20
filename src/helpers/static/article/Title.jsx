@@ -19,6 +19,7 @@ export default function Title(props) {
         props.title === "Carole Richou" ? classes.carole : classes.carine
       }
       fontSize={["22px", "24px", "28px", "33px", "36px"]}
+      pl={[0, 3, 6]}
     >
       {props.title}
     </Typography>
