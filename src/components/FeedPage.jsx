@@ -40,7 +40,7 @@ export default function FeedPage(props) {
           </Box>
         ) : null}
         {infoPage.infoTip && infoPage.infoTip ? (
-          <Box flex={1}>
+          <Box flex={1} justifySelf="center">
             <InfoTipGenerator infoTip={infoPage.infoTip} />
           </Box>
         ) : null}

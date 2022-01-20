@@ -27,7 +27,7 @@ export default function InfoTip(props) {
     <Box
       className={classes.container}
       p={2}
-      m={4}
+      mx={4}
       width={"auto"}
       //width={["280px", "320px", "380px", "440px"]}
     >
