@@ -17,11 +17,15 @@ const useStyles = makeStyles((theme) => ({
   },
   secondary: {
     paddingLeft: 12,
-    color: theme.palette.text.secondary,
+    color: theme.palette.primary.main,
+  },
+  def: {
+    paddingLeft: 12,
+    color: theme.palette.text.primary,
   },
 }));
 export default function Paragraph(props) {
-  const { bold, primary, secondary } = props;
+  const { bold, primary, secondary, def, infoTip } = props;
   const classes = useStyles();
 
   return (
@@ -31,7 +35,12 @@ export default function Paragraph(props) {
           <Typography
             fontFamily="Lato"
             color="textPrimary"
-            fontSize={["16px", "18px", "20px", "22px"]}
+            fontSize={
+              infoTip
+                ? ["14px", "16px", "18px"]
+                : ["16px", "18px", "20px", "20px"]
+            }
+            // fontSize={["16px", "18px", "20px", "22px", "24px"]}
             gutterBottom={!secondary}
           >
             {bold && <strong className={classes.bold}>{bold}&nbsp;</strong>}
@@ -41,8 +50,7 @@ export default function Paragraph(props) {
       ) : null}
       {secondary ? (
         <Typography
-          className={classes.secondary}
-          color="textPrimary"
+          className={def ? classes.def : classes.secondary}
           variant="body1"
           gutterBottom
         >

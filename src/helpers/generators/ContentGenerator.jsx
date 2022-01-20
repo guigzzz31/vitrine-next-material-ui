@@ -8,7 +8,10 @@ import ParagraphGenerator from "./ParagraphGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    // display: "flex",
+    // flexDirection: "row",
+    // //alignItems: "center",
+    // flexWrap: "wrap",
   },
 }));
 
@@ -17,18 +20,15 @@ export default function ContentGenerator(props) {
   const classes = useStyles();
 
   return (
-    <>
+    <Box className={classes.root} my={2}>
       {content
         ? content.map((item) => {
             return (
-              <Box
-                key={item.content_id}
-                mx={2}
-                mt={2}
-                //mb={item.title === "Carole Richou" ? 0 : 3}
-              >
+              <Box key={item.content_id} mx={1} mt={2}>
                 <Title title={item.title} />
-                {/* <Subtitle subtitle={item.subtitle} /> */}
+                {item.subtitle !== "" ? (
+                  <Subtitle subtitle={item.subtitle} />
+                ) : null}
                 <ParagraphGenerator
                   subtitle={item.subtitle}
                   paragraphs={item.paragraph}
@@ -37,6 +37,6 @@ export default function ContentGenerator(props) {
             );
           })
         : null}
-    </>
+    </Box>
   );
 }

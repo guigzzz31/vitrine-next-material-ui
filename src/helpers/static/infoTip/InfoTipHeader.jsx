@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: theme.palette.primary.main,
-    paddingRight: 8,
+    //paddingRight: 8,
   },
   head: {
     //width: "80%",
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
     fontFamily: "Montserrat",
     fontWeight: 500,
+    paddingLeft: 8,
   },
 }));
 
@@ -32,7 +33,8 @@ export default function InfoTipHeader(props) {
   return (
     <Box className={classes.container}>
       <InfoOutlinedIcon
-        sx={{ fontSize: [["16px", "16px", "22px", "24px"]] }}
+        // fontSize={["16px", "16px", "22px", "24px"]}
+        sx={{ fontSize: [16, 18, 20, 24] }}
         className={classes.icon}
       />
       <Typography
