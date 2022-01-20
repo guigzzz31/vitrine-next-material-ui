@@ -8,7 +8,10 @@ import ParagraphGenerator from "./ParagraphGenerator";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    // display: "flex",
+    // flexDirection: "row",
+    // //alignItems: "center",
+    // flexWrap: "wrap",
   },
 }));
 
@@ -17,7 +20,7 @@ export default function ContentGenerator(props) {
   const classes = useStyles();
 
   return (
-    <Box my={2}>
+    <Box className={classes.root} my={2}>
       {content
         ? content.map((item) => {
             return (

@@ -238,8 +238,23 @@ const data = [
       paragraph: [
         {
           paragraph_id: 0,
-          bold: "Un soin de pédicurie",
-          primary: `vise à soigner et traiter les affections de la peau et des ongles du pied.`,
+          bold: "La pédicurie",
+          primary: ` est un domaine consacré aux soins des pieds. Elle s'occupe donc de toutes les pathologies du pied :`,
+        },
+        {
+          paragraph_id: 1,
+          primary: "- l'hygiène des pieds et des ongles",
+          secondary: "",
+        },
+        {
+          paragraph_id: 2,
+          primary: "- les affections de la peau",
+          secondary: "",
+        },
+        {
+          paragraph_id: 3,
+          primary: "- les problèmes touchant les ongles",
+          secondary: "",
         },
       ],
     },
@@ -377,15 +392,19 @@ const data = [
         },
         {
           paragraph_id: 1,
-          secondary: `- de la position des pieds`,
+          primary: `- de la position des pieds`,
         },
         {
           paragraph_id: 2,
-          secondary: `- de la marche`,
+          primary: `- de la marche`,
         },
         {
           paragraph_id: 3,
-          secondary: `- de la posture (bascule du bassin, genoux en X, scoliose)`,
+          primary: `- de la posture (bascule du bassin, genoux en X, scoliose)`,
+        },
+        {
+          paragraph_id: 4,
+          primary: `- des pressions statiques et dynamiques (nous disposons d'une plateforme baropodométrique)`,
         },
       ],
     },
@@ -1021,6 +1040,23 @@ const data = [
       ],
       bottom: "À très bientôt!",
     },
+    definition: {
+      definition_id: 0,
+      title: "Consultation podologie/posturologique",
+      subtitle: "",
+      paragraph: [
+        {
+          paragraph_id: 0,
+          bold: " - 40 euros ",
+          primary: `la séance`,
+        },
+        {
+          paragraph_id: 1,
+          bold: `- entre 50 et 100 euros`,
+          primary: `pour la paire de semelle sur mesure`,
+        },
+      ],
+    },
     content: [
       {
         content_id: 0,
@@ -1040,40 +1076,40 @@ const data = [
           },
         ],
       },
-      {
-        content_id: 1,
-        title: "Consultation podologie",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 40 euros la séance",
-          },
-          {
-            paragraph_id: 1,
-            primary:
-              "- entre 50 et 100 euros pour la paire de semelle sur mesure",
-          },
-        ],
-      },
-      {
-        content_id: 3,
-        title: "Consultation posturologique",
-        subtitle: "",
-        iconPath: "",
-        paragraph: [
-          {
-            paragraph_id: 0,
-            primary: "- 40 euros la séance",
-          },
-          {
-            paragraph_id: 1,
-            primary:
-              "- entre 50 et 100 euros pour la paire de semelle sur mesure",
-          },
-        ],
-      },
+      // {
+      //   content_id: 1,
+      //   title: "Consultation podologie",
+      //   subtitle: "",
+      //   iconPath: "",
+      //   paragraph: [
+      //     {
+      //       paragraph_id: 0,
+      //       primary: "- 40 euros la séance",
+      //     },
+      //     {
+      //       paragraph_id: 1,
+      //       primary:
+      //         "- entre 50 et 100 euros pour la paire de semelle sur mesure",
+      //     },
+      //   ],
+      // },
+      // {
+      //   content_id: 3,
+      //   title: "Consultation posturologique",
+      //   subtitle: "",
+      //   iconPath: "",
+      //   paragraph: [
+      //     {
+      //       paragraph_id: 0,
+      //       primary: "- 40 euros la séance",
+      //     },
+      //     {
+      //       paragraph_id: 1,
+      //       primary:
+      //         "- entre 50 et 100 euros pour la paire de semelle sur mesure",
+      //     },
+      //   ],
+      // },
       {
         content_id: 2,
         title: "Séance de réflexologie",

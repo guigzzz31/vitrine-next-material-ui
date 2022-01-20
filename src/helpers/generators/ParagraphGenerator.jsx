@@ -6,7 +6,12 @@ export default function ParagraphGenerator(props) {
   const { subtitle, paragraphs, def } = props;
   const pl = subtitle ? [2, 4, 12] : [1, 2, 8];
   return (
-    <Box pt={1} pl={pl}>
+    <Box
+      pt={1}
+      pl={pl}
+      width={"100%"}
+      sx={{ display: "flex", flexDirection: "column", flexWrap: "wrap" }}
+    >
       {paragraphs
         ? paragraphs.map((item) => {
             return (

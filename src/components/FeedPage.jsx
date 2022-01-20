@@ -13,8 +13,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    //justifyContent: "center",
-    //alignItems: "center",
+    justifyContent: "center",
     //backgroundColor: theme.palette.secondary.main
   },
 }));
@@ -22,19 +21,34 @@ const useStyles = makeStyles((theme) => ({
 export default function FeedPage(props) {
   const classes = useStyles();
   const { infoPage } = props;
-
+  const matches = useMediaQuery("(min-width:1460px)");
+  console.log("mateches", matches);
   return (
     <Box className={classes.container}>
-      {infoPage.definition ? (
-        <DefinitionGenerator definition={infoPage.definition} />
-      ) : null}
-      {infoPage.infoTip && infoPage.infoTip ? (
-        <Box alignSelf="center">
-          <InfoTipGenerator infoTip={infoPage.infoTip} />
-        </Box>
-      ) : null}
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          flexWrap: "wrap",
+          flexDirection: matches ? "row" : "column",
+          justifyContent: matches ? "space-between" : "center",
+        }}
+      >
+        {infoPage.definition ? (
+          <Box flex={1}>
+            <DefinitionGenerator definition={infoPage.definition} />
+          </Box>
+        ) : null}
+        {infoPage.infoTip && infoPage.infoTip ? (
+          <Box flex={1}>
+            <InfoTipGenerator infoTip={infoPage.infoTip} />
+          </Box>
+        ) : null}
+      </Box>
       {infoPage.content ? (
-        <ContentGenerator content={infoPage.content} />
+        <Box>
+          <ContentGenerator content={infoPage.content} />
+        </Box>
       ) : null}
     </Box>
   );

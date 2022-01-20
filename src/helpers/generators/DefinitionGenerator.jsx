@@ -34,7 +34,7 @@ export default function DefinitionGenerator(props) {
 
   const classes = useStyles();
 
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -43,7 +43,7 @@ export default function DefinitionGenerator(props) {
   return (
     <>
       {definition ? (
-        <Box my={4} pl={[1, 1, 8]}>
+        <Box mb={4} pl={1}>
           <Grid direction="row" alignItems="center" container>
             <Grid item>
               <Title title={definition.title} />
@@ -62,11 +62,13 @@ export default function DefinitionGenerator(props) {
             </Grid>
           </Grid>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <ParagraphGenerator
-              subtitle={definition.subtitle}
-              paragraphs={definition.paragraph}
-              def
-            />
+            <Box mx={1}>
+              <ParagraphGenerator
+                subtitle={definition.subtitle}
+                paragraphs={definition.paragraph}
+                def
+              />
+            </Box>
           </Collapse>
         </Box>
       ) : null}

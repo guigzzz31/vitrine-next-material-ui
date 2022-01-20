@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function Paragraph(props) {
-  const { bold, primary, secondary, def } = props;
+  const { bold, primary, secondary, def, infoTip } = props;
   const classes = useStyles();
 
   return (
@@ -35,7 +35,12 @@ export default function Paragraph(props) {
           <Typography
             fontFamily="Lato"
             color="textPrimary"
-            fontSize={["16px", "18px", "20px", "22px"]}
+            fontSize={
+              infoTip
+                ? ["14px", "16px", "18px"]
+                : ["16px", "18px", "20px", "20px"]
+            }
+            // fontSize={["16px", "18px", "20px", "22px", "24px"]}
             gutterBottom={!secondary}
           >
             {bold && <strong className={classes.bold}>{bold}&nbsp;</strong>}
